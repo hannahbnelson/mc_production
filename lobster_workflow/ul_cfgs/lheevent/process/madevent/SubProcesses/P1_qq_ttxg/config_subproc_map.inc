@@ -1,0 +1,5 @@
+      DATA (CONFSUB(I,1),I=1,4)/1,1,1,1/
+      DATA (CONFSUB(I,2),I=1,4)/4,4,4,4/
+      DATA (CONFSUB(I,3),I=1,4)/8,8,8,8/
+      DATA (CONFSUB(I,4),I=1,4)/12,12,12,12/
+      DATA (CONFSUB(I,5),I=1,4)/15,15,15,15/

@@ -1,0 +1,33 @@
+import events.lhe
+set seed 1234567
+#************************************************************
+#*                        MadSpin                           *
+#*                                                          *
+#*    P. Artoisenet, R. Frederix, R. Rietkerk, O. Mattelaer *
+#*                                                          *
+#*    Part of the MadGraph5_aMC@NLO Framework:              *
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+#*                                                          *
+#************************************************************
+
+##Needed options for gridpack
+set ms_dir ./madspingrid
+set max_running_process 1
+
+
+#Some options (uncomment to apply)
+set max_weight_ps_point 400  # number of PS to estimate the maximum for each event
+
+# specify the decay for the final state particles
+
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+decay t > w+ b NP=0, w+ > l+ vl NP=0
+decay t~ > w- b~ NP=0, w- > l- vl~ NP=0
+
+# running the actual code
+launch

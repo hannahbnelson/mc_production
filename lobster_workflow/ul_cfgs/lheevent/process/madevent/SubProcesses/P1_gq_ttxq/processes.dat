@@ -1,0 +1,16 @@
+1       g u > t t~ u
+mirror  u g > t t~ u
+2       g c > t t~ c
+mirror  c g > t t~ c
+3       g d > t t~ d,g s > t t~ s
+mirror  d g > t t~ d,s g > t t~ s
+4       g b > t t~ b
+mirror  b g > t t~ b
+5       g u~ > t t~ u~
+mirror  u~ g > t t~ u~
+6       g c~ > t t~ c~
+mirror  c~ g > t t~ c~
+7       g d~ > t t~ d~,g s~ > t t~ s~
+mirror  d~ g > t t~ d~,s~ g > t t~ s~
+8       g b~ > t t~ b~
+mirror  b~ g > t t~ b~

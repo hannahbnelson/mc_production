@@ -1,0 +1,8 @@
+1       u u~ > t t~ g
+mirror  u~ u > t t~ g
+2       c c~ > t t~ g
+mirror  c~ c > t t~ g
+3       d d~ > t t~ g,s s~ > t t~ g
+mirror  d~ d > t t~ g,s~ s > t t~ g
+4       b b~ > t t~ g
+mirror  b~ b > t t~ g

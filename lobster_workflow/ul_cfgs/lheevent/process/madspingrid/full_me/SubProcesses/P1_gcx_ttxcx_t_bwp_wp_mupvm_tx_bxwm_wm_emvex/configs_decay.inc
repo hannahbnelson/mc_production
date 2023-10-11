@@ -1,0 +1,14 @@
+      data (map_external2res(i), i=1,5)/1,2,-2 ,-4 ,9 / 
+      DATA (IDECAY(I, -2 ),I=1,2)/  3 ,  -1 / 
+      DATA (IDECAY(I, -1 ),I=1,2)/  4 ,  5 / 
+      DATA (IDECAY(I, -4 ),I=1,2)/  6 ,  -3 / 
+      DATA (IDECAY(I, -3 ),I=1,2)/  7 ,  8 / 
+      ns_channel_decay= 4 
+      PRMASS(-2)=mdl_MT 
+      PRWIDTH(-2)=mdl_WT 
+      PRMASS(-1)=mdl_MW 
+      PRWIDTH(-1)=mdl_WW 
+      PRMASS(-4)=mdl_MT 
+      PRWIDTH(-4)=mdl_WT 
+      PRMASS(-3)=mdl_MW 
+      PRWIDTH(-3)=mdl_WW 
