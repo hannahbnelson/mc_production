@@ -2,15 +2,14 @@
 import numpy as np
 import awkward as ak
 np.seterr(divide='ignore', invalid='ignore', over='ignore')
-from coffea import processor
+from coffea import hist, processor
 from coffea.analysis_tools import PackedSelection
 
 # silence warnings due to using NanoGEN instead of full NanoAOD
 from coffea.nanoevents import NanoEventsFactory, NanoAODSchema
 NanoAODSchema.warn_missing_crossrefs = False
 
-import hist
-from topcoffea.modules.histEFT import HistEFT
+from topcoffea.modules.HistEFT import HistEFT
 
 # Get the lumi for the given year
 def get_lumi(year):
@@ -39,18 +38,8 @@ class AnalysisProcessor(processor.ProcessorABC):
 
         # Create the histograms with new scikit hist
         self._histo_dict = {
-            "j0pt": HistEFT(
-                hist.axis.StrCategory([], growth=True, name="process"),
-                hist.axis.Regular(name="j0pt",label="Leading jet $p_{T}$ (GeV)", bins=10, start=0, stop=600, flow=True),
-                wc_names = self._wc_names_lst,
-                label="Events",
-            ),
-            "ht": HistEFT(
-                hist.axis.StrCategory([], growth=True, name="process"),
-                hist.axis.Regular(name="ht",label="H_T (GeV)", bins=10, start=0, stop=800, flow=True),
-                wc_names = self._wc_names_lst,
-                label="Events",
-            ),
+            "tops_pt"      : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("tops_pt", "Pt of the sum of the tops", 50, 0, 500)),
+            "njets"        : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("njets", "njets", 10, 0, 10)), 
         }
 
     @property
@@ -91,6 +80,8 @@ class AnalysisProcessor(processor.ProcessorABC):
         jets_clean = jets[is_clean(jets, leps, drmin=0.4)]
         j0 = jets_clean[ak.argmax(jets.pt,axis=-1,keepdims=True)]
 
+        gen_top = ak.pad_none(genpart[is_final_mask & (abs(genpart.pdgId) == 6)],2)
+
 
         ######## Event selections ########
 
@@ -98,18 +89,10 @@ class AnalysisProcessor(processor.ProcessorABC):
         njets = ak.num(jets_clean)
 
         at_least_two_leps = ak.fill_none(nleps>=2,False)
-        at_least_two_jets = ak.fill_none(njets>=2,False)
 
         selections = PackedSelection()
-        selections.add('2l2j', at_least_two_leps & at_least_two_jets)
+        selections.add('2l', at_least_two_leps)
 
-
-        ######## Normalization ########
-
-        # Normalize by (xsec/sow)
-        lumi = 1000.0*get_lumi(year)
-        norm = (xsec/sow)*lumi
-        wgts = norm*np.ones_like(events['event'])
 
         ######## Normalization ########
 
@@ -124,17 +107,17 @@ class AnalysisProcessor(processor.ProcessorABC):
         hout = self._histo_dict
 
         variables_to_fill = {
-            "j0pt" : j0.pt,
-            "ht" : ak.sum(jets.pt,axis=-1),
+            "tops_pt" : gen_top.sum().pt,
+            "njets" : ak.num(jets_clean),
         }
 
-        event_selection_mask = selections.all("2l2j")
+        event_selection_mask = selections.all("2l")
 
         for var_name, var_values in variables_to_fill.items():
 
             fill_info = {
                 var_name    : var_values[event_selection_mask],
-                "process"   : hist_axis_name,
+                "sample"   : hist_axis_name,
                 "weight"    : wgts[event_selection_mask],
                 "eft_coeff" : eft_coeffs[event_selection_mask],
             }
