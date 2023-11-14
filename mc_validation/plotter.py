@@ -5,8 +5,9 @@ import argparse
 import matplotlib.pyplot as plt
 import topcoffea.modules.utils as utils
 
-import hist
-from topcoffea.modules.histEFT import HistEFT
+from coffea import hist
+from topcoffea.modules.HistEFT import HistEFT
+
 
 WCPT_EXAMPLES = {
     "nonsm": {
@@ -68,21 +69,13 @@ def main():
     hin_dict = pickle.load(gzip.open(histo_in))
 
     # Grab the one we want to plot
-    #variable = "j0pt"
-    variable = "ht"
+    variable = "tops_pt"
     histo = hin_dict[variable]
 
-    # Print some values
-    print("\nValues: SM",histo.eval(None))
-    print("\nValues EFT:",histo.eval(WCPT_EXAMPLES["nonsm"]))
-
-    # Make plots at a few wc points
-    for wcpt_name, wcpt_dict in WCPT_EXAMPLES.items():
-        wc_pt = WCPT_EXAMPLES[wcpt_name]
-        histo_to_plot = histo.as_hist(wc_pt)
-        fig = make_single_fig(histo_to_plot)
-        title = f"ttbar_{wcpt_name}.png"
-        fig.savefig(os.path.join(".",title))
+    h = histo.integrate('tops_pt').values()
+    fig, ax = plt.subplots(1,1, figsize=(7,7)) #create an axis for plotting
+    hist.plot1d(h, stack=True)
+    plt.savefig("test_fig.pdf")
 
 
 main()
