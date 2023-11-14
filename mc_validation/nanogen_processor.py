@@ -40,6 +40,8 @@ class AnalysisProcessor(processor.ProcessorABC):
         self._histo_dict = {
             "tops_pt"      : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("tops_pt", "Pt of the sum of the tops", 50, 0, 500)),
             "njets"        : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("njets", "njets", 10, 0, 10)), 
+            "mtt"          : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("mtt", "invariant mass of tops", 100, 0, 1000)), 
+            "mtt_ordered"  : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("mtt_ordered", "invariant mass of two leading tops", 100, 0, 1000))
         }
 
     @property
@@ -80,8 +82,13 @@ class AnalysisProcessor(processor.ProcessorABC):
         jets_clean = jets[is_clean(jets, leps, drmin=0.4)]
         j0 = jets_clean[ak.argmax(jets.pt,axis=-1,keepdims=True)]
 
-        gen_top = ak.pad_none(genpart[is_final_mask & (abs(genpart.pdgId) == 6)],2)
+        ######## Top selection ########
 
+        gen_top = ak.pad_none(genpart[is_final_mask & (abs(genpart.pdgId) == 6)],2)
+        mtt = (gen_top[:,0] + gen_top[:,1]).mass
+
+        gen_top_ordered = gen_top[ak.argsort(gen_top.pt, axis=-1, ascending=False)]
+        mtt_ordered = (gen_top_ordered[:,0] + gen_top_ordered[:,1]).mass
 
         ######## Event selections ########
 
@@ -109,6 +116,8 @@ class AnalysisProcessor(processor.ProcessorABC):
         variables_to_fill = {
             "tops_pt" : gen_top.sum().pt,
             "njets" : ak.num(jets_clean),
+            "mtt" : mtt,
+            "mtt_ordered" : mtt_ordered
         }
 
         event_selection_mask = selections.all("2l")
