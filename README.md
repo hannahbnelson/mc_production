@@ -8,7 +8,7 @@ conda activate cmseft2023
 
 python3 run_nanogen_processor.py --outname outputName sample_ttbar_LO_SMEFT.json
 
-python3 plotter.py histos.pkl.gz
+python3 plotter.py
 ```
 
 The default `outname` is `histos`, resulting in an output file of `histos.pkl.gz`. 

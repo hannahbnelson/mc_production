@@ -27,10 +27,19 @@ with gzip.open(fin) as fin:
 
         print(hists[k])
 
-h = hists['mtt_ordered']
+h = hists['tops_pt']
 # print(h.axes())
 
 fig, ax = plt.subplots(1,1) #create an axis for plotting
 hist.plot1d(h, ax=ax, stack=True)
 ax.legend()
-fig.savefig('mtt_ordered.pdf')
+fig.savefig('tops_pt.pdf')
+
+h.set_wilson_coeff_from_array([100, 100, 100, 100, 100,
+                               100, 100, 100, 100, 100,
+                               100, 100, 100, 100, 100])
+
+fig, ax = plt.subplots(1,1) #create an axis for plotting
+hist.plot1d(h, ax=ax, stack=True)
+ax.legend()
+fig.savefig('tops_pt_reweighted.pdf')
