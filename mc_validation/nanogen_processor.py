@@ -36,6 +36,9 @@ class AnalysisProcessor(processor.ProcessorABC):
         self._samples = samples
         self._wc_names_lst = wc_names_lst
 
+        print("self._samples", self._samples)
+        print("self._wc_names_lst", self._wc_names_lst)
+
         # Create the histograms with new scikit hist
         self._histo_dict = {
             "tops_pt"      : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("tops_pt", "Pt of the sum of the tops", 50, 0, 500)),
