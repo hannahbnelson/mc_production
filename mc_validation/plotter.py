@@ -14,8 +14,13 @@ params = {'axes.labelsize': 20,
           'legend.fontsize':20}
 plt.rcParams.update(params)
 
-fin = 'with_mtt.pkl.gz'
+#fin = 'TT01j2l.pkl.gz'
+fin = 'TT01j2l_4jtest.pkl.gz'
 hists = {}
+
+rwgt_pts = [1, 1, 1, 1, 1,
+           1, 1, 1, 1, 1,
+           1, 1, 1, 1, 1, 1]
 
 with gzip.open(fin) as fin: 
     hin = pickle.load(fin)
@@ -25,21 +30,40 @@ with gzip.open(fin) as fin:
         else: 
             hists[k]=hin[k]
 
-        print(hists[k])
+def plot_hist_noEFT(hists, name, label):
+    h = hists[name]
+    fig, ax = plt.subplots(1,1) #create an axis for plotting
+    hist.plot1d(h, ax=ax, stack=True)
+    ax.legend()
+    figname = name + label + '.pdf'
+    fig.savefig(figname)
+    print("Histogram saved to:", figname)
 
-h = hists['tops_pt']
-# print(h.axes())
+def plot_hist_sm(hists, name, label):
+    h = hists[name]
+    h.set_sm()
+    fig, ax = plt.subplots(1,1) #create an axis for plotting
+    hist.plot1d(h, ax=ax, stack=True)
+    ax.legend()     
+    figname = name + label + '.pdf'
+    fig.savefig(figname)
+    print("Histogram saved to:", figname)
 
-fig, ax = plt.subplots(1,1) #create an axis for plotting
-hist.plot1d(h, ax=ax, stack=True)
-ax.legend()
-fig.savefig('tops_pt.pdf')
+def plot_hist_rwgt(hists, name, label):
+    h = hists[name]
+    h.set_wilson_coeff_from_array(rwgt_pts)
+    fig, ax = plt.subplots(1,1) #create an axis for plotting
+    hist.plot1d(h, ax=ax, stack=True)
+    ax.legend()
+    figname = name + label + '.pdf'
+    fig.savefig(figname)
+    print("Histogram saved to:", figname)   
 
-h.set_wilson_coeff_from_array([100, 100, 100, 100, 100,
-                               100, 100, 100, 100, 100,
-                               100, 100, 100, 100, 100])
+print(hists['njets'].values())
+plot_hist_rwgt(hists, 'njets', "_TT01j2l_4jtest")
 
-fig, ax = plt.subplots(1,1) #create an axis for plotting
-hist.plot1d(h, ax=ax, stack=True)
-ax.legend()
-fig.savefig('tops_pt_reweighted.pdf')
+#for name in hists: 
+    #plot_hist_sm(hists, name, "_TT01j2l_no_norm_sm_rwgt")
+    #plot_hist_rwgt(hists, name, "_TT01j2l_no_norm_1rwgt")
+    #plot_hist_noEFT(hists, name, "_ttbarref")
+

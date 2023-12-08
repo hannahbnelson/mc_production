@@ -50,7 +50,7 @@ if __name__ == '__main__':
     wc_lst = wc_lst
 
     # Run the processor and get the output
-    processor_instance = nanogen_processor.AnalysisProcessor(samplesdict,wc_lst)
+    processor_instance = nanogen_processor.AnalysisProcessor(samplesdict,wc_lst,do_errors=True)
     exec_instance      = processor.FuturesExecutor(workers=nworkers)
     runner             = processor.Runner(exec_instance, schema=NanoAODSchema, chunksize=chunksize, maxchunks=nchunks)
     output             = runner(flist, treename, processor_instance)

@@ -5,7 +5,7 @@
   "histAxisName": "ttbar",
   "options": "",
   "files": [
-    "small_nanoGen_ttbar_LO_SMEFT.root"
+    "/afs/crc.nd.edu/user/h/hnelson2/ttbarEFT_mcgen/mc_validation/input_samples/nanoGen_files/small_nanoGen_ttbar_LO_SMEFT.root"
   ],
   "nSumOfWeights": 1.0,
   "isData": false

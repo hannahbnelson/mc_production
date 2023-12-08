@@ -1,0 +1,12 @@
+{
+  "xsec": 56.20343017578125,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "ttJets",
+  "options": "",
+  "files": [
+    "/afs/crc.nd.edu/user/h/hnelson2/ttbarEFT_mcgen/mc_validation/input_samples/nanoGen_files/nanogen_ttJets_LO_SMEFT.root"
+  ],
+  "nSumOfWeights": 4205,
+  "isData": false
+}

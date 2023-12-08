@@ -5,7 +5,7 @@
   "histAxisName": "ttbar",
   "options": "",
   "files": [
-    "nanoGen_ttbar_LO_SMEFT.root"
+    "../nanoGen_files/nanogen_ttbar_ref.root"
   ],
   "nSumOfWeights": 1.0,
   "isData": false
