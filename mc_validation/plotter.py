@@ -15,12 +15,22 @@ params = {'axes.labelsize': 20,
 plt.rcParams.update(params)
 
 #fin = 'TT01j2l.pkl.gz'
-fin = 'TT01j2l_4jtest.pkl.gz'
+#fin = 'TT01j2l_4jtest.pkl.gz'
+#fin = 'TT01j2l_cuts_test.pkl.gz'
+fin = 'TT01j2l_cuts.pkl.gz'
+
+if fin.endswith('.pkl.gz'):
+    label = fin[:-7]
+else: 
+    label = fin
+print(label)
+
 hists = {}
 
-rwgt_pts = [1, 1, 1, 1, 1,
-           1, 1, 1, 1, 1,
-           1, 1, 1, 1, 1, 1]
+rwgt_pts = [5, 5, 5, 5, 
+            5, 5, 5, 5, 
+            5, 5, 5, 5, 
+            5, 5, 5, 5]
 
 with gzip.open(fin) as fin: 
     hin = pickle.load(fin)
@@ -30,14 +40,15 @@ with gzip.open(fin) as fin:
         else: 
             hists[k]=hin[k]
 
-def plot_hist_noEFT(hists, name, label):
+def plot_hist_NOrwgt(hists, name, label):
     h = hists[name]
     fig, ax = plt.subplots(1,1) #create an axis for plotting
     hist.plot1d(h, ax=ax, stack=True)
     ax.legend()
-    figname = name + label + '.pdf'
+    figname = label + '_NOrwgt_' + name + '.pdf'
     fig.savefig(figname)
     print("Histogram saved to:", figname)
+    plt.close(fig)
 
 def plot_hist_sm(hists, name, label):
     h = hists[name]
@@ -45,9 +56,10 @@ def plot_hist_sm(hists, name, label):
     fig, ax = plt.subplots(1,1) #create an axis for plotting
     hist.plot1d(h, ax=ax, stack=True)
     ax.legend()     
-    figname = name + label + '.pdf'
+    figname = label + '_SMrwgt_' + name + '.pdf'
     fig.savefig(figname)
     print("Histogram saved to:", figname)
+    plt.close(fig)
 
 def plot_hist_rwgt(hists, name, label):
     h = hists[name]
@@ -55,15 +67,16 @@ def plot_hist_rwgt(hists, name, label):
     fig, ax = plt.subplots(1,1) #create an axis for plotting
     hist.plot1d(h, ax=ax, stack=True)
     ax.legend()
-    figname = name + label + '.pdf'
+    figname = label + '_rwgt_' + name + '.pdf'
     fig.savefig(figname)
     print("Histogram saved to:", figname)   
+    plt.close(fig)
 
-print(hists['njets'].values())
-plot_hist_rwgt(hists, 'njets', "_TT01j2l_4jtest")
+#print(hists)
+#plot_hist_NOrwgt(hists, 'njets', label)
 
-#for name in hists: 
-    #plot_hist_sm(hists, name, "_TT01j2l_no_norm_sm_rwgt")
-    #plot_hist_rwgt(hists, name, "_TT01j2l_no_norm_1rwgt")
-    #plot_hist_noEFT(hists, name, "_ttbarref")
+for name in hists: 
+    plot_hist_sm(hists, name, label)
+    plot_hist_rwgt(hists, name, label)
+    plot_hist_NOrwgt(hists, name, label)
 
