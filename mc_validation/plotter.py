@@ -14,10 +14,7 @@ params = {'axes.labelsize': 20,
           'legend.fontsize':20}
 plt.rcParams.update(params)
 
-#fin = 'TT01j2l.pkl.gz'
-#fin = 'TT01j2l_4jtest.pkl.gz'
-#fin = 'TT01j2l_cuts_test.pkl.gz'
-fin = 'TT01j2l_cuts.pkl.gz'
+fin = 'TT1j2l_cQj31.pkl.gz'
 
 if fin.endswith('.pkl.gz'):
     label = fin[:-7]
@@ -27,10 +24,15 @@ print(label)
 
 hists = {}
 
-rwgt_pts = [5, 5, 5, 5, 
-            5, 5, 5, 5, 
-            5, 5, 5, 5, 
-            5, 5, 5, 5]
+ref_pts = {"ctGIm": 1.0, "ctGRe":0.7, "cQj38": 9.0, "cQj18": 7.0, 
+            "cQu8": 9.5, "cQd8": 12.0, "ctj8": 7.0, "ctu8": 9.0,
+            "ctd8": 12.4, "cQj31": 3.0, "cQj11": 4.2, "cQu1": 5.5, 
+            "cQd1": 7.0, "ctj1": 4.4, "ctu1": 5.4, "ctd1": 7.0}
+
+rwgt5_pts = {"ctGIm": 5.0, "ctGRe":5.0, "cQj38": 5.0, "cQj18": 5.0, 
+            "cQu8": 5.0, "cQd8": 5.0, "ctj8": 5.0, "ctu8": 5.0,
+            "ctd8": 5.0, "cQj31": 5.0, "cQj11": 5.0, "cQu1": 5.0, 
+            "cQd1": 5.0, "ctj1": 5.0, "ctu1": 5.0, "ctd1": 5.0}
 
 with gzip.open(fin) as fin: 
     hin = pickle.load(fin)
@@ -61,9 +63,9 @@ def plot_hist_sm(hists, name, label):
     print("Histogram saved to:", figname)
     plt.close(fig)
 
-def plot_hist_rwgt(hists, name, label):
+def plot_hist_rwgt(hists, name, label, rwgt):
     h = hists[name]
-    h.set_wilson_coeff_from_array(rwgt_pts)
+    h.set_wilson_coefficients(rwgt)
     fig, ax = plt.subplots(1,1) #create an axis for plotting
     hist.plot1d(h, ax=ax, stack=True)
     ax.legend()
@@ -72,11 +74,9 @@ def plot_hist_rwgt(hists, name, label):
     print("Histogram saved to:", figname)   
     plt.close(fig)
 
-#print(hists)
-#plot_hist_NOrwgt(hists, 'njets', label)
-
 for name in hists: 
-    plot_hist_sm(hists, name, label)
-    plot_hist_rwgt(hists, name, label)
     plot_hist_NOrwgt(hists, name, label)
+    plot_hist_sm(hists, name, label)
+    plot_hist_rwgt(hists, name, label = label+'_refpoint', rwgt=ref_pts)
+    plot_hist_rwgt(hists, name, label = label+'_all5', rwgt = rwgt5_pts)
 

@@ -53,6 +53,7 @@ class AnalysisProcessor(processor.ProcessorABC):
             "njets"        : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("njets", "njets", 10, 0, 10)), 
             "mtt"          : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("mtt", "invariant mass of tops", 50, 0, 1000)), 
             "nleps"        : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("nleps", "number of leptons", 10, 0, 10))
+            "mtt"          : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("mtt", "invariant mass of the leptons", 50, 0, 1000)),
         }
 
     @property
@@ -87,6 +88,7 @@ class AnalysisProcessor(processor.ProcessorABC):
         e_selec = ((ele.pt>20) & (abs(ele.eta)<2.5))
         m_selec = ((mu.pt>20) & (abs(mu.eta)<2.5))
         leps = ak.concatenate([ele[e_selec],mu[m_selec]],axis=1)
+        mll = (leps[:,0] + gen[:,1]).mass
 
 
         ######## Jet selection  ########
@@ -140,6 +142,7 @@ class AnalysisProcessor(processor.ProcessorABC):
             "ntops"     : ntops, 
             "jets_pt"   : jets_clean.sum().pt,
             "j0pt"      : j0.pt,
+            "mtt"       : mtt,
         }
 
         eft_coeffs_cut = eft_coeffs

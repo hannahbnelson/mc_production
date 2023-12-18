@@ -2,7 +2,7 @@ import os
 import random
 
 # List of processes to make cards for
-process_list = ['TT01j2lCARef']
+process_list = ['TT012j1lCARef']
 
 
 #couplings = {'ctG':0.7, 'cQq83':9.0, 'cQq81':7.0, 'cQu8':9.5,
@@ -12,7 +12,7 @@ process_list = ['TT01j2lCARef']
 
 couplings = {'ctGIm': 1, 'ctGRe':0.7, 'cQj38':9.0, 'cQj18':7.0, 
             'cQu8':9.5, 'cQd8':12.0, 'ctj8':7.0, 'ctu8':9.0, 
-            'ctd8':12.4, 'cjj31':3.0, 'cQj11':4.2, 'cQu1':5.5, 
+            'ctd8':12.4, 'cQj31':3.0, 'cQj11':4.2, 'cQu1':5.5, 
             'cQd1':7.0, 'ctj1':4.4, 'ctu1':5.4, 'ctd1':7.0}
 
 scanValues = 183
