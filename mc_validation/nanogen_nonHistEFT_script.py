@@ -18,13 +18,24 @@ params = {'axes.labelsize': 20,
           'legend.fontsize':20}
 plt.rcParams.update(params)
 
-ref_pts = {"ctGIm": 1.0, "ctGRe":0.7, "cQj38": 9.0, "cQj18": 7.0,
-            "cQu8": 9.5, "cQd8": 12.0, "ctj8": 7.0, "ctu8": 9.0,
-            "ctd8": 12.4, "cQj31": 3.0, "cQj11": 4.2, "cQu1": 5.5,
-            "cQd1": 7.0, "ctj1": 4.4, "ctu1": 5.4, "ctd1": 7.0}
+sm_pts = {"ctGIm": 0.0, "ctGRe":0.0, "cQj38": 0.0, "cQj18": 0.0,
+          "cQu8": 0.0, "cQd8": 0.0, "ctj8": 0.0, "ctu8": 0.0,
+          "ctd8": 0.0, "cQj31": 0.0, "cQj11": 0.0, "cQu1": 0.0,
+          "cQd1": 0.0, "ctj1": 0.0, "ctu1": 0.0, "ctd1": 0.0}
+
+starting_pts = {"ctGIm": 1.0, "ctGRe":0.7, "cQj38": 9.0, "cQj18": 7.0,
+                "cQu8": 9.5, "cQd8": 12.0, "ctj8": 7.0, "ctu8": 9.0,
+                "ctd8": 12.4, "cQj31": 3.0, "cQj11": 4.2, "cQu1": 5.5,
+                "cQd1": 7.0, "ctj1": 4.4, "ctu1": 5.4, "ctd1": 7.0}
+
+other_pts = {"ctGIm": 1.0, "ctGRe":1.0, "cQj38": 1.0, "cQj18": 1.0,
+             "cQu8": 1.0, "cQd8": 1.0, "ctj8": 1.0, "ctu8": 1.0,
+             "ctd8": 1.0, "cQj31": 1.0, "cQj11": 1.0, "cQu1": 1.0,
+             "cQd1": 1.0, "ctj1": 1.0, "ctu1": 1.0, "ctd1": 1.0}
 
 fname = "/afs/crc.nd.edu/user/h/hnelson2/ttbarEFT_mcgen/mc_validation/input_samples/nanoGen_files/TT1j2l_cQj31/nanoGen_101.root"
 
+##############################
 
 # Clean the objects
 def is_clean(obj_A, obj_B, drmin=0.4):
@@ -32,21 +43,10 @@ def is_clean(obj_A, obj_B, drmin=0.4):
     mask = ak.fill_none(objB_DR > drmin, True)
     return (mask)
 
-events = NanoEventsFactory.from_root(
-    fname,
-    schemaclass=NanoAODSchema.v6,
-    metadata={"dataset": "ttJets"},
-).events()
-
-wc_lst = utils.get_list_of_wc_names(fname)
-print("wc list: ", wc_lst)
-
-dataset = events.metadata['dataset']
-
-
+# Create list of wc values in the correct order
 def order_wc_values(wcs, ref_pts):
-    '''Returns list of wc values in the same order as the list of wc names based on a dictionary 
-    '''    
+    '''Returns list of wc values in the same order as the list of wc names based on a dictionary
+    '''
     wc_names = wcs
     ref_pts = ref_pts
 
@@ -54,8 +54,45 @@ def order_wc_values(wcs, ref_pts):
     for i in wc_names:
         wc_values.append(ref_pts[i])
 
-    return wc_values 
-    
+    return wc_values
+
+# Calculate event weights from wc values and eft fit coefficients
+def calc_event_weights(eft_coeffs, wc_vals):
+    '''Returns an array that contains the event weight for each event.
+    eft_coeffs: Array of eft fit coefficients for each event
+    wc_vals: wilson coefficient values desired for the event weight calculation, listed in the same order as the wc_lst
+             such that the multiplication with eft_coeffs is correct
+             The correct ordering can be achieved with the order_wc_values function
+    '''
+
+    event_weight = np.empty_like(eft_coeffs)
+
+    wcs = np.hstack((np.ones(1),wc_vals))
+    wc_cross_terms = []
+    index = 0
+    for j in range(len(wcs)):
+        for k in range (j+1):
+            term = wcs[j]*wcs[k]
+            wc_cross_terms.append(term)
+    event_weight = np.sum(np.multiply(wc_cross_terms, eft_coeffs), axis=1)
+
+    return event_weight
+
+
+##############################
+
+# Load in events from root file
+events = NanoEventsFactory.from_root(
+    fname,
+    schemaclass=NanoAODSchema.v6,
+    metadata={"dataset": "TT1j2l"},
+).events()
+
+wc_lst = utils.get_list_of_wc_names(fname)
+print("wc list: ", wc_lst)
+
+dataset = events.metadata['dataset']
+
 
 # Extract the EFT quadratic coefficients and optionally use them to calculate the coefficients on the w**2 quartic function
 # eft_coeffs is never Jagged so convert immediately to numpy for ease of use.
@@ -119,43 +156,43 @@ h.fill(dr)
 fig, ax = plt.subplots(1,1)
 hep.histplot(h, ax=ax, stack=True, histtype="fill", label="TT01j2l")
 ax.legend()
-fig.savefig("old_TT1j2l_deltaR.pdf")
+fig.savefig("TT1j2l_deltaR.pdf")
 plt.close(fig)
 
 
-######## Histogram of event weights ########
+######## Histograms of event weights ########
 eft_coeffs_cut = eft_coeffs[event_selection_mask]
-wc_values = list(ref_pts.values())
-event_weight_calc = []
 
-print(events.LHEWeight.originalXWGTUP)
-#print("LHEWeight_originalXWGTUP: ", events["LHEWeight_originalXWGTUP"])
+ref_wc_lst = order_wc_values(wc_lst, starting_pts)
+sm_wc_lst = order_wc_values(wc_lst, sm_pts)
+other_wc_lst = order_wc_values(wc_lst, other_pts)
 
-print("wc_list: ", wc_lst)
-print("wc ref points: ", ref_pts) 
+event_weights_ref = calc_event_weights(eft_coeffs_cut, ref_wc_lst)
+event_weights_sm = calc_event_weights(eft_coeffs_cut, sm_wc_lst)
+event_weights_other = calc_event_weights(eft_coeffs_cut, other_wc_lst)
 
-ordered_lst = order_wc_values(wc_lst, ref_pts)
-print("ordered wc value list: ", ordered_lst)
-
-'''
-for i in range(len(eft_coeffs_cut)):
-    wcs = np.hstack((np.ones(1),ordered_lst))
-    wc_cross_terms = []
-    index = 0 
-    for j in range(len(wcs)):
-        for k in range (j+1):       
-            term = wcs[j]*wcs[k]
-            wc_cross_terms.append(term)  
-    weight_calc = np.sum(np.multiply(wc_cross_terms, eft_coeffs_cut[i]))
-    event_weight_calc.append(weight_calc)
-    
-h2 = Hist(hist.axis.Regular(bins = 20, start = 0, stop = 10, name="event weight"))
-h2.fill(event_weight_calc)
-
+h1 = Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight"))
+h1.fill(event_weights_ref)
 fig, ax = plt.subplots(1,1)
-hep.histplot(h2, ax=ax, stack=True, histtype="fill", label="TT01j2l")
-ax.legend()
-fig.savefig("ordered_TT1j2l_weights.pdf")
-print(len(event_weight_calc))
+hep.histplot(h1, ax=ax, stack=True, histtype="fill", label="TT1j2l ref")
+ax.legend
+fig.savefig("TT1j2l_weight_refpt.pdf")
 plt.close(fig)
-'''
+
+h2 = Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight"))
+h2.fill(event_weights_sm)
+fig, ax = plt.subplots(1,1)
+hep.histplot(h2, ax=ax, stack=True, histtype="fill", label="TT1j2l sm")
+ax.legend
+fig.savefig("TT1j2l_weight_smpt.pdf")
+plt.close(fig)
+
+h3 = Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight"))
+h3.fill(event_weights_other)
+fig, ax = plt.subplots(1,1)
+hep.histplot(h3, ax=ax, stack=True, histtype="fill", label="TT1j2l all wc=1")
+ax.legend
+fig.savefig("TT1j2l_weight_otherpt.pdf")
+plt.close(fig)
+
+
