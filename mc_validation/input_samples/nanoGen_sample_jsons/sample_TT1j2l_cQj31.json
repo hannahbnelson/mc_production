@@ -1,0 +1,13 @@
+{
+  "xsec": 1.0,
+  "year": "2017",
+  "treeName": "Events",
+  "histAxisName": "TT1j2l",
+  "options": "",
+  "files": [
+    "/afs/crc.nd.edu/user/h/hnelson2/ttbarEFT_mcgen/mc_validation/input_samples/nanoGen_files/TT1j2l_cQj31/nanoGen_101.root",
+    "/afs/crc.nd.edu/user/h/hnelson2/ttbarEFT_mcgen/mc_validation/input_samples/nanoGen_files/TT1j2l_cQj31/nanoGen_102.root" 
+  ],
+  "nSumOfWeights": 1.0,
+  "isData": false
+}

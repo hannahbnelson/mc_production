@@ -1,16 +1,29 @@
-#!/usr/bin/env python
-import numpy as np
 import awkward as ak
+import numpy as np
 np.seterr(divide='ignore', invalid='ignore', over='ignore')
-from coffea import hist, processor
-from coffea.analysis_tools import PackedSelection
-
-# silence warnings due to using NanoGEN instead of full NanoAOD
+import matplotlib.pyplot as plt
+import mplhep as hep
+import hist
+from hist import Hist
 from coffea.nanoevents import NanoEventsFactory, NanoAODSchema
 NanoAODSchema.warn_missing_crossrefs = False
 
-from topcoffea.modules.HistEFT import HistEFT
+from coffea import processor
+from coffea.analysis_tools import PackedSelection
+from topcoffea.modules import utils
 import topcoffea.modules.eft_helper as efth
+
+# histogram style
+#hep.style.use("CMS")
+#params = {'axes.labelsize': 20,
+#          'axes.titlesize': 20,
+#          'legend.fontsize':20}
+#plt.rcParams.update(params)
+#
+ref_pts = {"ctGIm": 1.0, "ctGRe":0.7, "cQj38": 9.0, "cQj18": 7.0,
+            "cQu8": 9.5, "cQd8": 12.0, "ctj8": 7.0, "ctu8": 9.0,
+            "ctd8": 12.4, "cQj31": 3.0, "cQj11": 4.2, "cQu1": 5.5,
+            "cQd1": 7.0, "ctj1": 4.4, "ctu1": 5.4, "ctd1": 7.0}
 
 # Get the lumi for the given year
 def get_lumi(year):
@@ -24,6 +37,7 @@ def get_lumi(year):
         raise Exception(f"(ERROR: Unknown year \"{year}\".")
     else:
         return(lumi_dict[year])
+
 
 # Clean the objects
 def is_clean(obj_A, obj_B, drmin=0.4):
@@ -45,22 +59,20 @@ class AnalysisProcessor(processor.ProcessorABC):
 
         # Create the histograms with new scikit hist
         self._histo_dict = {
-            "tops_pt"      : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("tops_pt", "pT of the sum of the tops", 50, 0, 1000)),
-            "ht"           : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("ht", "hT(Scalar sum of genjet pt)", 50, 0, 1000)),
-            "jets_pt"      : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("jets_pt", "pT of the sum of the jets", 50, 0, 1000)),
-            "j0pt"      : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("j0pt", "pT of the leading jet", 50, 0, 1000)),
-            "ntops"        : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("ntops", "ntops", 10, 0, 10)),
-            "njets"        : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("njets", "njets", 10, 0, 10)), 
-            "mtt"          : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("mtt", "invariant mass of tops", 50, 0, 1000)), 
-            "nleps"        : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("nleps", "number of leptons", 10, 0, 10)),
-            "mll"          : HistEFT("Events", wc_names_lst, hist.Cat("sample", "sample"), hist.Bin("mll", "invariant mass of the leptons", 50, 0, 1000)),
+            "weights"   : Hist(hist.axis.Regular(bins=250, start = 0, stop = 250, name="event weight")), 
+            "deltaR"    : Hist(hist.axis.Regular(bins=15, start=0, stop=6, name="deltaR"))
         }
-
+    
     @property
     def columns(self):
         return self._columns
 
     def process(self, events):
+
+        ref_pts = {"ctGIm": 1.0, "ctGRe":0.7, "cQj38": 9.0, "cQj18": 7.0,
+                    "cQu8": 9.5, "cQd8": 12.0, "ctj8": 7.0, "ctu8": 9.0,
+                    "ctd8": 12.4, "cQj31": 3.0, "cQj11": 4.2, "cQu1": 5.5,
+                    "cQd1": 7.0, "ctj1": 4.4, "ctu1": 5.4, "ctd1": 7.0}
 
         # Dataset parameters
         dataset = events.metadata['dataset']
@@ -74,7 +86,6 @@ class AnalysisProcessor(processor.ProcessorABC):
         # eft_coeffs is never Jagged so convert immediately to numpy for ease of use.
         eft_coeffs = ak.to_numpy(events['EFTfitCoefficients']) if hasattr(events, "EFTfitCoefficients") else None
         eft_w2_coeffs = efth.calc_w2_coeffs(eft_coeffs,self._dtype) if (self._do_errors and eft_coeffs is not None) else None
-
 
         # Initialize objects
         genpart = events.GenPart
@@ -125,53 +136,47 @@ class AnalysisProcessor(processor.ProcessorABC):
         jets_pt_cut = jets_clean.sum().pt[event_selection_mask]
         j0pt_cut = j0.pt[event_selection_mask]
         mll = (leps_cut[:,0] + leps_cut[:,1]).mass
-        
-        ######## Normalization ########
-
-        # Normalize by (xsec/sow)
-        #lumi = 1000.0*get_lumi(year)
-        #norm = (xsec/sow)
-        norm = 1
-        if eft_coeffs is None: 
-            event_weights = events["genWeight"]
-        else:
-            event_weights = norm*np.ones_like(events['event'])
 
 
-        ######## Fill histos ########
+        ######## Delta R ########
+        jets_clean = jets_clean[event_selection_mask]
+        njets = njets[event_selection_mask]
+        dr = []
+        for i in range(ak.max(njets)):
+            dr_i = jets_clean[njets>=(i+1)][:,i].delta_r(leps_cut[njets>=(i+1)])
+            dr.extend(ak.to_list(ak.flatten(dr_i, axis=None)))
 
-        hout = self._histo_dict
 
-        variables_to_fill = {
-            "tops_pt"   : tops_pt_cut,
-            "njets"     : njets_cut,
-            "nleps"     : nleps_cut,
-            "mtt"       : mtt_cut,
-            "ht"        : ht_cut,
-            "ntops"     : ntops_cut, 
-            "jets_pt"   : jets_pt_cut,
-            "j0pt"      : j0pt_cut,
-            "mll"       : mll,
-        }
-
+        ######## Histogram of event weights ########
         eft_coeffs_cut = eft_coeffs
         if eft_coeffs is not None:
             eft_coeffs_cut = eft_coeffs[event_selection_mask]
+        wc_values = list(ref_pts.values())
+        event_weight_calc = []
+
+        for i in range(len(eft_coeffs_cut)):
+            wcs = np.hstack((np.ones(1),wc_values))
+            wc_cross_terms = []
+            index = 0 
+            for j in range(len(wcs)):
+                for k in range (j+1):       
+                    term = wcs[j]*wcs[k]
+                    wc_cross_terms.append(term)  
+            weight_calc = np.sum(np.multiply(wc_cross_terms, eft_coeffs_cut[i]))
+            event_weight_calc.append(weight_calc)
+
+
+        ######## Fill histos ########
+        hout = self._histo_dict
+        variables_to_fill = {
+            "weights"   : event_weight_calc,
+            "deltaR"    : dr
+        }
 
         for var_name, var_values in variables_to_fill.items():
-
-            fill_info = {
-                var_name    : var_values,
-                "sample"    : hist_axis_name,
-                "weight"    : event_weights[event_selection_mask],
-                "eft_coeff" : eft_coeffs_cut,
-            }
-
-            hout[var_name].fill(**fill_info)
+            hout[var_name].fill(var_values)
 
         return hout
 
-
     def postprocess(self, accumulator):
         return accumulator
-

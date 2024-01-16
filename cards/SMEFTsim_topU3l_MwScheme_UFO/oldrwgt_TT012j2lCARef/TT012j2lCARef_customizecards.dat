@@ -1,0 +1,26 @@
+set param_card LambdaSMEFT 1.000000e+03
+
+#launch --rwgt_name=ctGRe_0p_ctGIm_0p_cQj18_0p_cQj38_0p_cQj11_0p_cjj31_0p_ctu8_0p_ctd8_0p_ctj8_0p_cQu8_0p_cQd8_0p_ctu1_0p_ctd1_0p_ctj1_0p_cQu1_0p_cQd1_0p
+
+set param_card SMEFT 11 1.0e-10
+set param_card SMEFT 38 3.0e+00
+set param_card SMEFT 40 3.0e+00
+set param_card SMEFT 41 3.0e+00
+set param_card SMEFT 43 3.0e+00
+set param_card SMEFT 44 1.0e-10
+set param_card SMEFT 45 1.0e-10
+set param_card SMEFT 48 1.0e-10
+set param_card SMEFT 49 3.0e+00
+set param_card SMEFT 50 3.0e+00
+set param_card SMEFT 58 3.0e+00
+set param_card SMEFT 62 3.0e+00
+set param_card SMEFT 67 3.0e+00
+set param_card SMEFT 69 3.0e+00
+set param_card SMEFT 70 3.0e+00
+set param_card SMEFT 71 3.0e+00
+set param_card SMEFT 72 1.0e-10
+set param_card SMEFT 73 1.0e-10
+set param_card SMEFT 76 3.0e+00
+set param_card SMEFT 77 3.0e+00
+set param_card SMEFTcpv 8 1.0e+00
+
