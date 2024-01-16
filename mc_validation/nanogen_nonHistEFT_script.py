@@ -33,6 +33,11 @@ other_pts = {"ctGIm": 1.0, "ctGRe":1.0, "cQj38": 1.0, "cQj18": 1.0,
              "ctd8": 1.0, "cQj31": 1.0, "cQj11": 1.0, "cQu1": 1.0,
              "cQd1": 1.0, "ctj1": 1.0, "ctu1": 1.0, "ctd1": 1.0}
 
+large_pts = {"ctGIm": 10, "ctGRe":10, "cQj38": 10, "cQj18": 10,
+             "cQu8": 10, "cQd8": 10, "ctj8": 10, "ctu8": 10,
+             "ctd8": 10, "cQj31": 10, "cQj11": 10, "cQu1": 10,
+             "cQd1": 10, "ctj1": 10, "ctu1": 10, "ctd1": 10}
+
 fname = "/afs/crc.nd.edu/user/h/hnelson2/ttbarEFT_mcgen/mc_validation/input_samples/nanoGen_files/TT1j2l_cQj31/nanoGen_101.root"
 
 ##############################
