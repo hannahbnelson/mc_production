@@ -116,10 +116,11 @@ class AnalysisProcessor(processor.ProcessorABC):
 
         # Create the histograms with new scikit hist
         self._histo_dict = {
-            "weights_ref"   : Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight")), 
+            "weights_ref"   : Hist(hist.axis.Regular(bins = 20, start = 0, stop = 3, name="event weight")), 
             "weights_sm"    : Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight")), 
             "weights_small" : Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight")), 
-            "weights_lg"    : Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight")),
+            "weights_lg"    : Hist(hist.axis.Regular(bins = 80, start = 0, stop = 400, name="event weight")),
+            "weights_lg_log": Hist(hist.axis.Regular(bins = 30, start = 0, stop = 3, name="event weight")),
             "deltaR"        : Hist(hist.axis.Regular(bins=30, start=0, stop=6, name="deltaR"))
         }
     
@@ -225,6 +226,7 @@ class AnalysisProcessor(processor.ProcessorABC):
             "weights_sm"        : event_weights_sm,
             "weights_small"     : event_weights_small,
             "weights_lg"        : event_weights_lg,
+            "weights_lg_log"    : np.log10(event_weights_lg),
             "deltaR"            : dr
         }
 

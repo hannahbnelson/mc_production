@@ -12,7 +12,7 @@ params = {'axes.labelsize': 20,
           'legend.fontsize':20}
 plt.rcParams.update(params)
 
-fin = 'TT1j2l_cQj31_noEFT.pkl.gz'
+fin = 'TT1j2l_weights.pkl.gz'
 
 if fin.endswith('.pkl.gz'):
     label = fin[:-7]
@@ -41,14 +41,11 @@ def plot_newhist(hists, name, label):
     fig, ax = plt.subplots(1,1)
     hep.histplot(h, ax=ax, stack=True, histtype="fill", label=label)
     ax.legend()
-    plt.yscale('log')
+    #plt.yscale('log')
     fig.savefig(label + "_" + name + ".png")
-    print("Saving histogram to " + label + name + ".png")
+    print("Saving histogram to " + label + "_" + name + ".png")
     plt.close(fig)
-    vals = h.values()
-    print(vals)
 
 ###### Plot histograms ######
 for name in hists: 
-    plot_newhist(hists, name, "TT2j2l")
-
+    plot_newhist(hists, name, "TT1j2l")
