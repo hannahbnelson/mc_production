@@ -120,7 +120,7 @@ class AnalysisProcessor(processor.ProcessorABC):
             "weights_sm"    : Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight")), 
             "weights_small" : Hist(hist.axis.Regular(bins = 20, start = 0, stop = 4, name="event weight")), 
             "weights_lg"    : Hist(hist.axis.Regular(bins = 80, start = 0, stop = 400, name="event weight")),
-            "weights_lg_log": Hist(hist.axis.Regular(bins = 30, start = 0, stop = 3, name="event weight")),
+            "weights_lg_log": Hist(hist.axis.Regular(bins = 65, start = -10, stop = 3, name="event weight")),
             "deltaR"        : Hist(hist.axis.Regular(bins=30, start=0, stop=6, name="deltaR"))
         }
     
