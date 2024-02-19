@@ -1,0 +1,21 @@
+set param_card LambdaSMEFT 1.000000e+03 
+set param_card mass   6  172.5 
+set param_card yukawa 6  172.5 
+set param_card mass   25 125.0 
+set param_card SMEFTcpv 8 1.0e+00 
+set param_card ctGIm -1.2
+set param_card ctGRe -1.2
+set param_card cQj38 6.5
+set param_card cQj18 5.0
+set param_card cQu8 4.0
+set param_card cQd8 9.4
+set param_card ctj8 3.5
+set param_card ctu8 4.75
+set param_card ctd8 9.3
+set param_card cQj31 3.1
+set param_card cQj11 3.1
+set param_card cQu1 3.5
+set param_card cQd1 5.0
+set param_card ctj1 2.8
+set param_card ctu1 3.6
+set param_card ctd1 5.0
