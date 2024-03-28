@@ -35,8 +35,9 @@ rm "$MG"
 
 At the end of this section, after `rm "$MG"`, add the following line: 
 ```
-cp -r <full path to your model dir (eg. /afs/crc.nd.edu/user/U/USER/genproductions/bin/MadGraph5_aMCatNLO/MODEL_DIR) $MGBASEDIRORIG/models
+cp -r <full path to your model dir> $MGBASEDIRORIG/models
 ```
+For example, the full path to the model dir is probably `/afs/crc.nd.edu/user/U/USER/genproductions/bin/MadGraph5_aMCatNLO/MODEL_DIR`. 
 This will allow your added model dir to be found when running `gridpack_productions.sh`. 
 
 From here, follow the instructions in the twiki to make the gridpack. Note that you do NOT start a cmssw environment before running `generate_gridpack.sh`. 
