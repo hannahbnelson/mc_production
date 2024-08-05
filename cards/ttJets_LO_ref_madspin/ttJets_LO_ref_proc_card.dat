@@ -1,6 +1,0 @@
-import model SMEFTatNLO-LO
-define p = g u c d s u~ c~ d~ s~ b b~
-define j = g u c d s u~ c~ d~ s~ b b~
-generate  p p > t  t~ NP=2 QCD=2 QED=0 @0
-add process  p p > t  t~ j NP=2 QCD=3 QED=0 @1
-output ttJets_LO_ref -f -nojpeg
