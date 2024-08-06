@@ -169,7 +169,7 @@ make_gridpack () {
       wget --no-check-certificate ${MGSOURCE}
       tar xzf ${MG}
       rm "$MG"
-      cp -r /afs/crc.nd.edu/user/h/hnelson2/genproductions/bin/MadGraph5_aMCatNLO/SMEFTsim_topU3l_MwScheme_UFO_gs $MGBASEDIRORIG/models
+      cp -r /afs/crc.nd.edu/user/h/hnelson2/mc_production/models/SMEFTsim_topU3l_MwScheme_UFO_ctGpatched  $MGBASEDIRORIG/models
  
       #############################################
       #Apply any necessary patches on top of official release
