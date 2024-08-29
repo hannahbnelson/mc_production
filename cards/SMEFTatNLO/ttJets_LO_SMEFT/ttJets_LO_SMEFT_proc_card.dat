@@ -1,0 +1,11 @@
+
+import model SMEFTatNLO-LO
+define p = g u c d s u~ c~ d~ s~ b b~
+define j = g u c d s u~ c~ d~ s~ b b~
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+generate p p > t  t~ NP=2 QCD=2 QED=0 , (t > w+ b NP=0, w+ > l+ vl NP=0), (t~ > w- b~ NP=0, w- > l- vl~ NP=0) @0
+add process p p > t  t~ j NP=2 QCD=3 QED=0 , (t > w+ b NP=0, w+ > l+ vl NP=0), (t~ > w- b~ NP=0, w- > l- vl~ NP=0) @1
+output ttJets_LO_SMEFT -f -nojpeg

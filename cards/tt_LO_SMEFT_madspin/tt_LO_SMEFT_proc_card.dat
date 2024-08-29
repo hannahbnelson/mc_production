@@ -1,5 +1,0 @@
-import model SMEFTatNLO-LO
-define p = g u c d s u~ c~ d~ s~ b b~
-define j = g u c d s u~ c~ d~ s~ b b~
-generate  p p > t  t~ NP=2 QCD=2 QED=0 @0
-output tt_LO_SMEFT -f -nojpeg
