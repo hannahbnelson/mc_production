@@ -12,11 +12,12 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 
 RUN_SETUP = 'UL_production'
 # UL_YEAR = 'UL16APV'
-# UL_YEAR = 'UL16'
+UL_YEAR = 'UL16'
 # UL_YEAR = 'UL17'
-UL_YEAR = 'UL18'
-prod_tag = "central_mini2nano_test"
-version = "UL18_jsontest_condorfe_v1"
+# UL_YEAR = 'UL18'
+prod_tag = "central_ttbar_nanoAOD"
+# version = "UL18"
+version = UL_YEAR
 
 process_whitelist = []
 coeff_whitelist   = []
@@ -41,40 +42,34 @@ storage = StorageConfiguration(
     ],
 )
 
-# sample_list = {
-#     "TTto2L2Nu_1Jets_smeft_MTT_0to700" : ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8',  'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
-#     "TTto2L2Nu_1Jets_smeft_MTT_700to900" : ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
-#     "TTto2L2Nu_1Jets_smeft_MTT_900toInf" : ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
-# }
-
-# sample_list = {
-#     "UL16APV":{
-#         "TTto2L2Nu_1Jets_smeft_MTT_0to700":     ['hnelson2/mc/RunIISummer20UL16MiniAODAPVv2/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/UL16APV_NAOD_cfg.py'],
-#         "TTto2L2Nu_1Jets_smeft_MTT_700to900":   ['hnelson2/mc/RunIISummer20UL16MiniAODAPVv2/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/UL16APV_NAOD_cfg.py'],
-#         "TTto2L2Nu_1Jets_smeft_MTT_900toInf":   ['hnelson2/mc/RunIISummer20UL16MiniAODAPVv2/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/UL16APV_NAOD_cfg.py'],
-#     },
-#     "UL16" : {
-#         "TTto2L2Nu_1Jets_smeft_MTT_0to700":     ['hnelson2/mc/RunIISummer20UL16MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/UL16_NAOD_cfg.py'],
-#         "TTto2L2Nu_1Jets_smeft_MTT_700to900":   ['hnelson2/mc/RunIISummer20UL16MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/UL16_NAOD_cfg.py'],
-#         "TTto2L2Nu_1Jets_smeft_MTT_900toInf":   ['hnelson2/mc/RunIISummer20UL16MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/UL16_NAOD_cfg.py'],
-#     },
-#     "UL17" : {
-#         "TTto2L2Nu_1Jets_smeft_MTT_0to700":     ['hnelson2/mc/RunIISummer20UL17MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL17NanoAODv9-cfg.py'],
-#         "TTto2L2Nu_1Jets_smeft_MTT_700to900":   ['hnelson2/mc/RunIISummer20UL17MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL17NanoAODv9-cfg.py'],
-#         "TTto2L2Nu_1Jets_smeft_MTT_900toInf":   ['hnelson2/mc/RunIISummer20UL17MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL17NanoAODv9-cfg.py'],
-#     },
-#     "UL18" : {
-#         "TTto2L2Nu_1Jets_smeft_MTT_0to700" :    ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8',  'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
-#         "TTto2L2Nu_1Jets_smeft_MTT_700to900" :  ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
-#         "TTto2L2Nu_1Jets_smeft_MTT_900toInf" :  ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
-#     },
-# }
-
 sample_list = {
+    "UL16APV":{
+        "TTto2L2Nu_1Jets_smeft_MTT_0to700":     ['sample_jsons/UL16APV_0_700_miniAOD_files.json', 'ul_cfgs/UL16APV_NAOD_cfg.py'],
+        "TTto2L2Nu_1Jets_smeft_MTT_700to900":   ['sample_jsons/UL16APV_700_900_miniAOD_files.json', 'ul_cfgs/UL16APV_NAOD_cfg.py'],
+        "TTto2L2Nu_1Jets_smeft_MTT_900toInf":   ['sample_jsons/UL16APV_900_Inf_miniAOD_files.json', 'ul_cfgs/UL16APV_NAOD_cfg.py'],
+    },
+    "UL16" : {
+        "TTto2L2Nu_1Jets_smeft_MTT_0to700":     ['sample_jsons/UL16_0_700_miniAOD_files.json', 'ul_cfgs/UL16_NAOD_cfg.py'],
+        "TTto2L2Nu_1Jets_smeft_MTT_700to900":   ['sample_jsons/UL16_700_900_miniAOD_files.json', 'ul_cfgs/UL16_NAOD_cfg.py'],
+        "TTto2L2Nu_1Jets_smeft_MTT_900toInf":   ['sample_jsons/UL16_900_Inf_miniAOD_files.json', 'ul_cfgs/UL16_NAOD_cfg.py'],
+    },
+    "UL17" : {
+        "TTto2L2Nu_1Jets_smeft_MTT_0to700":     ['sample_jsons/UL17_0_700_miniAOD_files.json', 'ul_cfgs/TOP-RunIISummer20UL17NanoAODv9-cfg.py'],
+        "TTto2L2Nu_1Jets_smeft_MTT_700to900":   ['sample_jsons/UL17_700_900_miniAOD_files.json', 'ul_cfgs/TOP-RunIISummer20UL17NanoAODv9-cfg.py'],
+        "TTto2L2Nu_1Jets_smeft_MTT_900toInf":   ['sample_jsons/UL17_900_Inf_miniAOD_files.json', 'ul_cfgs/TOP-RunIISummer20UL17NanoAODv9-cfg.py'],
+    },
     "UL18" : {
-        "TTto2L2Nu_1Jets_smeft_MTT_0to700" : ['test_UL18MiniAOD_MTT_0_700.json',  'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
-    }
+        "TTto2L2Nu_1Jets_smeft_MTT_0to700" :    ['sample_jsons/UL18_0_700_miniAOD_files.json',  'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
+        "TTto2L2Nu_1Jets_smeft_MTT_700to900" :  ['sample_jsons/UL18_700_900_miniAOD_files.json', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
+        "TTto2L2Nu_1Jets_smeft_MTT_900toInf" :  ['sample_jsons/UL18_900_Inf_miniAOD_files.json', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
+    },
 }
+
+# sample_list = {
+#     "UL18" : {
+#         "TTto2L2Nu_1Jets_smeft_MTT_0to700" : ['test_UL18MiniAOD_MTT_0_700.json',  'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
+#     }
+# }
 
 nano_resources = Category(
             name="naod",
@@ -84,13 +79,11 @@ nano_resources = Category(
         )
 
 def get_file_list_from_json(jsonfile):
+    
     with open(jsonfile, mode="r") as jf: 
         jsondata = json.load(jf)
         file_list = jsondata['files']
 
-        # print("length of file_list: ", len(file_list))
-        # print("type of file_list: ", type(file_list))
-        # print("file list: ", file_list)
         return file_list
 
 wf = []
