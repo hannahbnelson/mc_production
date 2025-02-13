@@ -84,13 +84,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     jsonFile = args.jsonFile
-    nrwgt = args.nrwgt
+    nrwgt = int(args.nrwgt)
 
     with open(jsonFile) as jf: 
         rwgt_dicts = json.load(jf)
 
-    print(rwgt_dicts)
-
     for item in rwgt_dicts:
-        make_reweight_card(nrwgt, rwgt_dicts[item], "tW_"+item)
-        make_customize_card(rwgt_dicts[item], "tW_"+item)
+        make_reweight_card(nrwgt, rwgt_dicts[item], item)
+        make_customize_card(rwgt_dicts[item], item)
+
+    print("\n ** Do not forget to change the proc card output name to match the reweight and customize card file names! ** \n")
