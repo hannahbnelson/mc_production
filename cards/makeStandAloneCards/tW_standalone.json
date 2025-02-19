@@ -1,5 +1,6 @@
 {
 	"MG_dir": "/afs/crc.nd.edu/user/h/hnelson2/MG5_aMC_v2_6_5/tW",
 	"wc_names": ["ctGIm", "ctGRe", "cHQ3", "ctWRe", "cleQt3Re", "cleQt1Re", "cQl3", "cbWRe", "cHtbRe"],
-	"scan_points": [-10.0, -7.0, -4.0, -2.0, 2.0, 4.0, 7.0, 10.0]
+	"scan_points": [-10.0, -7.0, -4.0, -2.0, 2.0, 4.0, 7.0, 10.0],
+	"profiled_points": {"ctGIm":-1.0, "ctGRe": -1.0, "cHQ3": 2.0, "ctWRe":-2.0, "cleQt3Re":5.0, "cleQt1Re":10.0, "cQl3":5.0, "cbWRe":-3.0, "cHtbRe":3.0}
 }
