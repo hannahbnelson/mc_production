@@ -1,0 +1,26 @@
+INFO:  Idle: 0,  Running: 0,  Completed: 0 [ current time: 17h35 ]
+INFO: Combining runs
+INFO: finish refine
+INFO: Combining Events
+  === Results Summary for run: ctGIm=-1.0 tag: tag_1 ===
+
+     Cross-section :   5.783 +- 0.02038 pb
+     Nb of events :  10000
+
+INFO: Running Systematics computation
+INFO:  Idle: 0,  Running: 4,  Completed: 0 [ current time: 17h35 ]
+INFO:  Idle: 0,  Running: 2,  Completed: 2 [  1m 36s  ]
+INFO: # events generated with PDF: NNPDF23_lo_as_0130_qed (247000)
+INFO: #Will Compute 145 weights per event.
+INFO: #***************************************************************************
+#
+# original cross-section: 5.78149572471
+#     scale variation: +4.65% -7.76%
+#     central scheme variation: +3.72% -4.19%
+# PDF variation: +5.03% -5.03%
+#
+# dynamical scheme # 1 : 5.89904 +3.7% -6.11% # \sum ET
+# dynamical scheme # 2 : 5.89928 +3.7% -6.11% # \sum\sqrt{m^2+pt^2}
+# dynamical scheme # 3 : 5.53899 +6.5% -9.97% # 0.5 \sum\sqrt{m^2+pt^2}
+# dynamical scheme # 4 : 5.99636 +2.95% -4.85% # \sqrt{\hat s}
+#***************************************************************************
