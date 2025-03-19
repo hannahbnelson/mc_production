@@ -80,7 +80,7 @@ def make_customize_card(rwgt_dict, name):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Command Line options parser")
     parser.add_argument("jsonFile", help="Json that contains dictionaries of reweight points: {rwgt_pt_name: {dict of WC points}}")
-    parser.add_argument("--nrwgt", default=2, help="Number of reweight points")
+    parser.add_argument('-n', "--nrwgt", default=2, help="Number of reweight points")
     args = parser.parse_args()
 
     jsonFile = args.jsonFile
