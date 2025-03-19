@@ -23,7 +23,7 @@ def read_reweightcard(fname):
     for line in lines: 
         if "set param_card" in line: 
             line = line[19:]
-            tmp = line.split(" ")
+            tmp = line.split(" ")f
 
             wc_name = tmp[0]
             wc_val = float(tmp[1])
