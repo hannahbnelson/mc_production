@@ -1,5 +1,10 @@
 #IMPORTANT: The workers that are submitted to this lobster master, MUST come from T3 resources
 
+'''
+To make this work, the dataset validation has to be manually overridden such that in 
+se.py XrootD.isfile is true and XrootD.isdir is false.
+'''
+
 import datetime
 import os
 import sys
@@ -12,9 +17,9 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 
 RUN_SETUP = 'UL_production'
 # UL_YEAR = 'UL16APV'
-UL_YEAR = 'UL16'
+# UL_YEAR = 'UL16'
 # UL_YEAR = 'UL17'
-# UL_YEAR = 'UL18'
+UL_YEAR = 'UL18'
 prod_tag = "central_ttbar_nanoAOD"
 # version = "UL18"
 version = UL_YEAR
@@ -23,7 +28,7 @@ process_whitelist = []
 coeff_whitelist   = []
 runs_whitelist    = []    # (i.e. MG starting points)
 
-master_label = 'T3_EFT_{tstamp}'.format(tstamp=timestamp_tag)
+master_label = 'CRC_EFT_{tstamp}'.format(tstamp=timestamp_tag)
 
 output_path  = "/store/user/$USER/mc/{tag}/{ver}".format(tag=prod_tag, ver=version)
 workdir_path = "/tmpscratch/users/$USER/mc/{tag}/{ver}".format(tag=prod_tag, ver=version)

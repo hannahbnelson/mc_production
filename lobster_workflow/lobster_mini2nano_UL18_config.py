@@ -12,7 +12,7 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 RUN_SETUP = 'UL_production'
 UL_YEAR = 'UL18'
 prod_tag = "central_mini2nano_test"
-version = "v4"
+version = "TTto2L2Nu_1Jets_smeft_MTT_900toInf"
 
 process_whitelist = []
 coeff_whitelist   = []
@@ -26,8 +26,6 @@ plotdir_path = "~/www/lobster/mc/{tag}/{ver}".format(tag=prod_tag, ver=version)
 
 storage = StorageConfiguration(
     input = [
-        #"file:///scratch365/",
-        #"file:///tmpscratch/users/",
         "file:///cms/cephfs/data/store/user/",
         "root://hactar01.crc.nd.edu//store/user/",
     ],
@@ -39,10 +37,12 @@ storage = StorageConfiguration(
 )
 
 sample_list = {
-    "TTto2L2Nu_1Jets_smeft_MTT_0to700_UL18" : ['hnelson2/mc/ttbar_central_mini', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-00615_1_cfg.py']
+    "TTto2L2Nu_1Jets_smeft_MTT_0to700" : ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8',  'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
+    "TTto2L2Nu_1Jets_smeft_MTT_700to900" : ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
+    "TTto2L2Nu_1Jets_smeft_MTT_900toInf" : ['hnelson2/mc/RunIISummer20UL18MiniAODv2/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8', 'ul_cfgs/TOP-RunIISummer20UL18NanoAODv9-cfg.py'],
 }
 
-nanoAOD = Category(
+nano_resources = Category(
             name="naod",
             cores=4,    
             memory=3000,
@@ -53,11 +53,13 @@ wf = []
 print("Generating workflows:")
 for key, value in sample_list.items():
     print(key)
-    cmsswSSource='/afs/crc.nd.edu/user/h/hnelson2/cmssw/noEFT/CMSSW_10_6_26/'
+    #cmsswSource='/afs/crc.nd.edu/user/h/hnelson2/cmssw/noEFT/CMSSW_10_6_26/'
+    #cmsswSource='/afs/crc.nd.edu/user/h/hnelson2/cmssw/CMSSW_10_6_32_patch1/'
+    cmsswSource = '/afs/crc.nd.edu/user/h/hnelson2/cmssw/CMSSW_10_6_26/'
     nanoAOD = Workflow(
         label='nanoAOD_{tag}'.format(tag=key),
         command='cmsRun {cfg}'.format(cfg= value[1]),
-        sandbox=cmssw.Sandbox(release=cmsswSSource),
+        sandbox=cmssw.Sandbox(release=cmsswSource),
         merge_size='256M',
         merge_command='python haddnano.py @outputfiles @inputfiles',
         extra_inputs=['/afs/crc.nd.edu/user/h/hnelson2/cmssw/CMSSW_10_6_26/src/PhysicsTools/NanoAODTools/scripts/haddnano.py'],
@@ -69,7 +71,7 @@ for key, value in sample_list.items():
             files_per_task=1,
             patterns=["*.root"],
         ),
-        category=nanoAOD,
+        category=nano_resources,
     )
     wf.extend([nanoAOD])
 

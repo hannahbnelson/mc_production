@@ -10,6 +10,7 @@ def make_reweight_card(wc_names, scan_points, profiled_dict, outname):
 
     # save SM point
     rwgtCards = rwgtCards + 'launch --rwgt_name=sm_point'+ '\n'
+    rwgtCards += f"    set param_card cHQ3 0.0 \n"
     for wc in wc_names:
         rwgtCards = rwgtCards +'    set param_card ' + wc + ' 0.0 ' + '\n'
     rwgtCards = rwgtCards +'\n'
@@ -26,6 +27,8 @@ def make_reweight_card(wc_names, scan_points, profiled_dict, outname):
             temp2 = temp2.replace("-", "m")
 
             rwgtCards += f"launch --rwgt_name=EFTrwgt{n}_cHQ3_{temp1}_{wc}_{temp2}\n"
+
+            rwgtCards += f"    set param_card cHQ3 {i} \n"
 
             for j in wc_names:
                 if wc==j:
