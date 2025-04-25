@@ -12,7 +12,7 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 RUN_SETUP = 'UL_production'
 UL_YEAR = 'UL17'
 prod_tag = "nanoGen"
-version = "TT01j2l_SM_v14"
+version = "tW"
 
 process_whitelist = []
 coeff_whitelist   = []
@@ -40,7 +40,8 @@ storage = StorageConfiguration(
 
 # gridpack list is a dictionary of the form {'process': [gridpack path, config (path from this dir), events per gridpack, events per lumi]}
 gridpack_list = {
-    'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 1000000, 1000]
+    #'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 20000000, 1000]
+    'tW_noEFT': ['hnelson2/gridpack_scans/tW_noEFT_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 1000]
 }
 
 
