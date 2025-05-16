@@ -14,7 +14,7 @@ UL_YEAR = 'UL17'
 prod_tag = "NanoGen"
 #prod_tag = "test"
 #version = "Run3_ttbar"
-version="tW_yukawa"
+version="tW_yukawa_redo"
 
 process_whitelist = []
 coeff_whitelist   = []
@@ -61,8 +61,8 @@ gridpack_list = {
 nanoGen = Category(
             name="nanoGen",
             cores=2,
-            memory=4000,
-            disk=6800
+            memory=12000,
+            disk=30000
         )
 
 wf = []

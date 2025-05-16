@@ -25,7 +25,7 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32(10)
+    input = cms.untracked.int32(5000)
 )
 
 # Input source
@@ -74,17 +74,17 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
             'processParameters'
         ),
         processParameters = cms.vstring(
-            'JetMatching:setMad = on', 
-            'JetMatching:scheme = 1', 
-            'JetMatching:merge = off', 
-            'JetMatching:jetAlgorithm = 2', 
-            'JetMatching:etaJetMax = 999', 
-            'JetMatching:coneRadius = 1.', 
-            'JetMatching:slowJetPower = 1', 
-            'JetMatching:qCut = 19.', 
-            'JetMatching:nQmatch = 5', 
-            'JetMatching:nJetMax = 1', 
-            'JetMatching:doShowerKt = off',
+            'JetMatching:setMad = off', 
+            #'JetMatching:scheme = 1', 
+            #'JetMatching:merge = off', 
+            #'JetMatching:jetAlgorithm = 2', 
+            #'JetMatching:etaJetMax = 999', 
+            #'JetMatching:coneRadius = 1.', 
+            #'JetMatching:slowJetPower = 1', 
+            #'JetMatching:qCut = 19.', 
+            #'JetMatching:nQmatch = 5', 
+            #'JetMatching:nJetMax = 1', 
+            #'JetMatching:doShowerKt = off',
             'SLHA:useDecayTable = off',  # Use pythia8s own decay mode instead of decays defined in LH accord
             '25:onMode = on',       # Allow all higgs decays
             '25:offIfAny = 5 5',    # Switch decays of b quarks off
@@ -140,9 +140,10 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
 
 process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
     #args = cms.vstring('/afs/crc.nd.edu/user/h/hnelson2/gridpacks/ttbarEFT/tt_LO_SMEFT/tt_LO_SMEFT_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
-    args = cms.vstring('/hadoop/store/user/hnelson2/gridpack_scans/ttbarEFT/tt_LO_SMEFT_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
+    #args = cms.vstring('/hadoop/store/user/hnelson2/gridpack_scans/ttbarEFT/tt_LO_SMEFT_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'),
     #args = cms.vstring('/hadoop/store/user/rgoldouz/gridpack_scans/SMEFT/tt_LO_SMEFT_slc7_amd64_gcc900_CMSSW_12_0_2_tarball.tar.xz'),
-    nEvents = cms.untracked.uint32(10),
+    args = cms.vstring('/cms/cephfs/data/store/user/hnelson2/gridpack_scans/tW_yukawa_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz'), 
+    nEvents = cms.untracked.uint32(5000),
     numberOfParameters = cms.uint32(1),
     outputFile = cms.string('cmsgrid_final.lhe'),
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh')

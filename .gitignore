@@ -1,0 +1,4 @@
+models/
+cards/tW_dim6top/
+*.pyc
+lobster_workflow/__pycache__/*

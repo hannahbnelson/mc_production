@@ -7,60 +7,34 @@ from os import path
 from lobster import cmssw
 from lobster.core import AdvancedOptions, Category, Config, MultiProductionDataset, StorageConfiguration, Workflow
 
-#sys.path.append(os.getcwd())
-sys.path.append('/afs/crc.nd.edu/user/h/hnelson2/mgprod/ttbarEFT/')
-from helpers.utils import regex_match
-
 timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
-
-#events_per_gridpack = 5e5
-#events_per_gridpack = 100e3
-events_per_gridpack = 4000
-events_per_lumi = 500
 
 RUN_SETUP = 'UL_production'
 UL_YEAR = 'UL17'
-version = "tt_ttJets_LO_ref_20231011"
 prod_tag = "nanoGen"
-
-process_whitelist = []
-coeff_whitelist   = []
-runs_whitelist    = []    # (i.e. MG starting points)
+version = "TT01j2l_SM"
 
 master_label = 'T3_EFT_{tstamp}'.format(tstamp=timestamp_tag)
 
-
-output_path  = "/store/user/$USER/ttbarEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
-workdir_path = "/tmpscratch/users/$USER/ttbarEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
-plotdir_path = "~/www/lobster/ttbarEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
-
-input_path = "/store/user/"
-input_path_full = "/hadoop" + input_path
+output_path  = "/store/user/$USER/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
+workdir_path = "/tmpscratch/users/$USER/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
+plotdir_path = "~/www/lobster/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
 
 storage = StorageConfiguration(
-    input = [
-        "hdfs://eddie.crc.nd.edu:19000"  + input_path,
-        "root://deepthought.crc.nd.edu/" + input_path,  # Note the extra slash after the hostname!
-        "gsiftp://T3_US_NotreDame"       + input_path,
-        "srm://T3_US_NotreDame"          + input_path,
+    input=[
+        "file:///cms/cephfs/data/store/user/",
+        "root://hactar01.crc.nd.edu//store/user/",
     ],
     output=[
-        "hdfs://eddie.crc.nd.edu:19000"  + output_path,
-         #ND is not in the XrootD redirector, thus hardcode server.
-        "root://deepthought.crc.nd.edu/" + output_path, # Note the extra slash after the hostname!
-        "gsiftp://T3_US_NotreDame"       + output_path,
-        "srm://T3_US_NotreDame"          + output_path,
-        "file:///hadoop"                 + output_path,
-    ],
-    disable_input_streaming=True,
+        "file:///cms/cephfs/data" + output_path,
+        "root://hactar01.crc.nd.edu/"+output_path,
+    ]
 )
 
 # gridpack list is a dictionary of the form {'process': [gridpack path, config (path from this dir), events per gridpack, events per lumi]}
 gridpack_list = {
-    'ttJets_LO_ref': ["hnelson2/gridpack_scans/ttbarEFT/ttJets_LO_ref_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 4000, 500],
-    'tt_LO_ref': ["hnelson2/gridpack_scans/ttbarEFT/tt_LO_ref_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", 'ul_cfgs/nanoGen2017_LO_cfg.py', 4000, 500],
+    'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 10E6, 1000]
 }
-
 
 nanoGen = Category(
             name="nanoGen",
@@ -72,15 +46,8 @@ nanoGen = Category(
 wf = []
 print "Generating workflows:"
 for key, value in gridpack_list.items():
-    # if path.exists('/hadoop/store/user/rgoldouz/FullProduction/nanoGen/NanoGen_' + key):
-    #     continue
     print key
     cmsswSSource='/afs/crc.nd.edu/user/h/hnelson2/cmssw/noEFT/CMSSW_10_6_26/'
-    # cmsswSSource='/afs/crc.nd.edu/user/r/rgoldouz/MakeLobsterJobs/UL/mgprod/lobster_workflow/CMSSW_10_6_26'
-    # if 'rwgt' in key:
-    #     cmsswSSource='/afs/crc.nd.edu/user/r/rgoldouz/MakeLobsterJobs/UL/mgprod/lobster_workflow/CMSSW_10_6_26'
-    # else:
-    #     cmsswSSource='/afs/crc.nd.edu/user/r/rgoldouz/MakeLobsterJobs/UL/mgprod/lobster_workflow/noEFTCMSSSWSource/CMSSW_10_6_26'
     GN = Workflow(
         label='NanoGen_{tag}'.format(tag=key),
         command='cmsRun {cfg}'.format(cfg= value[1]),
@@ -113,8 +80,9 @@ config = Config(
         bad_exit_codes=[127, 160],
         log_level=1,
         payload=10,
-        xrootd_servers=['ndcms.crc.nd.edu',
-                       'cmsxrootd.fnal.gov',
-                       'deepthought.crc.nd.edu']
+        osg_version='3.6',
+        #xrootd_servers=['ndcms.crc.nd.edu',
+        #               'cmsxrootd.fnal.gov',
+        #               'deepthought.crc.nd.edu']
     )
 )

@@ -1,0 +1,13 @@
+define p = g u c d s u~ c~ d~ s~ b b~
+define j = p
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+define had = u c d s u~ c~ d~ s~
+
+generate    p p > t t~, (t > l+ vl b ), (t~ > l- vl~ b~ )
+add process p p > t t~ j, (t > l+ vl b ), (t~ > l- vl~ b~ )  
+
+output TT01j2l_noEFT -nojpeg
+

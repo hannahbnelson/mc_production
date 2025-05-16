@@ -20,7 +20,7 @@ def make_json_file(dataset, fileName):
 
     print("length of dbs file list: ", len(dbs_out))
 
-        ## Dump datasets/files dict to JSON
+    ## Dump datasets/files dict to JSON
     with open(outputFile, "w") as f:
         json.dump(
             {'DAS dataset': dataset, 'files':dbs_out},
@@ -33,7 +33,6 @@ def make_json_file(dataset, fileName):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Command line options parser")
     parser.add_argument("jsonFile", help="Json that holds datasets and output file pairs: {outputFile_name: DAS dataset}")
-    # parser.add_argument("-of", "--outputFile", help="Output JSON file name for dataset", type=str, default=None, required=False)
     args = parser.parse_args()
 
     jsonFile = args.jsonFile

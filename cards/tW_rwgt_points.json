@@ -34,7 +34,25 @@
 						 "cleQt1Re" : 20.0,
 						 "cQl3"		: 20.0,
 						 "cbWRe"	: -10.0,
-						 "cHtbRe"	: 10.0} 
+						 "cHtbRe"	: 10.0}, 
+    "tW_new1"   : {"ctGIm": -0.2,
+                         "ctGRe": -0.2,
+                         "cHQ3" : 1.5,
+                         "ctWRe" : -1.0,
+                         "cleQt3Re" : 12.0,
+                         "cleQt1Re" : 15.0,
+                         "cQl3"     : 4.0,
+                         "cbWRe"    : -10.0,
+                         "cHtbRe"   : 4.0},
+    "tW_new2"   : {"ctGIm": -0.4,
+                         "ctGRe": -0.4,
+                         "cHQ3" : 1.5,
+                         "ctWRe" : -1.0,
+                         "cleQt3Re" : 12.0,
+                         "cleQt1Re" : 15.0,
+                         "cQl3"     : 6.0,
+                         "cbWRe"    : -12.0,
+                         "cHtbRe"   : 12.0}
 }
 
 

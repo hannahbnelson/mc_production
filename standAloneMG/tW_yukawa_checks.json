@@ -1,0 +1,5 @@
+{
+	"MG_dir": "/afs/crc.nd.edu/user/h/hnelson2/MG5_aMC_v2_6_5/tW_yukawa",
+	"wc_names": ["cleQt3Re", "cleQt1Re", "cQl3"],
+	"scan_points": [-10.0, -7.0, -4.0, -2.0, -1.0, 1.0, 2.0, 4.0, 7.0, 10.0]
+}

@@ -16,7 +16,7 @@ RUN_SETUP = 'UL_production'
 # UL_YEAR = 'UL17'
 UL_YEAR = 'UL18'
 prod_tag = "central_mini2nano_test"
-version = "UL18_jsontest"
+version = "UL18_jsontest_condorfe_v1"
 
 process_whitelist = []
 coeff_whitelist   = []
@@ -79,8 +79,8 @@ sample_list = {
 nano_resources = Category(
             name="naod",
             cores=4,    
-            memory=3000,
-            disk=3000
+            memory=6000,
+            disk=6000
         )
 
 def get_file_list_from_json(jsonfile):
@@ -133,5 +133,6 @@ config = Config(
         payload=10,
         osg_version='3.6',
         #xrootd_servers=['ndcms.crc.nd.edu','cmsxrootd.fnal.gov']
+        xrootd_servers=['hactar02.crc.nd.edu:1096', 'cmsxrootd.fnal.gov']
     )
 )
