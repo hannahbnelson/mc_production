@@ -1,0 +1,6 @@
+{
+        "process": "",
+        "wc_names": ["ctlT1", "ctlT2", "ctlT3", "ctlS1", "ctlS2", "ctlS3", "cQl31", "cQl32", "cQl33"], 
+        "scan_points": [-15.0, -10.0, -7.0, -4.0, -2.0, -1.0, 1.0, 2.0, 4.0, 7.0, 10.0, 15.0],
+        "extra": "set run_card mmnl 100.0 \n"
+}
