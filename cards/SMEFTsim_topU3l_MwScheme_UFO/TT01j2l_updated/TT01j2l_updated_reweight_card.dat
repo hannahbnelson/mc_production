@@ -6283,7 +6283,7 @@ set ctj8 0.000000
 set cQu8 0.000000
 set cQd8 0.000000
 set ctu1 0.000000
-set ctd1 0.000000
+cp -r /afs/crc.nd.edu/user/h/hnelson2/mc_production/models/SMEFTsim_topU3l_MwScheme_UFO_ctGpatched  $MGBASEDIRORIG/modelsset ctd1 0.000000
 set ctj1 2.000000
 set cQu1 0.000000
 set cQd1 0.000000

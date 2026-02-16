@@ -12,9 +12,7 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 RUN_SETUP = 'UL_production'
 UL_YEAR = 'UL17'
 prod_tag = "NanoGen"
-#prod_tag = "test"
-#version = "Run3_ttbar"
-version="tW_yukawa_redo"
+version="TT01j2l_noparrot_morestat"
 
 process_whitelist = []
 coeff_whitelist   = []
@@ -29,17 +27,18 @@ plotdir_path = "~/www/lobster/mc/{tag}/{ver}".format(tag=prod_tag, ver=version)
 storage = StorageConfiguration(
     input = [
         "file:///cms/cephfs/data/store/user/",
-        "root://hactar01.crc.nd.edu//store/user/",
+        "root://cmsxrootd.crc.nd.edu//store/user/",
     ],
     
     output=[
         "file:///cms/cephfs/data" + output_path,
-        "root://hactar01.crc.nd.edu/"+output_path,    
+        "root://cmsxrootd.crc.nd.edu/"+output_path,    
     ],
 )
 
 # gridpack list is a dictionary of the form {'process': [gridpack path, config (path from this dir), events per gridpack, events per lumi]}
 gridpack_list = {
+    "TT01j2lBSM" : ["hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz", "nanoGen2017_LOJets_cfg.py", 200000, 1000],
     #"tW_test": ["hnelson2/gridpack_scans/tW_test_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", "ul_cfgs/nanoGen2017_LO_cfg.py",2000, 1000],
     #"TT01j2lCARef": ["hnelson2/gridpack_scans/TT01j2lCARef_el9_amd64_gcc11_CMSSW_13_2_9_tarball.tar.xz", 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 10000, 1000]
     #"TT01j2l_ctj8": ["hnelson2/gridpack_scans/TT01j2l_ctj8_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 6000000, 1000]
@@ -51,7 +50,7 @@ gridpack_list = {
     # "tW_large": ["hnelson2/gridpack_scans/tW_large_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 1000],
     # "tW_new1": ["hnelson2/gridpack_scans/tW_new1_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 1000],
     # "tW_new2": ["hnelson2/gridpack_scans/tW_new2_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 1000],
-    "tW_yukawa" : ["hnelson2/gridpack_scans/tW_yukawa_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 1000],
+    # "tW_yukawa" : ["hnelson2/gridpack_scans/tW_yukawa_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 1000],
     # 'tt_LO_SMEFT': ["hnelson2/gridpack_scans/ttbarEFT/tt_LO_SMEFT_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", 'ul_cfgs/nanoGen2017_LO_cfg.py',10000, 500],
     # 'ttJets_LO_SMEFT': ["hnelson2/gridpack_scans/ttbarEFT/ttJets_LO_SMEFT_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 10000, 500],
     #'ttJets_LO_ref': ["hnelson2/gridpack_scans/ttbarEFT/ttJets_LO_ref_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 40000, 500],
@@ -62,7 +61,7 @@ nanoGen = Category(
             name="nanoGen",
             cores=2,
             memory=12000,
-            disk=30000
+            disk=60000
         )
 
 wf = []
