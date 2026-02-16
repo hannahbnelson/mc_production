@@ -1,0 +1,197 @@
+launch /afs/crc.nd.edu/user/h/hnelson2/MG5_aMC_v2_6_5/tW_smyl 
+launch -n SM 
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=-200.0
+set param_card cleQt3Re -200.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=-180.0
+set param_card cleQt3Re -180.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=-150.0
+set param_card cleQt3Re -150.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=-120.0
+set param_card cleQt3Re -120.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=-100.0
+set param_card cleQt3Re -100.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=-50.0
+set param_card cleQt3Re -50.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=-25.0
+set param_card cleQt3Re -25.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=-1.0
+set param_card cleQt3Re -1.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=1.0
+set param_card cleQt3Re 1.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=25.0
+set param_card cleQt3Re 25.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=50.0
+set param_card cleQt3Re 50.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=100.0
+set param_card cleQt3Re 100.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=120.0
+set param_card cleQt3Re 120.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=150.0
+set param_card cleQt3Re 150.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=180.0
+set param_card cleQt3Re 180.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt3Re=200.0
+set param_card cleQt3Re 200.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=-200.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re -200.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=-180.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re -180.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=-150.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re -150.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=-120.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re -120.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=-100.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re -100.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=-50.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re -50.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=-25.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re -25.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=-1.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re -1.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=1.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 1.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=25.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 25.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=50.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 50.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=100.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 100.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=120.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 120.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=150.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 150.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=180.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 180.0 
+set param_card cQl3 0.0 
+launch -n cleQt1Re=200.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 200.0 
+set param_card cQl3 0.0 
+launch -n cQl3=-200.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 -200.0 
+launch -n cQl3=-180.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 -180.0 
+launch -n cQl3=-150.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 -150.0 
+launch -n cQl3=-120.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 -120.0 
+launch -n cQl3=-100.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 -100.0 
+launch -n cQl3=-50.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 -50.0 
+launch -n cQl3=-25.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 -25.0 
+launch -n cQl3=-1.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 -1.0 
+launch -n cQl3=1.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 1.0 
+launch -n cQl3=25.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 25.0 
+launch -n cQl3=50.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 50.0 
+launch -n cQl3=100.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 100.0 
+launch -n cQl3=120.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 120.0 
+launch -n cQl3=150.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 150.0 
+launch -n cQl3=180.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 180.0 
+launch -n cQl3=200.0
+set param_card cleQt3Re 0.0 
+set param_card cleQt1Re 0.0 
+set param_card cQl3 200.0 

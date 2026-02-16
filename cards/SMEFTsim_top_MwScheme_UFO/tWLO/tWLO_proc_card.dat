@@ -1,0 +1,13 @@
+import model SMEFTsim_top_MwScheme_UFO_ctGpatched-massless_tW
+
+define p = g u c d s u~ c~ d~ s~ b b~
+define j = p
+define l+ = e+ mu+ ta+
+define l- = e- mu- ta-
+define vl = ve vm vt
+define vl~ = ve~ vm~ vt~
+
+generate  p p > t l- vl~, (t > l+ vl b NPprop=0 SMHLOOP=0 NP=0) @0 NPprop=0 SMHLOOP=0 NP=1
+add process  p p > t~ l+ vl, (t~ > l- vl~ b~ NPprop=0 SMHLOOP=0 NP=0) @1 NPprop=0 SMHLOOP=0 NP=1
+
+output tWLO -nojpeg

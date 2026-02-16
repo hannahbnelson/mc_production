@@ -12,7 +12,11 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 RUN_SETUP = 'UL_production'
 UL_YEAR = 'UL17'
 prod_tag = "nanoGen"
-version = "TT01j2l_SM"
+version = "TT01j2l_SM_test2"
+
+process_whitelist = []
+coeff_whitelist   = []
+runs_whitelist    = []    # (i.e. MG starting points)
 
 master_label = 'T3_EFT_{tstamp}'.format(tstamp=timestamp_tag)
 
@@ -21,20 +25,22 @@ workdir_path = "/tmpscratch/users/$USER/noEFT/{tag}/{ver}".format(tag=prod_tag, 
 plotdir_path = "~/www/lobster/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
 
 storage = StorageConfiguration(
-    input=[
+    input = [
         "file:///cms/cephfs/data/store/user/",
         "root://hactar01.crc.nd.edu//store/user/",
     ],
+    
     output=[
         "file:///cms/cephfs/data" + output_path,
-        "root://hactar01.crc.nd.edu/"+output_path,
-    ]
+        "root://hactar01.crc.nd.edu/"+output_path,    
+    ],
 )
 
 # gridpack list is a dictionary of the form {'process': [gridpack path, config (path from this dir), events per gridpack, events per lumi]}
 gridpack_list = {
-    'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 10E6, 1000]
+    'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 1000, 500]
 }
+
 
 nanoGen = Category(
             name="nanoGen",
@@ -81,8 +87,6 @@ config = Config(
         log_level=1,
         payload=10,
         osg_version='3.6',
-        #xrootd_servers=['ndcms.crc.nd.edu',
-        #               'cmsxrootd.fnal.gov',
-        #               'deepthought.crc.nd.edu']
+        #xrootd_servers=['ndcms.crc.nd.edu','cmsxrootd.fnal.gov']
     )
 )

@@ -1,0 +1,14 @@
+{
+    "UL16APV_0_700_miniAOD_files"   : "/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM",
+    "UL16APV_700_900_miniAOD_files" : "/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM",
+    "UL16APV_900_Inf_miniAOD_files" : "/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL16MiniAODAPVv2-106X_mcRun2_asymptotic_preVFP_v11-v2/MINIAODSIM",
+    "UL16_0_700_miniAOD_files"      : "/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL16MiniAODv2-BPH_106X_mcRun2_asymptotic_v17-v3/MINIAODSIM",
+    "UL16_700_900_miniAOD_files"    : "/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL16MiniAODv2-BPH_106X_mcRun2_asymptotic_v17-v1/MINIAODSIM",
+    "UL16_900_Inf_miniAOD_files"    : "/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL16MiniAODv2-BPH_106X_mcRun2_asymptotic_v17-v2/MINIAODSIM",
+    "UL17_0_700_miniAOD_files"      : "/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM",
+    "UL17_700_900_miniAOD_files"    : "/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM",
+    "UL17_900_Inf_miniAOD_files"    : "/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL17MiniAODv2-106X_mc2017_realistic_v9-v2/MINIAODSIM",
+    "UL18_0_700_miniAOD_files"      : "/TTto2L2Nu-1Jets-smeft_MTT-0to700_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/MINIAODSIM",
+    "UL18_700_900_miniAOD_files"    : "/TTto2L2Nu-1Jets-smeft_MTT-700to900_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v2/MINIAODSIM",
+    "UL18_900_Inf_miniAOD_files"    : "/TTto2L2Nu-1Jets-smeft_MTT-900toInf_TuneCP5_13TeV_madgraphMLM-pythia8/RunIISummer20UL18MiniAODv2-106X_upgrade2018_realistic_v16_L1v1-v3/MINIAODSIM"
+}

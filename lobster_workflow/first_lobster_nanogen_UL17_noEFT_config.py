@@ -33,8 +33,9 @@ storage = StorageConfiguration(
 
 # gridpack list is a dictionary of the form {'process': [gridpack path, config (path from this dir), events per gridpack, events per lumi]}
 gridpack_list = {
-    'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 10E6, 1000]
+    'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', '/afs/crc.nd.edu/user/h/hnelson2/mc_production/lobster_workflow/ul_cfgs/nanoGen2017_LOJets_cfg.py', 10E6, 1000]
 }
+
 
 nanoGen = Category(
             name="nanoGen",
@@ -81,8 +82,6 @@ config = Config(
         log_level=1,
         payload=10,
         osg_version='3.6',
-        #xrootd_servers=['ndcms.crc.nd.edu',
-        #               'cmsxrootd.fnal.gov',
-        #               'deepthought.crc.nd.edu']
+        #xrootd_servers=['ndcms.crc.nd.edu','cmsxrootd.fnal.gov']
     )
 )

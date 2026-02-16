@@ -1,0 +1,717 @@
+launch /afs/crc.nd.edu/user/h/hnelson2/MG5_aMC_v2_6_5/tW
+
+launch -n sm_point
+    set param_card cHQ3 0.0
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt0_cHQ3_m10p0_ctGIm_m1p0
+    set param_card cHQ3 -10.0 
+    set param_card ctGIm -1.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt1_cHQ3_m10p0_ctGRe_m1p0
+    set param_card cHQ3 -10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe -1.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch ---n EFTrwgt2_cHQ3_m10p0_ctWRe_m2p0
+    set param_card cHQ3 -10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe -2.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt3_cHQ3_m10p0_cleQt3Re_5p0
+    set param_card cHQ3 -10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 5.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt4_cHQ3_m10p0_cleQt1Re_10p0
+    set param_card cHQ3 -10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 10.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt5_cHQ3_m10p0_cQl3_5p0
+    set param_card cHQ3 -10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 5.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt6_cHQ3_m10p0_cbWRe_m3p0
+    set param_card cHQ3 -10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe -3.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt7_cHQ3_m10p0_cHtbRe_3p0
+    set param_card cHQ3 -10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 3.0 
+
+launch -n EFTrwgt8_cHQ3_m7p0_ctGIm_m1p0
+    set param_card cHQ3 -7.0 
+    set param_card ctGIm -1.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt9_cHQ3_m7p0_ctGRe_m1p0
+    set param_card cHQ3 -7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe -1.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt10_cHQ3_m7p0_ctWRe_m2p0
+    set param_card cHQ3 -7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe -2.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt11_cHQ3_m7p0_cleQt3Re_5p0
+    set param_card cHQ3 -7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 5.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt12_cHQ3_m7p0_cleQt1Re_10p0
+    set param_card cHQ3 -7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 10.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt13_cHQ3_m7p0_cQl3_5p0
+    set param_card cHQ3 -7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 5.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt14_cHQ3_m7p0_cbWRe_m3p0
+    set param_card cHQ3 -7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe -3.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt15_cHQ3_m7p0_cHtbRe_3p0
+    set param_card cHQ3 -7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 3.0 
+
+launch -n EFTrwgt16_cHQ3_m4p0_ctGIm_m1p0
+    set param_card cHQ3 -4.0 
+    set param_card ctGIm -1.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt17_cHQ3_m4p0_ctGRe_m1p0
+    set param_card cHQ3 -4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe -1.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt18_cHQ3_m4p0_ctWRe_m2p0
+    set param_card cHQ3 -4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe -2.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt19_cHQ3_m4p0_cleQt3Re_5p0
+    set param_card cHQ3 -4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 5.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt20_cHQ3_m4p0_cleQt1Re_10p0
+    set param_card cHQ3 -4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 10.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt21_cHQ3_m4p0_cQl3_5p0
+    set param_card cHQ3 -4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 5.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt22_cHQ3_m4p0_cbWRe_m3p0
+    set param_card cHQ3 -4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe -3.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt23_cHQ3_m4p0_cHtbRe_3p0
+    set param_card cHQ3 -4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 3.0 
+
+launch -n EFTrwgt24_cHQ3_m2p0_ctGIm_m1p0
+    set param_card cHQ3 -2.0 
+    set param_card ctGIm -1.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt25_cHQ3_m2p0_ctGRe_m1p0
+    set param_card cHQ3 -2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe -1.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt26_cHQ3_m2p0_ctWRe_m2p0
+    set param_card cHQ3 -2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe -2.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt27_cHQ3_m2p0_cleQt3Re_5p0
+    set param_card cHQ3 -2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 5.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt28_cHQ3_m2p0_cleQt1Re_10p0
+    set param_card cHQ3 -2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 10.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt29_cHQ3_m2p0_cQl3_5p0
+    set param_card cHQ3 -2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 5.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt30_cHQ3_m2p0_cbWRe_m3p0
+    set param_card cHQ3 -2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe -3.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt31_cHQ3_m2p0_cHtbRe_3p0
+    set param_card cHQ3 -2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 3.0 
+
+launch -n EFTrwgt32_cHQ3_2p0_ctGIm_m1p0
+    set param_card cHQ3 2.0 
+    set param_card ctGIm -1.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt33_cHQ3_2p0_ctGRe_m1p0
+    set param_card cHQ3 2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe -1.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt34_cHQ3_2p0_ctWRe_m2p0
+    set param_card cHQ3 2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe -2.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt35_cHQ3_2p0_cleQt3Re_5p0
+    set param_card cHQ3 2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 5.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt36_cHQ3_2p0_cleQt1Re_10p0
+    set param_card cHQ3 2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 10.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt37_cHQ3_2p0_cQl3_5p0
+    set param_card cHQ3 2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 5.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt38_cHQ3_2p0_cbWRe_m3p0
+    set param_card cHQ3 2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe -3.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt39_cHQ3_2p0_cHtbRe_3p0
+    set param_card cHQ3 2.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 3.0 
+
+launch -n EFTrwgt40_cHQ3_4p0_ctGIm_m1p0
+    set param_card cHQ3 4.0 
+    set param_card ctGIm -1.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt41_cHQ3_4p0_ctGRe_m1p0
+    set param_card cHQ3 4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe -1.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt42_cHQ3_4p0_ctWRe_m2p0
+    set param_card cHQ3 4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe -2.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt43_cHQ3_4p0_cleQt3Re_5p0
+    set param_card cHQ3 4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 5.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt44_cHQ3_4p0_cleQt1Re_10p0
+    set param_card cHQ3 4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 10.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt45_cHQ3_4p0_cQl3_5p0
+    set param_card cHQ3 4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 5.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt46_cHQ3_4p0_cbWRe_m3p0
+    set param_card cHQ3 4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe -3.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt47_cHQ3_4p0_cHtbRe_3p0
+    set param_card cHQ3 4.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 3.0 
+
+launch -n EFTrwgt48_cHQ3_7p0_ctGIm_m1p0
+    set param_card cHQ3 7.0 
+    set param_card ctGIm -1.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt49_cHQ3_7p0_ctGRe_m1p0
+    set param_card cHQ3 7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe -1.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt50_cHQ3_7p0_ctWRe_m2p0
+    set param_card cHQ3 7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe -2.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt51_cHQ3_7p0_cleQt3Re_5p0
+    set param_card cHQ3 7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 5.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt52_cHQ3_7p0_cleQt1Re_10p0
+    set param_card cHQ3 7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 10.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt53_cHQ3_7p0_cQl3_5p0
+    set param_card cHQ3 7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 5.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt54_cHQ3_7p0_cbWRe_m3p0
+    set param_card cHQ3 7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe -3.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt55_cHQ3_7p0_cHtbRe_3p0
+    set param_card cHQ3 7.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 3.0 
+
+launch -n EFTrwgt56_cHQ3_10p0_ctGIm_m1p0
+    set param_card cHQ3 10.0 
+    set param_card ctGIm -1.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt57_cHQ3_10p0_ctGRe_m1p0
+    set param_card cHQ3 10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe -1.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt58_cHQ3_10p0_ctWRe_m2p0
+    set param_card cHQ3 10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe -2.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt59_cHQ3_10p0_cleQt3Re_5p0
+    set param_card cHQ3 10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 5.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt60_cHQ3_10p0_cleQt1Re_10p0
+    set param_card cHQ3 10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 10.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt61_cHQ3_10p0_cQl3_5p0
+    set param_card cHQ3 10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 5.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt62_cHQ3_10p0_cbWRe_m3p0
+    set param_card cHQ3 10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe -3.0 
+    set param_card cHtbRe 0.0 
+
+launch -n EFTrwgt63_cHQ3_10p0_cHtbRe_3p0
+    set param_card cHQ3 10.0 
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 3.0 
+

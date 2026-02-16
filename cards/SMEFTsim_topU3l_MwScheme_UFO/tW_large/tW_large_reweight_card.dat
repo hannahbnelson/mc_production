@@ -1,0 +1,976 @@
+# Reference point: {'ctGIm': -1.5, 'ctGRe': -1.5, 'cHQ3': 2.5, 'ctWRe': -2.5, 'cleQt3Re': 15.0, 'cleQt1Re': 20.0, 'cQl3': 20.0, 'cbWRe': -10.0, 'cHtbRe': 10.0}
+
+change rwgt_dir rwgt
+
+launch --rwgt_name=reference_point
+
+launch --rwgt_name=sm_point
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card cHQ3 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0 
+
+launch --rwgt_name=EFTrwgt0_ctGIm_2p078_ctGRe_1p38_cHQ3_2p564_ctWRe_m2p324_cleQt3Re_14p655_cleQt1Re_36p021_cQl3_30p575_cbWRe_9p256_cHtbRe_m7p438
+    set param_card ctGIm 2.078
+    set param_card ctGRe 1.38
+    set param_card cHQ3 2.564
+    set param_card ctWRe -2.324
+    set param_card cleQt3Re 14.655
+    set param_card cleQt1Re 36.021
+    set param_card cQl3 30.575
+    set param_card cbWRe 9.256
+    set param_card cHtbRe -7.438
+
+
+launch --rwgt_name=EFTrwgt1_ctGIm_m2p432_ctGRe_m2p904_cHQ3_m0p495_ctWRe_4p947_cleQt3Re_27p162_cleQt1Re_m1p829_cQl3_5p415_cbWRe_12p408_cHtbRe_4p254
+    set param_card ctGIm -2.432
+    set param_card ctGRe -2.904
+    set param_card cHQ3 -0.495
+    set param_card ctWRe 4.947
+    set param_card cleQt3Re 27.162
+    set param_card cleQt1Re -1.829
+    set param_card cQl3 5.415
+    set param_card cbWRe 12.408
+    set param_card cHtbRe 4.254
+
+
+launch --rwgt_name=EFTrwgt2_ctGIm_m2p057_ctGRe_1p316_cHQ3_2p682_ctWRe_1p869_cleQt3Re_24p461_cleQt1Re_32p084_cQl3_m14p795_cbWRe_m10p923_cHtbRe_m12p336
+    set param_card ctGIm -2.057
+    set param_card ctGRe 1.316
+    set param_card cHQ3 2.682
+    set param_card ctWRe 1.869
+    set param_card cleQt3Re 24.461
+    set param_card cleQt1Re 32.084
+    set param_card cQl3 -14.795
+    set param_card cbWRe -10.923
+    set param_card cHtbRe -12.336
+
+
+launch --rwgt_name=EFTrwgt3_ctGIm_m1p687_ctGRe_2p076_cHQ3_m4p47_ctWRe_m2p047_cleQt3Re_12p01_cleQt1Re_15p849_cQl3_m6p217_cbWRe_m19p401_cHtbRe_m17p566
+    set param_card ctGIm -1.687
+    set param_card ctGRe 2.076
+    set param_card cHQ3 -4.47
+    set param_card ctWRe -2.047
+    set param_card cleQt3Re 12.01
+    set param_card cleQt1Re 15.849
+    set param_card cQl3 -6.217
+    set param_card cbWRe -19.401
+    set param_card cHtbRe -17.566
+
+
+launch --rwgt_name=EFTrwgt4_ctGIm_m2p047_ctGRe_m0p162_cHQ3_m3p599_ctWRe_0p655_cleQt3Re_6p644_cleQt1Re_m24p981_cQl3_m9p985_cbWRe_m4p11_cHtbRe_m15p0
+    set param_card ctGIm -2.047
+    set param_card ctGRe -0.162
+    set param_card cHQ3 -3.599
+    set param_card ctWRe 0.655
+    set param_card cleQt3Re 6.644
+    set param_card cleQt1Re -24.981
+    set param_card cQl3 -9.985
+    set param_card cbWRe -4.11
+    set param_card cHtbRe -15.0
+
+
+launch --rwgt_name=EFTrwgt5_ctGIm_m2p303_ctGRe_2p701_cHQ3_m4p476_ctWRe_3p014_cleQt3Re_m10p341_cleQt1Re_m27p896_cQl3_2p038_cbWRe_0p204_cHtbRe_m3p491
+    set param_card ctGIm -2.303
+    set param_card ctGRe 2.701
+    set param_card cHQ3 -4.476
+    set param_card ctWRe 3.014
+    set param_card cleQt3Re -10.341
+    set param_card cleQt1Re -27.896
+    set param_card cQl3 2.038
+    set param_card cbWRe 0.204
+    set param_card cHtbRe -3.491
+
+
+launch --rwgt_name=EFTrwgt6_ctGIm_0p657_ctGRe_2p364_cHQ3_m0p269_ctWRe_m4p658_cleQt3Re_m6p01_cleQt1Re_25p734_cQl3_8p188_cbWRe_7p36_cHtbRe_14p402
+    set param_card ctGIm 0.657
+    set param_card ctGRe 2.364
+    set param_card cHQ3 -0.269
+    set param_card ctWRe -4.658
+    set param_card cleQt3Re -6.01
+    set param_card cleQt1Re 25.734
+    set param_card cQl3 8.188
+    set param_card cbWRe 7.36
+    set param_card cHtbRe 14.402
+
+
+launch --rwgt_name=EFTrwgt7_ctGIm_1p017_ctGRe_2p407_cHQ3_4p767_ctWRe_1p363_cleQt3Re_m16p601_cleQt1Re_m34p173_cQl3_19p33_cbWRe_m15p814_cHtbRe_m9p835
+    set param_card ctGIm 1.017
+    set param_card ctGRe 2.407
+    set param_card cHQ3 4.767
+    set param_card ctWRe 1.363
+    set param_card cleQt3Re -16.601
+    set param_card cleQt1Re -34.173
+    set param_card cQl3 19.33
+    set param_card cbWRe -15.814
+    set param_card cHtbRe -9.835
+
+
+launch --rwgt_name=EFTrwgt8_ctGIm_2p31_ctGRe_2p436_cHQ3_3p219_ctWRe_m0p008_cleQt3Re_m13p543_cleQt1Re_8p573_cQl3_m11p912_cbWRe_2p959_cHtbRe_17p366
+    set param_card ctGIm 2.31
+    set param_card ctGRe 2.436
+    set param_card cHQ3 3.219
+    set param_card ctWRe -0.008
+    set param_card cleQt3Re -13.543
+    set param_card cleQt1Re 8.573
+    set param_card cQl3 -11.912
+    set param_card cbWRe 2.959
+    set param_card cHtbRe 17.366
+
+
+launch --rwgt_name=EFTrwgt9_ctGIm_m1p151_ctGRe_1p11_cHQ3_4p24_ctWRe_0p187_cleQt3Re_5p12_cleQt1Re_37p911_cQl3_21p445_cbWRe_13p066_cHtbRe_m6p854
+    set param_card ctGIm -1.151
+    set param_card ctGRe 1.11
+    set param_card cHQ3 4.24
+    set param_card ctWRe 0.187
+    set param_card cleQt3Re 5.12
+    set param_card cleQt1Re 37.911
+    set param_card cQl3 21.445
+    set param_card cbWRe 13.066
+    set param_card cHtbRe -6.854
+
+
+launch --rwgt_name=EFTrwgt10_ctGIm_m1p013_ctGRe_2p147_cHQ3_m3p898_ctWRe_0p827_cleQt3Re_m0p478_cleQt1Re_6p051_cQl3_14p357_cbWRe_m5p046_cHtbRe_13p389
+    set param_card ctGIm -1.013
+    set param_card ctGRe 2.147
+    set param_card cHQ3 -3.898
+    set param_card ctWRe 0.827
+    set param_card cleQt3Re -0.478
+    set param_card cleQt1Re 6.051
+    set param_card cQl3 14.357
+    set param_card cbWRe -5.046
+    set param_card cHtbRe 13.389
+
+
+launch --rwgt_name=EFTrwgt11_ctGIm_1p59_ctGRe_m1p983_cHQ3_2p445_ctWRe_2p427_cleQt3Re_m13p752_cleQt1Re_6p334_cQl3_m32p132_cbWRe_14p048_cHtbRe_14p973
+    set param_card ctGIm 1.59
+    set param_card ctGRe -1.983
+    set param_card cHQ3 2.445
+    set param_card ctWRe 2.427
+    set param_card cleQt3Re -13.752
+    set param_card cleQt1Re 6.334
+    set param_card cQl3 -32.132
+    set param_card cbWRe 14.048
+    set param_card cHtbRe 14.973
+
+
+launch --rwgt_name=EFTrwgt12_ctGIm_1p077_ctGRe_2p256_cHQ3_m0p686_ctWRe_4p544_cleQt3Re_m18p296_cleQt1Re_m30p291_cQl3_21p453_cbWRe_11p144_cHtbRe_m18p955
+    set param_card ctGIm 1.077
+    set param_card ctGRe 2.256
+    set param_card cHQ3 -0.686
+    set param_card ctWRe 4.544
+    set param_card cleQt3Re -18.296
+    set param_card cleQt1Re -30.291
+    set param_card cQl3 21.453
+    set param_card cbWRe 11.144
+    set param_card cHtbRe -18.955
+
+
+launch --rwgt_name=EFTrwgt13_ctGIm_0p194_ctGRe_0p116_cHQ3_m1p449_ctWRe_m4p003_cleQt3Re_16p16_cleQt1Re_28p916_cQl3_32p96_cbWRe_m7p892_cHtbRe_16p339
+    set param_card ctGIm 0.194
+    set param_card ctGRe 0.116
+    set param_card cHQ3 -1.449
+    set param_card ctWRe -4.003
+    set param_card cleQt3Re 16.16
+    set param_card cleQt1Re 28.916
+    set param_card cQl3 32.96
+    set param_card cbWRe -7.892
+    set param_card cHtbRe 16.339
+
+
+launch --rwgt_name=EFTrwgt14_ctGIm_m2p6_ctGRe_1p23_cHQ3_1p568_ctWRe_m1p647_cleQt3Re_12p446_cleQt1Re_m35p859_cQl3_m11p553_cbWRe_m0p379_cHtbRe_m12p658
+    set param_card ctGIm -2.6
+    set param_card ctGRe 1.23
+    set param_card cHQ3 1.568
+    set param_card ctWRe -1.647
+    set param_card cleQt3Re 12.446
+    set param_card cleQt1Re -35.859
+    set param_card cQl3 -11.553
+    set param_card cbWRe -0.379
+    set param_card cHtbRe -12.658
+
+
+launch --rwgt_name=EFTrwgt15_ctGIm_m1p351_ctGRe_1p898_cHQ3_4p413_ctWRe_1p102_cleQt3Re_14p199_cleQt1Re_11p89_cQl3_m25p838_cbWRe_11p533_cHtbRe_10p117
+    set param_card ctGIm -1.351
+    set param_card ctGRe 1.898
+    set param_card cHQ3 4.413
+    set param_card ctWRe 1.102
+    set param_card cleQt3Re 14.199
+    set param_card cleQt1Re 11.89
+    set param_card cQl3 -25.838
+    set param_card cbWRe 11.533
+    set param_card cHtbRe 10.117
+
+
+launch --rwgt_name=EFTrwgt16_ctGIm_m2p68_ctGRe_m1p156_cHQ3_3p592_ctWRe_3p928_cleQt3Re_m19p566_cleQt1Re_m2p325_cQl3_m7p813_cbWRe_m11p774_cHtbRe_m0p9
+    set param_card ctGIm -2.68
+    set param_card ctGRe -1.156
+    set param_card cHQ3 3.592
+    set param_card ctWRe 3.928
+    set param_card cleQt3Re -19.566
+    set param_card cleQt1Re -2.325
+    set param_card cQl3 -7.813
+    set param_card cbWRe -11.774
+    set param_card cHtbRe -0.9
+
+
+launch --rwgt_name=EFTrwgt17_ctGIm_m2p688_ctGRe_m0p412_cHQ3_m1p125_ctWRe_2p409_cleQt3Re_m4p782_cleQt1Re_m26p535_cQl3_23p493_cbWRe_m2p187_cHtbRe_13p165
+    set param_card ctGIm -2.688
+    set param_card ctGRe -0.412
+    set param_card cHQ3 -1.125
+    set param_card ctWRe 2.409
+    set param_card cleQt3Re -4.782
+    set param_card cleQt1Re -26.535
+    set param_card cQl3 23.493
+    set param_card cbWRe -2.187
+    set param_card cHtbRe 13.165
+
+
+launch --rwgt_name=EFTrwgt18_ctGIm_0p7_ctGRe_2p538_cHQ3_m4p72_ctWRe_m0p348_cleQt3Re_m14p352_cleQt1Re_9p07_cQl3_10p154_cbWRe_4p328_cHtbRe_10p682
+    set param_card ctGIm 0.7
+    set param_card ctGRe 2.538
+    set param_card cHQ3 -4.72
+    set param_card ctWRe -0.348
+    set param_card cleQt3Re -14.352
+    set param_card cleQt1Re 9.07
+    set param_card cQl3 10.154
+    set param_card cbWRe 4.328
+    set param_card cHtbRe 10.682
+
+
+launch --rwgt_name=EFTrwgt19_ctGIm_1p867_ctGRe_m1p002_cHQ3_m0p155_ctWRe_m0p66_cleQt3Re_m5p445_cleQt1Re_m33p959_cQl3_m19p68_cbWRe_12p171_cHtbRe_m18p811
+    set param_card ctGIm 1.867
+    set param_card ctGRe -1.002
+    set param_card cHQ3 -0.155
+    set param_card ctWRe -0.66
+    set param_card cleQt3Re -5.445
+    set param_card cleQt1Re -33.959
+    set param_card cQl3 -19.68
+    set param_card cbWRe 12.171
+    set param_card cHtbRe -18.811
+
+
+launch --rwgt_name=EFTrwgt20_ctGIm_m0p494_ctGRe_1p415_cHQ3_m1p098_ctWRe_m4p573_cleQt3Re_9p442_cleQt1Re_22p373_cQl3_11p17_cbWRe_m4p485_cHtbRe_13p835
+    set param_card ctGIm -0.494
+    set param_card ctGRe 1.415
+    set param_card cHQ3 -1.098
+    set param_card ctWRe -4.573
+    set param_card cleQt3Re 9.442
+    set param_card cleQt1Re 22.373
+    set param_card cQl3 11.17
+    set param_card cbWRe -4.485
+    set param_card cHtbRe 13.835
+
+
+launch --rwgt_name=EFTrwgt21_ctGIm_0p696_ctGRe_m0p395_cHQ3_4p746_ctWRe_3p597_cleQt3Re_8p97_cleQt1Re_17p564_cQl3_17p618_cbWRe_m17p011_cHtbRe_m15p539
+    set param_card ctGIm 0.696
+    set param_card ctGRe -0.395
+    set param_card cHQ3 4.746
+    set param_card ctWRe 3.597
+    set param_card cleQt3Re 8.97
+    set param_card cleQt1Re 17.564
+    set param_card cQl3 17.618
+    set param_card cbWRe -17.011
+    set param_card cHtbRe -15.539
+
+
+launch --rwgt_name=EFTrwgt22_ctGIm_m1p785_ctGRe_m0p109_cHQ3_m3p424_ctWRe_3p614_cleQt3Re_m21p585_cleQt1Re_15p566_cQl3_8p875_cbWRe_4p092_cHtbRe_m16p271
+    set param_card ctGIm -1.785
+    set param_card ctGRe -0.109
+    set param_card cHQ3 -3.424
+    set param_card ctWRe 3.614
+    set param_card cleQt3Re -21.585
+    set param_card cleQt1Re 15.566
+    set param_card cQl3 8.875
+    set param_card cbWRe 4.092
+    set param_card cHtbRe -16.271
+
+
+launch --rwgt_name=EFTrwgt23_ctGIm_m1p384_ctGRe_m0p098_cHQ3_2p626_ctWRe_0p315_cleQt3Re_m27p916_cleQt1Re_1p604_cQl3_m11p181_cbWRe_15p578_cHtbRe_19p636
+    set param_card ctGIm -1.384
+    set param_card ctGRe -0.098
+    set param_card cHQ3 2.626
+    set param_card ctWRe 0.315
+    set param_card cleQt3Re -27.916
+    set param_card cleQt1Re 1.604
+    set param_card cQl3 -11.181
+    set param_card cbWRe 15.578
+    set param_card cHtbRe 19.636
+
+
+launch --rwgt_name=EFTrwgt24_ctGIm_m2p264_ctGRe_m0p372_cHQ3_m2p576_ctWRe_m3p039_cleQt3Re_12p726_cleQt1Re_m16p385_cQl3_35p582_cbWRe_2p243_cHtbRe_m6p399
+    set param_card ctGIm -2.264
+    set param_card ctGRe -0.372
+    set param_card cHQ3 -2.576
+    set param_card ctWRe -3.039
+    set param_card cleQt3Re 12.726
+    set param_card cleQt1Re -16.385
+    set param_card cQl3 35.582
+    set param_card cbWRe 2.243
+    set param_card cHtbRe -6.399
+
+
+launch --rwgt_name=EFTrwgt25_ctGIm_2p833_ctGRe_m1p983_cHQ3_4p872_ctWRe_3p572_cleQt3Re_19p19_cleQt1Re_m19p17_cQl3_19p963_cbWRe_5p724_cHtbRe_12p049
+    set param_card ctGIm 2.833
+    set param_card ctGRe -1.983
+    set param_card cHQ3 4.872
+    set param_card ctWRe 3.572
+    set param_card cleQt3Re 19.19
+    set param_card cleQt1Re -19.17
+    set param_card cQl3 19.963
+    set param_card cbWRe 5.724
+    set param_card cHtbRe 12.049
+
+
+launch --rwgt_name=EFTrwgt26_ctGIm_m1p875_ctGRe_2p551_cHQ3_2p707_ctWRe_4p94_cleQt3Re_19p902_cleQt1Re_m28p19_cQl3_m33p564_cbWRe_m6p343_cHtbRe_m15p552
+    set param_card ctGIm -1.875
+    set param_card ctGRe 2.551
+    set param_card cHQ3 2.707
+    set param_card ctWRe 4.94
+    set param_card cleQt3Re 19.902
+    set param_card cleQt1Re -28.19
+    set param_card cQl3 -33.564
+    set param_card cbWRe -6.343
+    set param_card cHtbRe -15.552
+
+
+launch --rwgt_name=EFTrwgt27_ctGIm_m1p47_ctGRe_m0p086_cHQ3_m0p025_ctWRe_m1p472_cleQt3Re_11p818_cleQt1Re_m38p58_cQl3_8p713_cbWRe_2p86_cHtbRe_17p47
+    set param_card ctGIm -1.47
+    set param_card ctGRe -0.086
+    set param_card cHQ3 -0.025
+    set param_card ctWRe -1.472
+    set param_card cleQt3Re 11.818
+    set param_card cleQt1Re -38.58
+    set param_card cQl3 8.713
+    set param_card cbWRe 2.86
+    set param_card cHtbRe 17.47
+
+
+launch --rwgt_name=EFTrwgt28_ctGIm_m2p634_ctGRe_m2p744_cHQ3_m2p357_ctWRe_m1p051_cleQt3Re_9p693_cleQt1Re_18p834_cQl3_m26p107_cbWRe_5p029_cHtbRe_5p965
+    set param_card ctGIm -2.634
+    set param_card ctGRe -2.744
+    set param_card cHQ3 -2.357
+    set param_card ctWRe -1.051
+    set param_card cleQt3Re 9.693
+    set param_card cleQt1Re 18.834
+    set param_card cQl3 -26.107
+    set param_card cbWRe 5.029
+    set param_card cHtbRe 5.965
+
+
+launch --rwgt_name=EFTrwgt29_ctGIm_1p507_ctGRe_1p573_cHQ3_m1p482_ctWRe_m1p562_cleQt3Re_5p944_cleQt1Re_m28p634_cQl3_28p359_cbWRe_m8p875_cHtbRe_4p839
+    set param_card ctGIm 1.507
+    set param_card ctGRe 1.573
+    set param_card cHQ3 -1.482
+    set param_card ctWRe -1.562
+    set param_card cleQt3Re 5.944
+    set param_card cleQt1Re -28.634
+    set param_card cQl3 28.359
+    set param_card cbWRe -8.875
+    set param_card cHtbRe 4.839
+
+
+launch --rwgt_name=EFTrwgt30_ctGIm_0p204_ctGRe_m0p813_cHQ3_m0p477_ctWRe_m0p016_cleQt3Re_4p225_cleQt1Re_m33p742_cQl3_21p414_cbWRe_m8p781_cHtbRe_m2p189
+    set param_card ctGIm 0.204
+    set param_card ctGRe -0.813
+    set param_card cHQ3 -0.477
+    set param_card ctWRe -0.016
+    set param_card cleQt3Re 4.225
+    set param_card cleQt1Re -33.742
+    set param_card cQl3 21.414
+    set param_card cbWRe -8.781
+    set param_card cHtbRe -2.189
+
+
+launch --rwgt_name=EFTrwgt31_ctGIm_0p016_ctGRe_2p844_cHQ3_m4p082_ctWRe_m1p885_cleQt3Re_13p454_cleQt1Re_31p956_cQl3_m8p403_cbWRe_4p718_cHtbRe_m6p078
+    set param_card ctGIm 0.016
+    set param_card ctGRe 2.844
+    set param_card cHQ3 -4.082
+    set param_card ctWRe -1.885
+    set param_card cleQt3Re 13.454
+    set param_card cleQt1Re 31.956
+    set param_card cQl3 -8.403
+    set param_card cbWRe 4.718
+    set param_card cHtbRe -6.078
+
+
+launch --rwgt_name=EFTrwgt32_ctGIm_m1p923_ctGRe_2p837_cHQ3_4p163_ctWRe_m0p92_cleQt3Re_17p792_cleQt1Re_m1p972_cQl3_26p864_cbWRe_m6p919_cHtbRe_19p155
+    set param_card ctGIm -1.923
+    set param_card ctGRe 2.837
+    set param_card cHQ3 4.163
+    set param_card ctWRe -0.92
+    set param_card cleQt3Re 17.792
+    set param_card cleQt1Re -1.972
+    set param_card cQl3 26.864
+    set param_card cbWRe -6.919
+    set param_card cHtbRe 19.155
+
+
+launch --rwgt_name=EFTrwgt33_ctGIm_m2p988_ctGRe_0p386_cHQ3_2p936_ctWRe_0p94_cleQt3Re_5p165_cleQt1Re_m18p493_cQl3_4p795_cbWRe_m11p347_cHtbRe_m14p758
+    set param_card ctGIm -2.988
+    set param_card ctGRe 0.386
+    set param_card cHQ3 2.936
+    set param_card ctWRe 0.94
+    set param_card cleQt3Re 5.165
+    set param_card cleQt1Re -18.493
+    set param_card cQl3 4.795
+    set param_card cbWRe -11.347
+    set param_card cHtbRe -14.758
+
+
+launch --rwgt_name=EFTrwgt34_ctGIm_2p012_ctGRe_m0p336_cHQ3_2p451_ctWRe_m3p441_cleQt3Re_8p064_cleQt1Re_37p216_cQl3_28p683_cbWRe_m12p359_cHtbRe_m16p674
+    set param_card ctGIm 2.012
+    set param_card ctGRe -0.336
+    set param_card cHQ3 2.451
+    set param_card ctWRe -3.441
+    set param_card cleQt3Re 8.064
+    set param_card cleQt1Re 37.216
+    set param_card cQl3 28.683
+    set param_card cbWRe -12.359
+    set param_card cHtbRe -16.674
+
+
+launch --rwgt_name=EFTrwgt35_ctGIm_m2p862_ctGRe_0p355_cHQ3_m3p988_ctWRe_m3p354_cleQt3Re_25p607_cleQt1Re_m24p207_cQl3_37p065_cbWRe_4p398_cHtbRe_7p856
+    set param_card ctGIm -2.862
+    set param_card ctGRe 0.355
+    set param_card cHQ3 -3.988
+    set param_card ctWRe -3.354
+    set param_card cleQt3Re 25.607
+    set param_card cleQt1Re -24.207
+    set param_card cQl3 37.065
+    set param_card cbWRe 4.398
+    set param_card cHtbRe 7.856
+
+
+launch --rwgt_name=EFTrwgt36_ctGIm_0p11_ctGRe_0p747_cHQ3_2p185_ctWRe_m4p375_cleQt3Re_21p379_cleQt1Re_1p663_cQl3_12p243_cbWRe_m5p881_cHtbRe_m6p846
+    set param_card ctGIm 0.11
+    set param_card ctGRe 0.747
+    set param_card cHQ3 2.185
+    set param_card ctWRe -4.375
+    set param_card cleQt3Re 21.379
+    set param_card cleQt1Re 1.663
+    set param_card cQl3 12.243
+    set param_card cbWRe -5.881
+    set param_card cHtbRe -6.846
+
+
+launch --rwgt_name=EFTrwgt37_ctGIm_0p401_ctGRe_1p74_cHQ3_1p478_ctWRe_2p626_cleQt3Re_0p566_cleQt1Re_3p318_cQl3_m31p169_cbWRe_18p883_cHtbRe_m19p751
+    set param_card ctGIm 0.401
+    set param_card ctGRe 1.74
+    set param_card cHQ3 1.478
+    set param_card ctWRe 2.626
+    set param_card cleQt3Re 0.566
+    set param_card cleQt1Re 3.318
+    set param_card cQl3 -31.169
+    set param_card cbWRe 18.883
+    set param_card cHtbRe -19.751
+
+
+launch --rwgt_name=EFTrwgt38_ctGIm_1p567_ctGRe_2p074_cHQ3_2p725_ctWRe_2p279_cleQt3Re_19p899_cleQt1Re_27p557_cQl3_1p304_cbWRe_m2p206_cHtbRe_1p418
+    set param_card ctGIm 1.567
+    set param_card ctGRe 2.074
+    set param_card cHQ3 2.725
+    set param_card ctWRe 2.279
+    set param_card cleQt3Re 19.899
+    set param_card cleQt1Re 27.557
+    set param_card cQl3 1.304
+    set param_card cbWRe -2.206
+    set param_card cHtbRe 1.418
+
+
+launch --rwgt_name=EFTrwgt39_ctGIm_m1p602_ctGRe_1p446_cHQ3_3p549_ctWRe_m2p665_cleQt3Re_9p125_cleQt1Re_m25p163_cQl3_m33p52_cbWRe_m14p957_cHtbRe_m1p674
+    set param_card ctGIm -1.602
+    set param_card ctGRe 1.446
+    set param_card cHQ3 3.549
+    set param_card ctWRe -2.665
+    set param_card cleQt3Re 9.125
+    set param_card cleQt1Re -25.163
+    set param_card cQl3 -33.52
+    set param_card cbWRe -14.957
+    set param_card cHtbRe -1.674
+
+
+launch --rwgt_name=EFTrwgt40_ctGIm_m1p212_ctGRe_1p38_cHQ3_m0p387_ctWRe_0p477_cleQt3Re_m0p225_cleQt1Re_36p764_cQl3_30p514_cbWRe_m10p889_cHtbRe_8p518
+    set param_card ctGIm -1.212
+    set param_card ctGRe 1.38
+    set param_card cHQ3 -0.387
+    set param_card ctWRe 0.477
+    set param_card cleQt3Re -0.225
+    set param_card cleQt1Re 36.764
+    set param_card cQl3 30.514
+    set param_card cbWRe -10.889
+    set param_card cHtbRe 8.518
+
+
+launch --rwgt_name=EFTrwgt41_ctGIm_m2p978_ctGRe_m1p698_cHQ3_3p088_ctWRe_2p205_cleQt3Re_m10p524_cleQt1Re_m7p32_cQl3_m23p34_cbWRe_8p397_cHtbRe_m10p892
+    set param_card ctGIm -2.978
+    set param_card ctGRe -1.698
+    set param_card cHQ3 3.088
+    set param_card ctWRe 2.205
+    set param_card cleQt3Re -10.524
+    set param_card cleQt1Re -7.32
+    set param_card cQl3 -23.34
+    set param_card cbWRe 8.397
+    set param_card cHtbRe -10.892
+
+
+launch --rwgt_name=EFTrwgt42_ctGIm_2p715_ctGRe_2p173_cHQ3_3p093_ctWRe_0p568_cleQt3Re_12p061_cleQt1Re_m15p474_cQl3_38p668_cbWRe_7p349_cHtbRe_10p974
+    set param_card ctGIm 2.715
+    set param_card ctGRe 2.173
+    set param_card cHQ3 3.093
+    set param_card ctWRe 0.568
+    set param_card cleQt3Re 12.061
+    set param_card cleQt1Re -15.474
+    set param_card cQl3 38.668
+    set param_card cbWRe 7.349
+    set param_card cHtbRe 10.974
+
+
+launch --rwgt_name=EFTrwgt43_ctGIm_m0p167_ctGRe_0p52_cHQ3_4p387_ctWRe_2p552_cleQt3Re_18p224_cleQt1Re_m17p026_cQl3_20p855_cbWRe_0p424_cHtbRe_m9p857
+    set param_card ctGIm -0.167
+    set param_card ctGRe 0.52
+    set param_card cHQ3 4.387
+    set param_card ctWRe 2.552
+    set param_card cleQt3Re 18.224
+    set param_card cleQt1Re -17.026
+    set param_card cQl3 20.855
+    set param_card cbWRe 0.424
+    set param_card cHtbRe -9.857
+
+
+launch --rwgt_name=EFTrwgt44_ctGIm_0p248_ctGRe_1p485_cHQ3_m3p004_ctWRe_m0p624_cleQt3Re_26p359_cleQt1Re_8p975_cQl3_7p58_cbWRe_m5p026_cHtbRe_m17p375
+    set param_card ctGIm 0.248
+    set param_card ctGRe 1.485
+    set param_card cHQ3 -3.004
+    set param_card ctWRe -0.624
+    set param_card cleQt3Re 26.359
+    set param_card cleQt1Re 8.975
+    set param_card cQl3 7.58
+    set param_card cbWRe -5.026
+    set param_card cHtbRe -17.375
+
+
+launch --rwgt_name=EFTrwgt45_ctGIm_m0p125_ctGRe_m0p366_cHQ3_4p081_ctWRe_m2p609_cleQt3Re_m1p301_cleQt1Re_m17p018_cQl3_8p029_cbWRe_13p813_cHtbRe_m10p755
+    set param_card ctGIm -0.125
+    set param_card ctGRe -0.366
+    set param_card cHQ3 4.081
+    set param_card ctWRe -2.609
+    set param_card cleQt3Re -1.301
+    set param_card cleQt1Re -17.018
+    set param_card cQl3 8.029
+    set param_card cbWRe 13.813
+    set param_card cHtbRe -10.755
+
+
+launch --rwgt_name=EFTrwgt46_ctGIm_0p266_ctGRe_1p681_cHQ3_3p54_ctWRe_m1p325_cleQt3Re_m9p857_cleQt1Re_4p847_cQl3_31p106_cbWRe_12p865_cHtbRe_m11p553
+    set param_card ctGIm 0.266
+    set param_card ctGRe 1.681
+    set param_card cHQ3 3.54
+    set param_card ctWRe -1.325
+    set param_card cleQt3Re -9.857
+    set param_card cleQt1Re 4.847
+    set param_card cQl3 31.106
+    set param_card cbWRe 12.865
+    set param_card cHtbRe -11.553
+
+
+launch --rwgt_name=EFTrwgt47_ctGIm_0p929_ctGRe_0p902_cHQ3_4p955_ctWRe_3p179_cleQt3Re_15p912_cleQt1Re_m5p024_cQl3_m28p669_cbWRe_m6p724_cHtbRe_12p765
+    set param_card ctGIm 0.929
+    set param_card ctGRe 0.902
+    set param_card cHQ3 4.955
+    set param_card ctWRe 3.179
+    set param_card cleQt3Re 15.912
+    set param_card cleQt1Re -5.024
+    set param_card cQl3 -28.669
+    set param_card cbWRe -6.724
+    set param_card cHtbRe 12.765
+
+
+launch --rwgt_name=EFTrwgt48_ctGIm_m0p403_ctGRe_m1p352_cHQ3_4p163_ctWRe_4p452_cleQt3Re_8p193_cleQt1Re_17p416_cQl3_28p261_cbWRe_m15p173_cHtbRe_3p184
+    set param_card ctGIm -0.403
+    set param_card ctGRe -1.352
+    set param_card cHQ3 4.163
+    set param_card ctWRe 4.452
+    set param_card cleQt3Re 8.193
+    set param_card cleQt1Re 17.416
+    set param_card cQl3 28.261
+    set param_card cbWRe -15.173
+    set param_card cHtbRe 3.184
+
+
+launch --rwgt_name=EFTrwgt49_ctGIm_0p386_ctGRe_2p47_cHQ3_1p943_ctWRe_m4p591_cleQt3Re_6p945_cleQt1Re_m7p92_cQl3_33p479_cbWRe_m1p755_cHtbRe_m2p151
+    set param_card ctGIm 0.386
+    set param_card ctGRe 2.47
+    set param_card cHQ3 1.943
+    set param_card ctWRe -4.591
+    set param_card cleQt3Re 6.945
+    set param_card cleQt1Re -7.92
+    set param_card cQl3 33.479
+    set param_card cbWRe -1.755
+    set param_card cHtbRe -2.151
+
+
+launch --rwgt_name=EFTrwgt50_ctGIm_m2p398_ctGRe_2p324_cHQ3_m4p834_ctWRe_4p128_cleQt3Re_m13p539_cleQt1Re_2p332_cQl3_m21p475_cbWRe_m11p08_cHtbRe_1p051
+    set param_card ctGIm -2.398
+    set param_card ctGRe 2.324
+    set param_card cHQ3 -4.834
+    set param_card ctWRe 4.128
+    set param_card cleQt3Re -13.539
+    set param_card cleQt1Re 2.332
+    set param_card cQl3 -21.475
+    set param_card cbWRe -11.08
+    set param_card cHtbRe 1.051
+
+
+launch --rwgt_name=EFTrwgt51_ctGIm_1p437_ctGRe_m0p458_cHQ3_2p042_ctWRe_4p246_cleQt3Re_3p064_cleQt1Re_m16p966_cQl3_m34p94_cbWRe_m2p087_cHtbRe_9p878
+    set param_card ctGIm 1.437
+    set param_card ctGRe -0.458
+    set param_card cHQ3 2.042
+    set param_card ctWRe 4.246
+    set param_card cleQt3Re 3.064
+    set param_card cleQt1Re -16.966
+    set param_card cQl3 -34.94
+    set param_card cbWRe -2.087
+    set param_card cHtbRe 9.878
+
+
+launch --rwgt_name=EFTrwgt52_ctGIm_m1p717_ctGRe_m1p309_cHQ3_3p191_ctWRe_4p158_cleQt3Re_16p695_cleQt1Re_11p08_cQl3_m23p997_cbWRe_7p429_cHtbRe_m19p758
+    set param_card ctGIm -1.717
+    set param_card ctGRe -1.309
+    set param_card cHQ3 3.191
+    set param_card ctWRe 4.158
+    set param_card cleQt3Re 16.695
+    set param_card cleQt1Re 11.08
+    set param_card cQl3 -23.997
+    set param_card cbWRe 7.429
+    set param_card cHtbRe -19.758
+
+
+launch --rwgt_name=EFTrwgt53_ctGIm_m2p035_ctGRe_m2p176_cHQ3_m1p818_ctWRe_4p081_cleQt3Re_m12p42_cleQt1Re_2p54_cQl3_25p202_cbWRe_7p411_cHtbRe_m17p51
+    set param_card ctGIm -2.035
+    set param_card ctGRe -2.176
+    set param_card cHQ3 -1.818
+    set param_card ctWRe 4.081
+    set param_card cleQt3Re -12.42
+    set param_card cleQt1Re 2.54
+    set param_card cQl3 25.202
+    set param_card cbWRe 7.411
+    set param_card cHtbRe -17.51
+
+
+launch --rwgt_name=EFTrwgt54_ctGIm_m0p975_ctGRe_m1p404_cHQ3_0p647_ctWRe_m1p526_cleQt3Re_m1p485_cleQt1Re_11p294_cQl3_m29p7_cbWRe_9p06_cHtbRe_8p478
+    set param_card ctGIm -0.975
+    set param_card ctGRe -1.404
+    set param_card cHQ3 0.647
+    set param_card ctWRe -1.526
+    set param_card cleQt3Re -1.485
+    set param_card cleQt1Re 11.294
+    set param_card cQl3 -29.7
+    set param_card cbWRe 9.06
+    set param_card cHtbRe 8.478
+
+
+launch --rwgt_name=EFTrwgt55_ctGIm_m2p429_ctGRe_0p313_cHQ3_0p293_ctWRe_m4p829_cleQt3Re_m4p226_cleQt1Re_15p638_cQl3_11p707_cbWRe_m5p167_cHtbRe_m17p501
+    set param_card ctGIm -2.429
+    set param_card ctGRe 0.313
+    set param_card cHQ3 0.293
+    set param_card ctWRe -4.829
+    set param_card cleQt3Re -4.226
+    set param_card cleQt1Re 15.638
+    set param_card cQl3 11.707
+    set param_card cbWRe -5.167
+    set param_card cHtbRe -17.501
+
+
+launch --rwgt_name=EFTrwgt56_ctGIm_0p873_ctGRe_1p702_cHQ3_1p668_ctWRe_1p088_cleQt3Re_m13p779_cleQt1Re_29p806_cQl3_m35p675_cbWRe_0p769_cHtbRe_m11p585
+    set param_card ctGIm 0.873
+    set param_card ctGRe 1.702
+    set param_card cHQ3 1.668
+    set param_card ctWRe 1.088
+    set param_card cleQt3Re -13.779
+    set param_card cleQt1Re 29.806
+    set param_card cQl3 -35.675
+    set param_card cbWRe 0.769
+    set param_card cHtbRe -11.585
+
+
+launch --rwgt_name=EFTrwgt57_ctGIm_1p788_ctGRe_m1p935_cHQ3_m1p07_ctWRe_0p174_cleQt3Re_m12p762_cleQt1Re_6p219_cQl3_m27p965_cbWRe_4p38_cHtbRe_m3p713
+    set param_card ctGIm 1.788
+    set param_card ctGRe -1.935
+    set param_card cHQ3 -1.07
+    set param_card ctWRe 0.174
+    set param_card cleQt3Re -12.762
+    set param_card cleQt1Re 6.219
+    set param_card cQl3 -27.965
+    set param_card cbWRe 4.38
+    set param_card cHtbRe -3.713
+
+
+launch --rwgt_name=EFTrwgt58_ctGIm_m2p445_ctGRe_m0p528_cHQ3_2p97_ctWRe_m3p287_cleQt3Re_m23p155_cleQt1Re_2p759_cQl3_m5p515_cbWRe_m19p822_cHtbRe_16p008
+    set param_card ctGIm -2.445
+    set param_card ctGRe -0.528
+    set param_card cHQ3 2.97
+    set param_card ctWRe -3.287
+    set param_card cleQt3Re -23.155
+    set param_card cleQt1Re 2.759
+    set param_card cQl3 -5.515
+    set param_card cbWRe -19.822
+    set param_card cHtbRe 16.008
+
+
+launch --rwgt_name=EFTrwgt59_ctGIm_2p958_ctGRe_m1p062_cHQ3_m1p67_ctWRe_m0p156_cleQt3Re_16p93_cleQt1Re_14p998_cQl3_28p407_cbWRe_m3p227_cHtbRe_19p065
+    set param_card ctGIm 2.958
+    set param_card ctGRe -1.062
+    set param_card cHQ3 -1.67
+    set param_card ctWRe -0.156
+    set param_card cleQt3Re 16.93
+    set param_card cleQt1Re 14.998
+    set param_card cQl3 28.407
+    set param_card cbWRe -3.227
+    set param_card cHtbRe 19.065
+
+
+launch --rwgt_name=EFTrwgt60_ctGIm_m2p226_ctGRe_0p91_cHQ3_3p238_ctWRe_2p766_cleQt3Re_m13p741_cleQt1Re_12p609_cQl3_m30p276_cbWRe_m1p417_cHtbRe_m16p872
+    set param_card ctGIm -2.226
+    set param_card ctGRe 0.91
+    set param_card cHQ3 3.238
+    set param_card ctWRe 2.766
+    set param_card cleQt3Re -13.741
+    set param_card cleQt1Re 12.609
+    set param_card cQl3 -30.276
+    set param_card cbWRe -1.417
+    set param_card cHtbRe -16.872
+
+
+launch --rwgt_name=EFTrwgt61_ctGIm_1p667_ctGRe_m1p084_cHQ3_1p343_ctWRe_1p571_cleQt3Re_7p057_cleQt1Re_m7p351_cQl3_16p694_cbWRe_m13p959_cHtbRe_19p955
+    set param_card ctGIm 1.667
+    set param_card ctGRe -1.084
+    set param_card cHQ3 1.343
+    set param_card ctWRe 1.571
+    set param_card cleQt3Re 7.057
+    set param_card cleQt1Re -7.351
+    set param_card cQl3 16.694
+    set param_card cbWRe -13.959
+    set param_card cHtbRe 19.955
+
+
+launch --rwgt_name=EFTrwgt62_ctGIm_m1p098_ctGRe_0p285_cHQ3_2p956_ctWRe_m2p466_cleQt3Re_m26p42_cleQt1Re_38p792_cQl3_m25p726_cbWRe_10p811_cHtbRe_1p672
+    set param_card ctGIm -1.098
+    set param_card ctGRe 0.285
+    set param_card cHQ3 2.956
+    set param_card ctWRe -2.466
+    set param_card cleQt3Re -26.42
+    set param_card cleQt1Re 38.792
+    set param_card cQl3 -25.726
+    set param_card cbWRe 10.811
+    set param_card cHtbRe 1.672
+
+
+launch --rwgt_name=EFTrwgt63_ctGIm_1p771_ctGRe_1p255_cHQ3_4p48_ctWRe_m1p781_cleQt3Re_1p701_cleQt1Re_22p607_cQl3_m19p434_cbWRe_18p589_cHtbRe_17p475
+    set param_card ctGIm 1.771
+    set param_card ctGRe 1.255
+    set param_card cHQ3 4.48
+    set param_card ctWRe -1.781
+    set param_card cleQt3Re 1.701
+    set param_card cleQt1Re 22.607
+    set param_card cQl3 -19.434
+    set param_card cbWRe 18.589
+    set param_card cHtbRe 17.475
+
+
+launch --rwgt_name=EFTrwgt64_ctGIm_1p347_ctGRe_0p428_cHQ3_2p406_ctWRe_m1p349_cleQt3Re_m24p948_cleQt1Re_m20p671_cQl3_m9p782_cbWRe_14p809_cHtbRe_m14p206
+    set param_card ctGIm 1.347
+    set param_card ctGRe 0.428
+    set param_card cHQ3 2.406
+    set param_card ctWRe -1.349
+    set param_card cleQt3Re -24.948
+    set param_card cleQt1Re -20.671
+    set param_card cQl3 -9.782
+    set param_card cbWRe 14.809
+    set param_card cHtbRe -14.206
+
+
+launch --rwgt_name=EFTrwgt65_ctGIm_0p59_ctGRe_2p919_cHQ3_m0p533_ctWRe_2p5_cleQt3Re_7p475_cleQt1Re_m39p514_cQl3_m18p37_cbWRe_3p385_cHtbRe_18p067
+    set param_card ctGIm 0.59
+    set param_card ctGRe 2.919
+    set param_card cHQ3 -0.533
+    set param_card ctWRe 2.5
+    set param_card cleQt3Re 7.475
+    set param_card cleQt1Re -39.514
+    set param_card cQl3 -18.37
+    set param_card cbWRe 3.385
+    set param_card cHtbRe 18.067
+
+
+launch --rwgt_name=EFTrwgt66_ctGIm_m1p303_ctGRe_m2p956_cHQ3_m4p581_ctWRe_m3p256_cleQt3Re_6p579_cleQt1Re_15p161_cQl3_m34p008_cbWRe_6p324_cHtbRe_m2p573
+    set param_card ctGIm -1.303
+    set param_card ctGRe -2.956
+    set param_card cHQ3 -4.581
+    set param_card ctWRe -3.256
+    set param_card cleQt3Re 6.579
+    set param_card cleQt1Re 15.161
+    set param_card cQl3 -34.008
+    set param_card cbWRe 6.324
+    set param_card cHtbRe -2.573
+
+
+launch --rwgt_name=EFTrwgt67_ctGIm_0p51_ctGRe_1p054_cHQ3_m3p359_ctWRe_m4p781_cleQt3Re_m13p269_cleQt1Re_m17p906_cQl3_m22p089_cbWRe_17p289_cHtbRe_5p765
+    set param_card ctGIm 0.51
+    set param_card ctGRe 1.054
+    set param_card cHQ3 -3.359
+    set param_card ctWRe -4.781
+    set param_card cleQt3Re -13.269
+    set param_card cleQt1Re -17.906
+    set param_card cQl3 -22.089
+    set param_card cbWRe 17.289
+    set param_card cHtbRe 5.765
+
+
+launch --rwgt_name=EFTrwgt68_ctGIm_m0p155_ctGRe_m2p346_cHQ3_0p5_ctWRe_3p774_cleQt3Re_m29p777_cleQt1Re_m21p93_cQl3_m8p83_cbWRe_m8p891_cHtbRe_8p606
+    set param_card ctGIm -0.155
+    set param_card ctGRe -2.346
+    set param_card cHQ3 0.5
+    set param_card ctWRe 3.774
+    set param_card cleQt3Re -29.777
+    set param_card cleQt1Re -21.93
+    set param_card cQl3 -8.83
+    set param_card cbWRe -8.891
+    set param_card cHtbRe 8.606
+
+
+launch --rwgt_name=EFTrwgt69_ctGIm_2p481_ctGRe_2p631_cHQ3_m2p039_ctWRe_2p697_cleQt3Re_m6p108_cleQt1Re_m34p197_cQl3_m32p089_cbWRe_10p928_cHtbRe_7p585
+    set param_card ctGIm 2.481
+    set param_card ctGRe 2.631
+    set param_card cHQ3 -2.039
+    set param_card ctWRe 2.697
+    set param_card cleQt3Re -6.108
+    set param_card cleQt1Re -34.197
+    set param_card cQl3 -32.089
+    set param_card cbWRe 10.928
+    set param_card cHtbRe 7.585
+
+
+launch --rwgt_name=EFTrwgt70_ctGIm_m1p711_ctGRe_0p066_cHQ3_m2p12_ctWRe_3p073_cleQt3Re_8p02_cleQt1Re_34p052_cQl3_m15p263_cbWRe_0p509_cHtbRe_m19p136
+    set param_card ctGIm -1.711
+    set param_card ctGRe 0.066
+    set param_card cHQ3 -2.12
+    set param_card ctWRe 3.073
+    set param_card cleQt3Re 8.02
+    set param_card cleQt1Re 34.052
+    set param_card cQl3 -15.263
+    set param_card cbWRe 0.509
+    set param_card cHtbRe -19.136
+
+
+launch --rwgt_name=EFTrwgt71_ctGIm_m0p481_ctGRe_m1p706_cHQ3_m3p055_ctWRe_m3p163_cleQt3Re_19p82_cleQt1Re_18p46_cQl3_m24p952_cbWRe_m13p017_cHtbRe_16p794
+    set param_card ctGIm -0.481
+    set param_card ctGRe -1.706
+    set param_card cHQ3 -3.055
+    set param_card ctWRe -3.163
+    set param_card cleQt3Re 19.82
+    set param_card cleQt1Re 18.46
+    set param_card cQl3 -24.952
+    set param_card cbWRe -13.017
+    set param_card cHtbRe 16.794
+
+
+launch --rwgt_name=EFTrwgt72_ctGIm_m0p164_ctGRe_2p848_cHQ3_2p595_ctWRe_1p625_cleQt3Re_13p644_cleQt1Re_m28p366_cQl3_37p714_cbWRe_3p807_cHtbRe_m4p691
+    set param_card ctGIm -0.164
+    set param_card ctGRe 2.848
+    set param_card cHQ3 2.595
+    set param_card ctWRe 1.625
+    set param_card cleQt3Re 13.644
+    set param_card cleQt1Re -28.366
+    set param_card cQl3 37.714
+    set param_card cbWRe 3.807
+    set param_card cHtbRe -4.691
+
+
+launch --rwgt_name=EFTrwgt73_ctGIm_m2p587_ctGRe_0p574_cHQ3_1p164_ctWRe_4p064_cleQt3Re_m27p859_cleQt1Re_m13p341_cQl3_19p93_cbWRe_m14p583_cHtbRe_14p095
+    set param_card ctGIm -2.587
+    set param_card ctGRe 0.574
+    set param_card cHQ3 1.164
+    set param_card ctWRe 4.064
+    set param_card cleQt3Re -27.859
+    set param_card cleQt1Re -13.341
+    set param_card cQl3 19.93
+    set param_card cbWRe -14.583
+    set param_card cHtbRe 14.095
+
+
+launch --rwgt_name=EFTrwgt74_ctGIm_0p373_ctGRe_m1p958_cHQ3_0p961_ctWRe_4p258_cleQt3Re_m9p615_cleQt1Re_m2p304_cQl3_8p612_cbWRe_m11p45_cHtbRe_7p827
+    set param_card ctGIm 0.373
+    set param_card ctGRe -1.958
+    set param_card cHQ3 0.961
+    set param_card ctWRe 4.258
+    set param_card cleQt3Re -9.615
+    set param_card cleQt1Re -2.304
+    set param_card cQl3 8.612
+    set param_card cbWRe -11.45
+    set param_card cHtbRe 7.827
+
+
+launch --rwgt_name=EFTrwgt75_ctGIm_m1p619_ctGRe_2p873_cHQ3_m1p609_ctWRe_m3p108_cleQt3Re_m25p418_cleQt1Re_25p735_cQl3_7p205_cbWRe_m17p227_cHtbRe_4p515
+    set param_card ctGIm -1.619
+    set param_card ctGRe 2.873
+    set param_card cHQ3 -1.609
+    set param_card ctWRe -3.108
+    set param_card cleQt3Re -25.418
+    set param_card cleQt1Re 25.735
+    set param_card cQl3 7.205
+    set param_card cbWRe -17.227
+    set param_card cHtbRe 4.515
+
+
+launch --rwgt_name=EFTrwgt76_ctGIm_1p33_ctGRe_m2p936_cHQ3_m0p168_ctWRe_1p678_cleQt3Re_m15p903_cleQt1Re_8p513_cQl3_m36p947_cbWRe_6p93_cHtbRe_10p609
+    set param_card ctGIm 1.33
+    set param_card ctGRe -2.936
+    set param_card cHQ3 -0.168
+    set param_card ctWRe 1.678
+    set param_card cleQt3Re -15.903
+    set param_card cleQt1Re 8.513
+    set param_card cQl3 -36.947
+    set param_card cbWRe 6.93
+    set param_card cHtbRe 10.609
+
+
+launch --rwgt_name=EFTrwgt77_ctGIm_m2p831_ctGRe_m1p83_cHQ3_m4p73_ctWRe_m1p508_cleQt3Re_15p752_cleQt1Re_m1p768_cQl3_m5p077_cbWRe_6p766_cHtbRe_m13p376
+    set param_card ctGIm -2.831
+    set param_card ctGRe -1.83
+    set param_card cHQ3 -4.73
+    set param_card ctWRe -1.508
+    set param_card cleQt3Re 15.752
+    set param_card cleQt1Re -1.768
+    set param_card cQl3 -5.077
+    set param_card cbWRe 6.766
+    set param_card cHtbRe -13.376
+
+
+launch --rwgt_name=EFTrwgt78_ctGIm_0p995_ctGRe_0p959_cHQ3_1p493_ctWRe_m0p449_cleQt3Re_m25p923_cleQt1Re_m12p484_cQl3_m21p208_cbWRe_m1p651_cHtbRe_m3p763
+    set param_card ctGIm 0.995
+    set param_card ctGRe 0.959
+    set param_card cHQ3 1.493
+    set param_card ctWRe -0.449
+    set param_card cleQt3Re -25.923
+    set param_card cleQt1Re -12.484
+    set param_card cQl3 -21.208
+    set param_card cbWRe -1.651
+    set param_card cHtbRe -3.763
+
+
+launch --rwgt_name=EFTrwgt79_ctGIm_m0p877_ctGRe_m0p255_cHQ3_1p686_ctWRe_1p355_cleQt3Re_9p073_cleQt1Re_18p233_cQl3_28p505_cbWRe_3p763_cHtbRe_16p659
+    set param_card ctGIm -0.877
+    set param_card ctGRe -0.255
+    set param_card cHQ3 1.686
+    set param_card ctWRe 1.355
+    set param_card cleQt3Re 9.073
+    set param_card cleQt1Re 18.233
+    set param_card cQl3 28.505
+    set param_card cbWRe 3.763
+    set param_card cHtbRe 16.659
+

@@ -1,0 +1,3633 @@
+# Reference point: {'ctGIm': -0.9, 'ctGRe': -0.8, 'cQj38': 1.0, 'cQj18': 2.5, 'cQu8': 0.5, 'cQd8': 1.0, 'ctj8': 1.2, 'ctu8': 1.0, 'ctd8': 2.0, 'cQj31': 1.2, 'cQj11': 0.8, 'cQu1': 0.5, 'cQd1': 0.8, 'ctj1': 2.0, 'ctu1': 1.0, 'ctd1': 1.2}
+
+change rwgt_dir rwgt
+
+launch --rwgt_name=reference_point
+
+launch --rwgt_name=sm_point
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card cQj38 0.0 
+    set param_card cQj18 0.0 
+    set param_card cQu8 0.0 
+    set param_card cQd8 0.0 
+    set param_card ctj8 0.0 
+    set param_card ctu8 0.0 
+    set param_card ctd8 0.0 
+    set param_card cQj31 0.0 
+    set param_card cQj11 0.0 
+    set param_card cQu1 0.0 
+    set param_card cQd1 0.0 
+    set param_card ctj1 0.0 
+    set param_card ctu1 0.0 
+    set param_card ctd1 0.0 
+
+launch --rwgt_name=EFTrwgt0_ctGIm_0p722_ctGRe_0p447_cQj38_m1p043_cQj18_3p044_cQu8_0p788_cQd8_m0p052_ctj8_m1p961_ctu8_1p283_ctd8_3p647_cQj31_m2p326_cQj11_0p557_cQu1_0p875_cQd1_m1p49_ctj1_m3p732_ctu1_m0p119_ctd1_m0p91
+    set param_card ctGIm 0.722
+    set param_card ctGRe 0.447
+    set param_card cQj38 -1.043
+    set param_card cQj18 3.044
+    set param_card cQu8 0.788
+    set param_card cQd8 -0.052
+    set param_card ctj8 -1.961
+    set param_card ctu8 1.283
+    set param_card ctd8 3.647
+    set param_card cQj31 -2.326
+    set param_card cQj11 0.557
+    set param_card cQu1 0.875
+    set param_card cQd1 -1.49
+    set param_card ctj1 -3.732
+    set param_card ctu1 -0.119
+    set param_card ctd1 -0.91
+
+
+launch --rwgt_name=EFTrwgt1_ctGIm_m0p054_ctGRe_m1p388_cQj38_m1p802_cQj18_1p864_cQu8_m0p405_cQd8_1p459_ctj8_m2p186_ctu8_0p675_ctd8_m3p12_cQj31_m1p229_cQj11_0p065_cQu1_0p711_cQd1_m0p393_ctj1_3p28_ctu1_0p503_ctd1_m2p063
+    set param_card ctGIm -0.054
+    set param_card ctGRe -1.388
+    set param_card cQj38 -1.802
+    set param_card cQj18 1.864
+    set param_card cQu8 -0.405
+    set param_card cQd8 1.459
+    set param_card ctj8 -2.186
+    set param_card ctu8 0.675
+    set param_card ctd8 -3.12
+    set param_card cQj31 -1.229
+    set param_card cQj11 0.065
+    set param_card cQu1 0.711
+    set param_card cQd1 -0.393
+    set param_card ctj1 3.28
+    set param_card ctu1 0.503
+    set param_card ctd1 -2.063
+
+
+launch --rwgt_name=EFTrwgt2_ctGIm_0p104_ctGRe_m0p053_cQj38_1p532_cQj18_3p057_cQu8_0p319_cQd8_m1p013_ctj8_0p631_ctu8_m0p952_ctd8_m2p426_cQj31_m0p305_cQj11_0p316_cQu1_0p609_cQd1_1p445_ctj1_m1p305_ctu1_m1p477_ctd1_m0p384
+    set param_card ctGIm 0.104
+    set param_card ctGRe -0.053
+    set param_card cQj38 1.532
+    set param_card cQj18 3.057
+    set param_card cQu8 0.319
+    set param_card cQd8 -1.013
+    set param_card ctj8 0.631
+    set param_card ctu8 -0.952
+    set param_card ctd8 -2.426
+    set param_card cQj31 -0.305
+    set param_card cQj11 0.316
+    set param_card cQu1 0.609
+    set param_card cQd1 1.445
+    set param_card ctj1 -1.305
+    set param_card ctu1 -1.477
+    set param_card ctd1 -0.384
+
+
+launch --rwgt_name=EFTrwgt3_ctGIm_m0p449_ctGRe_0p467_cQj38_1p862_cQj18_2p361_cQu8_0p963_cQd8_0p506_ctj8_m1p559_ctu8_m1p207_ctd8_3p819_cQj31_m0p237_cQj11_m0p229_cQu1_0p639_cQd1_1p075_ctj1_m3p409_ctu1_m0p6_ctd1_m0p52
+    set param_card ctGIm -0.449
+    set param_card ctGRe 0.467
+    set param_card cQj38 1.862
+    set param_card cQj18 2.361
+    set param_card cQu8 0.963
+    set param_card cQd8 0.506
+    set param_card ctj8 -1.559
+    set param_card ctu8 -1.207
+    set param_card ctd8 3.819
+    set param_card cQj31 -0.237
+    set param_card cQj11 -0.229
+    set param_card cQu1 0.639
+    set param_card cQd1 1.075
+    set param_card ctj1 -3.409
+    set param_card ctu1 -0.6
+    set param_card ctd1 -0.52
+
+
+launch --rwgt_name=EFTrwgt4_ctGIm_m0p576_ctGRe_0p797_cQj38_1p94_cQj18_0p529_cQu8_m0p521_cQd8_0p278_ctj8_m1p268_ctu8_m0p618_ctd8_m2p538_cQj31_1p397_cQj11_1p068_cQu1_0p0_cQd1_m0p655_ctj1_0p145_ctu1_m1p182_ctd1_1p466
+    set param_card ctGIm -0.576
+    set param_card ctGRe 0.797
+    set param_card cQj38 1.94
+    set param_card cQj18 0.529
+    set param_card cQu8 -0.521
+    set param_card cQd8 0.278
+    set param_card ctj8 -1.268
+    set param_card ctu8 -0.618
+    set param_card ctd8 -2.538
+    set param_card cQj31 1.397
+    set param_card cQj11 1.068
+    set param_card cQu1 0.0
+    set param_card cQd1 -0.655
+    set param_card ctj1 0.145
+    set param_card ctu1 -1.182
+    set param_card ctd1 1.466
+
+
+launch --rwgt_name=EFTrwgt5_ctGIm_1p264_ctGRe_m0p797_cQj38_m1p43_cQj18_3p677_cQu8_m0p288_cQd8_m0p271_ctj8_1p577_ctu8_m1p78_ctd8_1p278_cQj31_m1p174_cQj11_m1p588_cQu1_0p053_cQd1_1p401_ctj1_2p96_ctu1_m0p909_ctd1_2p035
+    set param_card ctGIm 1.264
+    set param_card ctGRe -0.797
+    set param_card cQj38 -1.43
+    set param_card cQj18 3.677
+    set param_card cQu8 -0.288
+    set param_card cQd8 -0.271
+    set param_card ctj8 1.577
+    set param_card ctu8 -1.78
+    set param_card ctd8 1.278
+    set param_card cQj31 -1.174
+    set param_card cQj11 -1.588
+    set param_card cQu1 0.053
+    set param_card cQd1 1.401
+    set param_card ctj1 2.96
+    set param_card ctu1 -0.909
+    set param_card ctd1 2.035
+
+
+launch --rwgt_name=EFTrwgt6_ctGIm_m1p229_ctGRe_m0p126_cQj38_1p431_cQj18_0p604_cQu8_0p971_cQd8_m1p404_ctj8_m0p806_ctu8_1p103_ctd8_1p476_cQj31_1p041_cQj11_0p654_cQu1_0p877_cQd1_m0p36_ctj1_0p324_ctu1_m1p005_ctd1_m1p015
+    set param_card ctGIm -1.229
+    set param_card ctGRe -0.126
+    set param_card cQj38 1.431
+    set param_card cQj18 0.604
+    set param_card cQu8 0.971
+    set param_card cQd8 -1.404
+    set param_card ctj8 -0.806
+    set param_card ctu8 1.103
+    set param_card ctd8 1.476
+    set param_card cQj31 1.041
+    set param_card cQj11 0.654
+    set param_card cQu1 0.877
+    set param_card cQd1 -0.36
+    set param_card ctj1 0.324
+    set param_card ctu1 -1.005
+    set param_card ctd1 -1.015
+
+
+launch --rwgt_name=EFTrwgt7_ctGIm_m0p336_ctGRe_1p451_cQj38_0p426_cQj18_3p722_cQu8_m0p861_cQd8_m1p612_ctj8_0p842_ctu8_m0p915_ctd8_2p293_cQj31_m0p073_cQj11_m1p389_cQu1_0p568_cQd1_m0p904_ctj1_m2p227_ctu1_1p054_ctd1_m1p893
+    set param_card ctGIm -0.336
+    set param_card ctGRe 1.451
+    set param_card cQj38 0.426
+    set param_card cQj18 3.722
+    set param_card cQu8 -0.861
+    set param_card cQd8 -1.612
+    set param_card ctj8 0.842
+    set param_card ctu8 -0.915
+    set param_card ctd8 2.293
+    set param_card cQj31 -0.073
+    set param_card cQj11 -1.389
+    set param_card cQu1 0.568
+    set param_card cQd1 -0.904
+    set param_card ctj1 -2.227
+    set param_card ctu1 1.054
+    set param_card ctd1 -1.893
+
+
+launch --rwgt_name=EFTrwgt8_ctGIm_m0p81_ctGRe_0p555_cQj38_m1p839_cQj18_4p761_cQu8_0p24_cQd8_m1p594_ctj8_m1p296_ctu8_m0p6_ctd8_m1p612_cQj31_2p294_cQj11_m1p521_cQu1_0p836_cQd1_0p142_ctj1_m2p968_ctu1_m0p076_ctd1_1p002
+    set param_card ctGIm -0.81
+    set param_card ctGRe 0.555
+    set param_card cQj38 -1.839
+    set param_card cQj18 4.761
+    set param_card cQu8 0.24
+    set param_card cQd8 -1.594
+    set param_card ctj8 -1.296
+    set param_card ctu8 -0.6
+    set param_card ctd8 -1.612
+    set param_card cQj31 2.294
+    set param_card cQj11 -1.521
+    set param_card cQu1 0.836
+    set param_card cQd1 0.142
+    set param_card ctj1 -2.968
+    set param_card ctu1 -0.076
+    set param_card ctd1 1.002
+
+
+launch --rwgt_name=EFTrwgt9_ctGIm_m1p476_ctGRe_m0p792_cQj38_m1p563_cQj18_4p714_cQu8_m0p806_cQd8_m1p674_ctj8_m1p917_ctu8_m1p239_ctd8_m0p443_cQj31_m0p059_cQj11_0p956_cQu1_m0p4_cQd1_0p614_ctj1_m0p192_ctu1_m0p708_ctd1_m2p332
+    set param_card ctGIm -1.476
+    set param_card ctGRe -0.792
+    set param_card cQj38 -1.563
+    set param_card cQj18 4.714
+    set param_card cQu8 -0.806
+    set param_card cQd8 -1.674
+    set param_card ctj8 -1.917
+    set param_card ctu8 -1.239
+    set param_card ctd8 -0.443
+    set param_card cQj31 -0.059
+    set param_card cQj11 0.956
+    set param_card cQu1 -0.4
+    set param_card cQd1 0.614
+    set param_card ctj1 -0.192
+    set param_card ctu1 -0.708
+    set param_card ctd1 -2.332
+
+
+launch --rwgt_name=EFTrwgt10_ctGIm_0p372_ctGRe_0p248_cQj38_1p821_cQj18_2p111_cQu8_0p212_cQd8_m0p076_ctj8_m1p012_ctu8_m0p081_ctd8_0p048_cQj31_0p47_cQj11_m0p757_cQu1_m0p679_cQd1_1p124_ctj1_m3p056_ctu1_0p329_ctd1_0p745
+    set param_card ctGIm 0.372
+    set param_card ctGRe 0.248
+    set param_card cQj38 1.821
+    set param_card cQj18 2.111
+    set param_card cQu8 0.212
+    set param_card cQd8 -0.076
+    set param_card ctj8 -1.012
+    set param_card ctu8 -0.081
+    set param_card ctd8 0.048
+    set param_card cQj31 0.47
+    set param_card cQj11 -0.757
+    set param_card cQu1 -0.679
+    set param_card cQd1 1.124
+    set param_card ctj1 -3.056
+    set param_card ctu1 0.329
+    set param_card ctd1 0.745
+
+
+launch --rwgt_name=EFTrwgt11_ctGIm_m0p31_ctGRe_0p491_cQj38_m0p288_cQj18_2p514_cQu8_m0p148_cQd8_1p46_ctj8_m1p693_ctu8_1p174_ctd8_m2p667_cQj31_1p687_cQj11_0p136_cQu1_m0p587_cQd1_m0p3_ctj1_1p085_ctu1_m0p413_ctd1_m0p854
+    set param_card ctGIm -0.31
+    set param_card ctGRe 0.491
+    set param_card cQj38 -0.288
+    set param_card cQj18 2.514
+    set param_card cQu8 -0.148
+    set param_card cQd8 1.46
+    set param_card ctj8 -1.693
+    set param_card ctu8 1.174
+    set param_card ctd8 -2.667
+    set param_card cQj31 1.687
+    set param_card cQj11 0.136
+    set param_card cQu1 -0.587
+    set param_card cQd1 -0.3
+    set param_card ctj1 1.085
+    set param_card ctu1 -0.413
+    set param_card ctd1 -0.854
+
+
+launch --rwgt_name=EFTrwgt12_ctGIm_m1p074_ctGRe_m1p078_cQj38_m1p041_cQj18_1p889_cQu8_0p478_cQd8_m1p332_ctj8_0p102_ctu8_m0p417_ctd8_2p82_cQj31_0p361_cQj11_0p131_cQu1_0p771_cQd1_1p056_ctj1_m2p453_ctu1_m1p648_ctd1_m0p281
+    set param_card ctGIm -1.074
+    set param_card ctGRe -1.078
+    set param_card cQj38 -1.041
+    set param_card cQj18 1.889
+    set param_card cQu8 0.478
+    set param_card cQd8 -1.332
+    set param_card ctj8 0.102
+    set param_card ctu8 -0.417
+    set param_card ctd8 2.82
+    set param_card cQj31 0.361
+    set param_card cQj11 0.131
+    set param_card cQu1 0.771
+    set param_card cQd1 1.056
+    set param_card ctj1 -2.453
+    set param_card ctu1 -1.648
+    set param_card ctd1 -0.281
+
+
+launch --rwgt_name=EFTrwgt13_ctGIm_m0p812_ctGRe_0p21_cQj38_m1p598_cQj18_0p574_cQu8_m0p764_cQd8_0p567_ctj8_2p214_ctu8_1p681_ctd8_m2p747_cQj31_m1p278_cQj11_m0p495_cQu1_m0p943_cQd1_m1p118_ctj1_m1p836_ctu1_m0p235_ctd1_2p201
+    set param_card ctGIm -0.812
+    set param_card ctGRe 0.21
+    set param_card cQj38 -1.598
+    set param_card cQj18 0.574
+    set param_card cQu8 -0.764
+    set param_card cQd8 0.567
+    set param_card ctj8 2.214
+    set param_card ctu8 1.681
+    set param_card ctd8 -2.747
+    set param_card cQj31 -1.278
+    set param_card cQj11 -0.495
+    set param_card cQu1 -0.943
+    set param_card cQd1 -1.118
+    set param_card ctj1 -1.836
+    set param_card ctu1 -0.235
+    set param_card ctd1 2.201
+
+
+launch --rwgt_name=EFTrwgt14_ctGIm_m1p278_ctGRe_m0p282_cQj38_m0p15_cQj18_m2p987_cQu8_m0p439_cQd8_1p146_ctj8_m2p188_ctu8_1p486_ctd8_m3p148_cQj31_1p984_cQj11_m0p375_cQu1_m0p18_cQd1_0p87_ctj1_m0p265_ctu1_m0p227_ctd1_m2p25
+    set param_card ctGIm -1.278
+    set param_card ctGRe -0.282
+    set param_card cQj38 -0.15
+    set param_card cQj18 -2.987
+    set param_card cQu8 -0.439
+    set param_card cQd8 1.146
+    set param_card ctj8 -2.188
+    set param_card ctu8 1.486
+    set param_card ctd8 -3.148
+    set param_card cQj31 1.984
+    set param_card cQj11 -0.375
+    set param_card cQu1 -0.18
+    set param_card cQd1 0.87
+    set param_card ctj1 -0.265
+    set param_card ctu1 -0.227
+    set param_card ctd1 -2.25
+
+
+launch --rwgt_name=EFTrwgt15_ctGIm_0p145_ctGRe_m1p246_cQj38_0p674_cQj18_m0p516_cQu8_0p13_cQd8_m1p703_ctj8_1p439_ctu8_m0p951_ctd8_m3p993_cQj31_m1p816_cQj11_1p488_cQu1_0p027_cQd1_m1p324_ctj1_m1p357_ctu1_m1p142_ctd1_0p377
+    set param_card ctGIm 0.145
+    set param_card ctGRe -1.246
+    set param_card cQj38 0.674
+    set param_card cQj18 -0.516
+    set param_card cQu8 0.13
+    set param_card cQd8 -1.703
+    set param_card ctj8 1.439
+    set param_card ctu8 -0.951
+    set param_card ctd8 -3.993
+    set param_card cQj31 -1.816
+    set param_card cQj11 1.488
+    set param_card cQu1 0.027
+    set param_card cQd1 -1.324
+    set param_card ctj1 -1.357
+    set param_card ctu1 -1.142
+    set param_card ctd1 0.377
+
+
+launch --rwgt_name=EFTrwgt16_ctGIm_0p595_ctGRe_m0p076_cQj38_m0p394_cQj18_m0p321_cQu8_m0p588_cQd8_m0p733_ctj8_1p81_ctu8_1p448_ctd8_2p225_cQj31_m2p149_cQj11_0p69_cQu1_m0p309_cQd1_0p753_ctj1_3p96_ctu1_m1p879_ctd1_2p199
+    set param_card ctGIm 0.595
+    set param_card ctGRe -0.076
+    set param_card cQj38 -0.394
+    set param_card cQj18 -0.321
+    set param_card cQu8 -0.588
+    set param_card cQd8 -0.733
+    set param_card ctj8 1.81
+    set param_card ctu8 1.448
+    set param_card ctd8 2.225
+    set param_card cQj31 -2.149
+    set param_card cQj11 0.69
+    set param_card cQu1 -0.309
+    set param_card cQd1 0.753
+    set param_card ctj1 3.96
+    set param_card ctu1 -1.879
+    set param_card ctd1 2.199
+
+
+launch --rwgt_name=EFTrwgt17_ctGIm_m0p759_ctGRe_1p553_cQj38_0p12_cQj18_m3p939_cQu8_m0p495_cQd8_1p475_ctj8_0p866_ctu8_m0p183_ctd8_0p195_cQj31_m1p539_cQj11_m0p909_cQu1_0p677_cQd1_m1p501_ctj1_m0p841_ctu1_0p785_ctd1_m0p741
+    set param_card ctGIm -0.759
+    set param_card ctGRe 1.553
+    set param_card cQj38 0.12
+    set param_card cQj18 -3.939
+    set param_card cQu8 -0.495
+    set param_card cQd8 1.475
+    set param_card ctj8 0.866
+    set param_card ctu8 -0.183
+    set param_card ctd8 0.195
+    set param_card cQj31 -1.539
+    set param_card cQj11 -0.909
+    set param_card cQu1 0.677
+    set param_card cQd1 -1.501
+    set param_card ctj1 -0.841
+    set param_card ctu1 0.785
+    set param_card ctd1 -0.741
+
+
+launch --rwgt_name=EFTrwgt18_ctGIm_0p427_ctGRe_m0p366_cQj38_m0p386_cQj18_m2p056_cQu8_m0p253_cQd8_m0p598_ctj8_m0p494_ctu8_m0p205_ctd8_3p92_cQj31_1p013_cQj11_m0p484_cQu1_0p471_cQd1_1p285_ctj1_m1p149_ctu1_m1p69_ctd1_2p387
+    set param_card ctGIm 0.427
+    set param_card ctGRe -0.366
+    set param_card cQj38 -0.386
+    set param_card cQj18 -2.056
+    set param_card cQu8 -0.253
+    set param_card cQd8 -0.598
+    set param_card ctj8 -0.494
+    set param_card ctu8 -0.205
+    set param_card ctd8 3.92
+    set param_card cQj31 1.013
+    set param_card cQj11 -0.484
+    set param_card cQu1 0.471
+    set param_card cQd1 1.285
+    set param_card ctj1 -1.149
+    set param_card ctu1 -1.69
+    set param_card ctd1 2.387
+
+
+launch --rwgt_name=EFTrwgt19_ctGIm_m0p89_ctGRe_0p767_cQj38_0p419_cQj18_m0p965_cQu8_m0p833_cQd8_m1p87_ctj8_m0p396_ctu8_m1p035_ctd8_m3p479_cQj31_2p047_cQj11_1p415_cQu1_m0p544_cQd1_m0p231_ctj1_0p085_ctu1_0p439_ctd1_m0p882
+    set param_card ctGIm -0.89
+    set param_card ctGRe 0.767
+    set param_card cQj38 0.419
+    set param_card cQj18 -0.965
+    set param_card cQu8 -0.833
+    set param_card cQd8 -1.87
+    set param_card ctj8 -0.396
+    set param_card ctu8 -1.035
+    set param_card ctd8 -3.479
+    set param_card cQj31 2.047
+    set param_card cQj11 1.415
+    set param_card cQu1 -0.544
+    set param_card cQd1 -0.231
+    set param_card ctj1 0.085
+    set param_card ctu1 0.439
+    set param_card ctd1 -0.882
+
+
+launch --rwgt_name=EFTrwgt20_ctGIm_m0p025_ctGRe_m0p564_cQj38_m0p84_cQj18_m2p442_cQu8_0p154_cQd8_m1p44_ctj8_m0p794_ctu8_0p118_ctd8_1p373_cQj31_m1p467_cQj11_0p033_cQu1_0p426_cQd1_m0p317_ctj1_m3p418_ctu1_m1p865_ctd1_1p747
+    set param_card ctGIm -0.025
+    set param_card ctGRe -0.564
+    set param_card cQj38 -0.84
+    set param_card cQj18 -2.442
+    set param_card cQu8 0.154
+    set param_card cQd8 -1.44
+    set param_card ctj8 -0.794
+    set param_card ctu8 0.118
+    set param_card ctd8 1.373
+    set param_card cQj31 -1.467
+    set param_card cQj11 0.033
+    set param_card cQu1 0.426
+    set param_card cQd1 -0.317
+    set param_card ctj1 -3.418
+    set param_card ctu1 -1.865
+    set param_card ctd1 1.747
+
+
+launch --rwgt_name=EFTrwgt21_ctGIm_0p723_ctGRe_0p028_cQj38_m1p368_cQj18_4p94_cQu8_0p475_cQd8_m0p581_ctj8_0p026_ctu8_m0p392_ctd8_0p143_cQj31_m0p326_cQj11_1p161_cQu1_m0p846_cQd1_0p861_ctj1_2p226_ctu1_m0p196_ctd1_m1p074
+    set param_card ctGIm 0.723
+    set param_card ctGRe 0.028
+    set param_card cQj38 -1.368
+    set param_card cQj18 4.94
+    set param_card cQu8 0.475
+    set param_card cQd8 -0.581
+    set param_card ctj8 0.026
+    set param_card ctu8 -0.392
+    set param_card ctd8 0.143
+    set param_card cQj31 -0.326
+    set param_card cQj11 1.161
+    set param_card cQu1 -0.846
+    set param_card cQd1 0.861
+    set param_card ctj1 2.226
+    set param_card ctu1 -0.196
+    set param_card ctd1 -1.074
+
+
+launch --rwgt_name=EFTrwgt22_ctGIm_m1p497_ctGRe_0p316_cQj38_1p656_cQj18_m3p759_cQu8_m0p223_cQd8_m0p515_ctj8_0p372_ctu8_m1p97_ctd8_0p913_cQj31_m2p054_cQj11_m0p53_cQu1_m0p731_cQd1_m0p705_ctj1_m0p6_ctu1_0p767_ctd1_m0p11
+    set param_card ctGIm -1.497
+    set param_card ctGRe 0.316
+    set param_card cQj38 1.656
+    set param_card cQj18 -3.759
+    set param_card cQu8 -0.223
+    set param_card cQd8 -0.515
+    set param_card ctj8 0.372
+    set param_card ctu8 -1.97
+    set param_card ctd8 0.913
+    set param_card cQj31 -2.054
+    set param_card cQj11 -0.53
+    set param_card cQu1 -0.731
+    set param_card cQd1 -0.705
+    set param_card ctj1 -0.6
+    set param_card ctu1 0.767
+    set param_card ctd1 -0.11
+
+
+launch --rwgt_name=EFTrwgt23_ctGIm_m0p777_ctGRe_m0p294_cQj38_0p185_cQj18_m2p486_cQu8_0p727_cQd8_m1p547_ctj8_0p89_ctu8_m0p829_ctd8_m0p879_cQj31_m0p593_cQj11_1p229_cQu1_m0p168_cQd1_0p272_ctj1_m1p692_ctu1_1p291_ctd1_1p829
+    set param_card ctGIm -0.777
+    set param_card ctGRe -0.294
+    set param_card cQj38 0.185
+    set param_card cQj18 -2.486
+    set param_card cQu8 0.727
+    set param_card cQd8 -1.547
+    set param_card ctj8 0.89
+    set param_card ctu8 -0.829
+    set param_card ctd8 -0.879
+    set param_card cQj31 -0.593
+    set param_card cQj11 1.229
+    set param_card cQu1 -0.168
+    set param_card cQd1 0.272
+    set param_card ctj1 -1.692
+    set param_card ctu1 1.291
+    set param_card ctd1 1.829
+
+
+launch --rwgt_name=EFTrwgt24_ctGIm_m1p216_ctGRe_m0p663_cQj38_1p37_cQj18_0p479_cQu8_m0p003_cQd8_m0p0_ctj8_0p371_ctu8_m0p895_ctd8_m3p543_cQj31_0p996_cQj11_m0p165_cQu1_m0p837_cQd1_0p712_ctj1_0p444_ctu1_m0p748_ctd1_m1p644
+    set param_card ctGIm -1.216
+    set param_card ctGRe -0.663
+    set param_card cQj38 1.37
+    set param_card cQj18 0.479
+    set param_card cQu8 -0.003
+    set param_card cQd8 -0.0
+    set param_card ctj8 0.371
+    set param_card ctu8 -0.895
+    set param_card ctd8 -3.543
+    set param_card cQj31 0.996
+    set param_card cQj11 -0.165
+    set param_card cQu1 -0.837
+    set param_card cQd1 0.712
+    set param_card ctj1 0.444
+    set param_card ctu1 -0.748
+    set param_card ctd1 -1.644
+
+
+launch --rwgt_name=EFTrwgt25_ctGIm_m1p141_ctGRe_m1p211_cQj38_m1p081_cQj18_m0p45_cQu8_m0p871_cQd8_0p626_ctj8_m1p357_ctu8_m0p996_ctd8_m1p705_cQj31_m1p777_cQj11_m0p797_cQu1_0p893_cQd1_m0p634_ctj1_m3p722_ctu1_m0p761_ctd1_m0p301
+    set param_card ctGIm -1.141
+    set param_card ctGRe -1.211
+    set param_card cQj38 -1.081
+    set param_card cQj18 -0.45
+    set param_card cQu8 -0.871
+    set param_card cQd8 0.626
+    set param_card ctj8 -1.357
+    set param_card ctu8 -0.996
+    set param_card ctd8 -1.705
+    set param_card cQj31 -1.777
+    set param_card cQj11 -0.797
+    set param_card cQu1 0.893
+    set param_card cQd1 -0.634
+    set param_card ctj1 -3.722
+    set param_card ctu1 -0.761
+    set param_card ctd1 -0.301
+
+
+launch --rwgt_name=EFTrwgt26_ctGIm_1p313_ctGRe_m0p362_cQj38_m0p977_cQj18_m3p301_cQu8_m0p508_cQd8_0p234_ctj8_0p336_ctu8_0p808_ctd8_m3p54_cQj31_2p018_cQj11_m1p115_cQu1_0p207_cQd1_1p037_ctj1_m3p735_ctu1_0p556_ctd1_m0p918
+    set param_card ctGIm 1.313
+    set param_card ctGRe -0.362
+    set param_card cQj38 -0.977
+    set param_card cQj18 -3.301
+    set param_card cQu8 -0.508
+    set param_card cQd8 0.234
+    set param_card ctj8 0.336
+    set param_card ctu8 0.808
+    set param_card ctd8 -3.54
+    set param_card cQj31 2.018
+    set param_card cQj11 -1.115
+    set param_card cQu1 0.207
+    set param_card cQd1 1.037
+    set param_card ctj1 -3.735
+    set param_card ctu1 0.556
+    set param_card ctd1 -0.918
+
+
+launch --rwgt_name=EFTrwgt27_ctGIm_m0p177_ctGRe_0p888_cQj38_0p894_cQj18_2p337_cQu8_m0p807_cQd8_m0p45_ctj8_m0p356_ctu8_m0p839_ctd8_m3p536_cQj31_0p252_cQj11_0p575_cQu1_0p425_cQd1_0p544_ctj1_m0p819_ctu1_m1p841_ctd1_m1p161
+    set param_card ctGIm -0.177
+    set param_card ctGRe 0.888
+    set param_card cQj38 0.894
+    set param_card cQj18 2.337
+    set param_card cQu8 -0.807
+    set param_card cQd8 -0.45
+    set param_card ctj8 -0.356
+    set param_card ctu8 -0.839
+    set param_card ctd8 -3.536
+    set param_card cQj31 0.252
+    set param_card cQj11 0.575
+    set param_card cQu1 0.425
+    set param_card cQd1 0.544
+    set param_card ctj1 -0.819
+    set param_card ctu1 -1.841
+    set param_card ctd1 -1.161
+
+
+launch --rwgt_name=EFTrwgt28_ctGIm_m1p794_ctGRe_0p581_cQj38_m0p913_cQj18_m1p977_cQu8_m0p193_cQd8_1p902_ctj8_m1p86_ctu8_1p843_ctd8_2p574_cQj31_m1p515_cQj11_m0p871_cQu1_m0p729_cQd1_m1p311_ctj1_2p872_ctu1_m0p716_ctd1_m0p286
+    set param_card ctGIm -1.794
+    set param_card ctGRe 0.581
+    set param_card cQj38 -0.913
+    set param_card cQj18 -1.977
+    set param_card cQu8 -0.193
+    set param_card cQd8 1.902
+    set param_card ctj8 -1.86
+    set param_card ctu8 1.843
+    set param_card ctd8 2.574
+    set param_card cQj31 -1.515
+    set param_card cQj11 -0.871
+    set param_card cQu1 -0.729
+    set param_card cQd1 -1.311
+    set param_card ctj1 2.872
+    set param_card ctu1 -0.716
+    set param_card ctd1 -0.286
+
+
+launch --rwgt_name=EFTrwgt29_ctGIm_0p832_ctGRe_m0p087_cQj38_m0p291_cQj18_m0p368_cQu8_0p102_cQd8_0p333_ctj8_0p405_ctu8_m0p675_ctd8_m1p881_cQj31_0p475_cQj11_m1p37_cQu1_0p592_cQd1_1p211_ctj1_m0p992_ctu1_m0p669_ctd1_0p046
+    set param_card ctGIm 0.832
+    set param_card ctGRe -0.087
+    set param_card cQj38 -0.291
+    set param_card cQj18 -0.368
+    set param_card cQu8 0.102
+    set param_card cQd8 0.333
+    set param_card ctj8 0.405
+    set param_card ctu8 -0.675
+    set param_card ctd8 -1.881
+    set param_card cQj31 0.475
+    set param_card cQj11 -1.37
+    set param_card cQu1 0.592
+    set param_card cQd1 1.211
+    set param_card ctj1 -0.992
+    set param_card ctu1 -0.669
+    set param_card ctd1 0.046
+
+
+launch --rwgt_name=EFTrwgt30_ctGIm_0p524_ctGRe_0p016_cQj38_m1p844_cQj18_m2p58_cQu8_0p88_cQd8_0p799_ctj8_m0p756_ctu8_0p453_ctd8_m3p205_cQj31_m0p561_cQj11_0p54_cQu1_m0p478_cQd1_m0p835_ctj1_m2p049_ctu1_0p6_ctd1_1p595
+    set param_card ctGIm 0.524
+    set param_card ctGRe 0.016
+    set param_card cQj38 -1.844
+    set param_card cQj18 -2.58
+    set param_card cQu8 0.88
+    set param_card cQd8 0.799
+    set param_card ctj8 -0.756
+    set param_card ctu8 0.453
+    set param_card ctd8 -3.205
+    set param_card cQj31 -0.561
+    set param_card cQj11 0.54
+    set param_card cQu1 -0.478
+    set param_card cQd1 -0.835
+    set param_card ctj1 -2.049
+    set param_card ctu1 0.6
+    set param_card ctd1 1.595
+
+
+launch --rwgt_name=EFTrwgt31_ctGIm_m1p347_ctGRe_m1p0_cQj38_m0p203_cQj18_m1p597_cQu8_m0p143_cQd8_m1p047_ctj8_m1p454_ctu8_1p858_ctd8_m2p486_cQj31_0p547_cQj11_1p406_cQu1_m0p598_cQd1_0p781_ctj1_m1p355_ctu1_m1p252_ctd1_m1p63
+    set param_card ctGIm -1.347
+    set param_card ctGRe -1.0
+    set param_card cQj38 -0.203
+    set param_card cQj18 -1.597
+    set param_card cQu8 -0.143
+    set param_card cQd8 -1.047
+    set param_card ctj8 -1.454
+    set param_card ctu8 1.858
+    set param_card ctd8 -2.486
+    set param_card cQj31 0.547
+    set param_card cQj11 1.406
+    set param_card cQu1 -0.598
+    set param_card cQd1 0.781
+    set param_card ctj1 -1.355
+    set param_card ctu1 -1.252
+    set param_card ctd1 -1.63
+
+
+launch --rwgt_name=EFTrwgt32_ctGIm_m0p676_ctGRe_0p175_cQj38_m0p761_cQj18_1p208_cQu8_m0p481_cQd8_0p829_ctj8_0p625_ctu8_1p862_ctd8_m0p531_cQj31_0p828_cQj11_0p118_cQu1_m0p145_cQd1_1p465_ctj1_m1p842_ctu1_m0p682_ctd1_2p354
+    set param_card ctGIm -0.676
+    set param_card ctGRe 0.175
+    set param_card cQj38 -0.761
+    set param_card cQj18 1.208
+    set param_card cQu8 -0.481
+    set param_card cQd8 0.829
+    set param_card ctj8 0.625
+    set param_card ctu8 1.862
+    set param_card ctd8 -0.531
+    set param_card cQj31 0.828
+    set param_card cQj11 0.118
+    set param_card cQu1 -0.145
+    set param_card cQd1 1.465
+    set param_card ctj1 -1.842
+    set param_card ctu1 -0.682
+    set param_card ctd1 2.354
+
+
+launch --rwgt_name=EFTrwgt33_ctGIm_m0p789_ctGRe_m0p137_cQj38_1p657_cQj18_3p054_cQu8_m0p877_cQd8_0p385_ctj8_m1p322_ctu8_1p946_ctd8_m1p807_cQj31_m0p995_cQj11_m0p487_cQu1_m0p688_cQd1_0p882_ctj1_m3p563_ctu1_1p042_ctd1_0p269
+    set param_card ctGIm -0.789
+    set param_card ctGRe -0.137
+    set param_card cQj38 1.657
+    set param_card cQj18 3.054
+    set param_card cQu8 -0.877
+    set param_card cQd8 0.385
+    set param_card ctj8 -1.322
+    set param_card ctu8 1.946
+    set param_card ctd8 -1.807
+    set param_card cQj31 -0.995
+    set param_card cQj11 -0.487
+    set param_card cQu1 -0.688
+    set param_card cQd1 0.882
+    set param_card ctj1 -3.563
+    set param_card ctu1 1.042
+    set param_card ctd1 0.269
+
+
+launch --rwgt_name=EFTrwgt34_ctGIm_0p261_ctGRe_m1p528_cQj38_m0p344_cQj18_m3p118_cQu8_m0p202_cQd8_1p196_ctj8_0p2_ctu8_m1p659_ctd8_m0p637_cQj31_m1p388_cQj11_1p292_cQu1_m0p557_cQd1_0p865_ctj1_m1p317_ctu1_m1p432_ctd1_2p152
+    set param_card ctGIm 0.261
+    set param_card ctGRe -1.528
+    set param_card cQj38 -0.344
+    set param_card cQj18 -3.118
+    set param_card cQu8 -0.202
+    set param_card cQd8 1.196
+    set param_card ctj8 0.2
+    set param_card ctu8 -1.659
+    set param_card ctd8 -0.637
+    set param_card cQj31 -1.388
+    set param_card cQj11 1.292
+    set param_card cQu1 -0.557
+    set param_card cQd1 0.865
+    set param_card ctj1 -1.317
+    set param_card ctu1 -1.432
+    set param_card ctd1 2.152
+
+
+launch --rwgt_name=EFTrwgt35_ctGIm_m1p094_ctGRe_m0p59_cQj38_1p496_cQj18_m0p1_cQu8_0p53_cQd8_m0p575_ctj8_2p334_ctu8_m0p299_ctd8_3p719_cQj31_m1p716_cQj11_0p162_cQu1_m0p44_cQd1_0p504_ctj1_m1p112_ctu1_1p53_ctd1_m0p889
+    set param_card ctGIm -1.094
+    set param_card ctGRe -0.59
+    set param_card cQj38 1.496
+    set param_card cQj18 -0.1
+    set param_card cQu8 0.53
+    set param_card cQd8 -0.575
+    set param_card ctj8 2.334
+    set param_card ctu8 -0.299
+    set param_card ctd8 3.719
+    set param_card cQj31 -1.716
+    set param_card cQj11 0.162
+    set param_card cQu1 -0.44
+    set param_card cQd1 0.504
+    set param_card ctj1 -1.112
+    set param_card ctu1 1.53
+    set param_card ctd1 -0.889
+
+
+launch --rwgt_name=EFTrwgt36_ctGIm_m1p221_ctGRe_m0p974_cQj38_1p524_cQj18_3p312_cQu8_m0p707_cQd8_m1p423_ctj8_0p342_ctu8_m1p972_ctd8_m1p397_cQj31_m2p097_cQj11_m0p459_cQu1_0p547_cQd1_0p188_ctj1_2p306_ctu1_m0p276_ctd1_m0p879
+    set param_card ctGIm -1.221
+    set param_card ctGRe -0.974
+    set param_card cQj38 1.524
+    set param_card cQj18 3.312
+    set param_card cQu8 -0.707
+    set param_card cQd8 -1.423
+    set param_card ctj8 0.342
+    set param_card ctu8 -1.972
+    set param_card ctd8 -1.397
+    set param_card cQj31 -2.097
+    set param_card cQj11 -0.459
+    set param_card cQu1 0.547
+    set param_card cQd1 0.188
+    set param_card ctj1 2.306
+    set param_card ctu1 -0.276
+    set param_card ctd1 -0.879
+
+
+launch --rwgt_name=EFTrwgt37_ctGIm_m0p279_ctGRe_m1p285_cQj38_m0p97_cQj18_0p01_cQu8_m0p96_cQd8_m1p242_ctj8_m0p256_ctu8_0p784_ctd8_m2p925_cQj31_m1p979_cQj11_m1p209_cQu1_0p917_cQd1_0p458_ctj1_m0p931_ctu1_1p748_ctd1_m0p332
+    set param_card ctGIm -0.279
+    set param_card ctGRe -1.285
+    set param_card cQj38 -0.97
+    set param_card cQj18 0.01
+    set param_card cQu8 -0.96
+    set param_card cQd8 -1.242
+    set param_card ctj8 -0.256
+    set param_card ctu8 0.784
+    set param_card ctd8 -2.925
+    set param_card cQj31 -1.979
+    set param_card cQj11 -1.209
+    set param_card cQu1 0.917
+    set param_card cQd1 0.458
+    set param_card ctj1 -0.931
+    set param_card ctu1 1.748
+    set param_card ctd1 -0.332
+
+
+launch --rwgt_name=EFTrwgt38_ctGIm_0p026_ctGRe_0p734_cQj38_1p965_cQj18_m0p531_cQu8_m0p624_cQd8_m0p254_ctj8_1p178_ctu8_1p52_ctd8_2p79_cQj31_0p625_cQj11_0p368_cQu1_0p396_cQd1_m1p138_ctj1_m3p848_ctu1_0p332_ctd1_1p129
+    set param_card ctGIm 0.026
+    set param_card ctGRe 0.734
+    set param_card cQj38 1.965
+    set param_card cQj18 -0.531
+    set param_card cQu8 -0.624
+    set param_card cQd8 -0.254
+    set param_card ctj8 1.178
+    set param_card ctu8 1.52
+    set param_card ctd8 2.79
+    set param_card cQj31 0.625
+    set param_card cQj11 0.368
+    set param_card cQu1 0.396
+    set param_card cQd1 -1.138
+    set param_card ctj1 -3.848
+    set param_card ctu1 0.332
+    set param_card ctd1 1.129
+
+
+launch --rwgt_name=EFTrwgt39_ctGIm_1p701_ctGRe_m1p322_cQj38_1p851_cQj18_1p278_cQu8_m0p284_cQd8_m0p648_ctj8_0p909_ctu8_1p388_ctd8_0p689_cQj31_2p085_cQj11_m0p435_cQu1_m0p564_cQd1_1p025_ctj1_m1p922_ctu1_m0p171_ctd1_m2p124
+    set param_card ctGIm 1.701
+    set param_card ctGRe -1.322
+    set param_card cQj38 1.851
+    set param_card cQj18 1.278
+    set param_card cQu8 -0.284
+    set param_card cQd8 -0.648
+    set param_card ctj8 0.909
+    set param_card ctu8 1.388
+    set param_card ctd8 0.689
+    set param_card cQj31 2.085
+    set param_card cQj11 -0.435
+    set param_card cQu1 -0.564
+    set param_card cQd1 1.025
+    set param_card ctj1 -1.922
+    set param_card ctu1 -0.171
+    set param_card ctd1 -2.124
+
+
+launch --rwgt_name=EFTrwgt40_ctGIm_m0p915_ctGRe_m0p109_cQj38_1p782_cQj18_m4p453_cQu8_m0p156_cQd8_1p047_ctj8_m1p084_ctu8_1p006_ctd8_2p267_cQj31_0p51_cQj11_m1p519_cQu1_m0p857_cQd1_m1p431_ctj1_0p376_ctu1_0p095_ctd1_1p28
+    set param_card ctGIm -0.915
+    set param_card ctGRe -0.109
+    set param_card cQj38 1.782
+    set param_card cQj18 -4.453
+    set param_card cQu8 -0.156
+    set param_card cQd8 1.047
+    set param_card ctj8 -1.084
+    set param_card ctu8 1.006
+    set param_card ctd8 2.267
+    set param_card cQj31 0.51
+    set param_card cQj11 -1.519
+    set param_card cQu1 -0.857
+    set param_card cQd1 -1.431
+    set param_card ctj1 0.376
+    set param_card ctu1 0.095
+    set param_card ctd1 1.28
+
+
+launch --rwgt_name=EFTrwgt41_ctGIm_0p422_ctGRe_1p128_cQj38_m1p019_cQj18_4p609_cQu8_m0p866_cQd8_m1p754_ctj8_m1p892_ctu8_0p169_ctd8_1p594_cQj31_m1p031_cQj11_m1p015_cQu1_m0p755_cQd1_0p474_ctj1_3p827_ctu1_0p528_ctd1_m1p921
+    set param_card ctGIm 0.422
+    set param_card ctGRe 1.128
+    set param_card cQj38 -1.019
+    set param_card cQj18 4.609
+    set param_card cQu8 -0.866
+    set param_card cQd8 -1.754
+    set param_card ctj8 -1.892
+    set param_card ctu8 0.169
+    set param_card ctd8 1.594
+    set param_card cQj31 -1.031
+    set param_card cQj11 -1.015
+    set param_card cQu1 -0.755
+    set param_card cQd1 0.474
+    set param_card ctj1 3.827
+    set param_card ctu1 0.528
+    set param_card ctd1 -1.921
+
+
+launch --rwgt_name=EFTrwgt42_ctGIm_m1p648_ctGRe_m0p303_cQj38_0p968_cQj18_m1p341_cQu8_m0p118_cQd8_m1p741_ctj8_m1p826_ctu8_m0p417_ctd8_2p234_cQj31_1p648_cQj11_m0p408_cQu1_m0p613_cQd1_1p039_ctj1_0p076_ctu1_m1p499_ctd1_0p336
+    set param_card ctGIm -1.648
+    set param_card ctGRe -0.303
+    set param_card cQj38 0.968
+    set param_card cQj18 -1.341
+    set param_card cQu8 -0.118
+    set param_card cQd8 -1.741
+    set param_card ctj8 -1.826
+    set param_card ctu8 -0.417
+    set param_card ctd8 2.234
+    set param_card cQj31 1.648
+    set param_card cQj11 -0.408
+    set param_card cQu1 -0.613
+    set param_card cQd1 1.039
+    set param_card ctj1 0.076
+    set param_card ctu1 -1.499
+    set param_card ctd1 0.336
+
+
+launch --rwgt_name=EFTrwgt43_ctGIm_m1p287_ctGRe_0p904_cQj38_0p281_cQj18_0p351_cQu8_m0p142_cQd8_1p654_ctj8_2p151_ctu8_m0p003_ctd8_m2p67_cQj31_0p859_cQj11_1p166_cQu1_m0p826_cQd1_0p622_ctj1_m0p435_ctu1_0p97_ctd1_0p932
+    set param_card ctGIm -1.287
+    set param_card ctGRe 0.904
+    set param_card cQj38 0.281
+    set param_card cQj18 0.351
+    set param_card cQu8 -0.142
+    set param_card cQd8 1.654
+    set param_card ctj8 2.151
+    set param_card ctu8 -0.003
+    set param_card ctd8 -2.67
+    set param_card cQj31 0.859
+    set param_card cQj11 1.166
+    set param_card cQu1 -0.826
+    set param_card cQd1 0.622
+    set param_card ctj1 -0.435
+    set param_card ctu1 0.97
+    set param_card ctd1 0.932
+
+
+launch --rwgt_name=EFTrwgt44_ctGIm_0p844_ctGRe_1p063_cQj38_m0p525_cQj18_1p119_cQu8_m0p995_cQd8_1p493_ctj8_0p389_ctu8_1p267_ctd8_m2p944_cQj31_m2p108_cQj11_m0p409_cQu1_0p443_cQd1_0p014_ctj1_m2p729_ctu1_m0p478_ctd1_1p419
+    set param_card ctGIm 0.844
+    set param_card ctGRe 1.063
+    set param_card cQj38 -0.525
+    set param_card cQj18 1.119
+    set param_card cQu8 -0.995
+    set param_card cQd8 1.493
+    set param_card ctj8 0.389
+    set param_card ctu8 1.267
+    set param_card ctd8 -2.944
+    set param_card cQj31 -2.108
+    set param_card cQj11 -0.409
+    set param_card cQu1 0.443
+    set param_card cQd1 0.014
+    set param_card ctj1 -2.729
+    set param_card ctu1 -0.478
+    set param_card ctd1 1.419
+
+
+launch --rwgt_name=EFTrwgt45_ctGIm_0p026_ctGRe_0p923_cQj38_m1p702_cQj18_m3p035_cQu8_0p724_cQd8_0p554_ctj8_m1p626_ctu8_m0p793_ctd8_0p57_cQj31_m2p239_cQj11_m0p667_cQu1_m0p801_cQd1_0p659_ctj1_m3p389_ctu1_0p357_ctd1_0p591
+    set param_card ctGIm 0.026
+    set param_card ctGRe 0.923
+    set param_card cQj38 -1.702
+    set param_card cQj18 -3.035
+    set param_card cQu8 0.724
+    set param_card cQd8 0.554
+    set param_card ctj8 -1.626
+    set param_card ctu8 -0.793
+    set param_card ctd8 0.57
+    set param_card cQj31 -2.239
+    set param_card cQj11 -0.667
+    set param_card cQu1 -0.801
+    set param_card cQd1 0.659
+    set param_card ctj1 -3.389
+    set param_card ctu1 0.357
+    set param_card ctd1 0.591
+
+
+launch --rwgt_name=EFTrwgt46_ctGIm_1p494_ctGRe_m0p415_cQj38_m0p54_cQj18_m3p778_cQu8_m0p358_cQd8_m1p415_ctj8_m1p103_ctu8_m0p991_ctd8_m2p371_cQj31_1p893_cQj11_m0p648_cQu1_m0p772_cQd1_0p948_ctj1_3p279_ctu1_1p739_ctd1_2p099
+    set param_card ctGIm 1.494
+    set param_card ctGRe -0.415
+    set param_card cQj38 -0.54
+    set param_card cQj18 -3.778
+    set param_card cQu8 -0.358
+    set param_card cQd8 -1.415
+    set param_card ctj8 -1.103
+    set param_card ctu8 -0.991
+    set param_card ctd8 -2.371
+    set param_card cQj31 1.893
+    set param_card cQj11 -0.648
+    set param_card cQu1 -0.772
+    set param_card cQd1 0.948
+    set param_card ctj1 3.279
+    set param_card ctu1 1.739
+    set param_card ctd1 2.099
+
+
+launch --rwgt_name=EFTrwgt47_ctGIm_0p301_ctGRe_0p17_cQj38_m1p029_cQj18_3p867_cQu8_m0p221_cQd8_m1p886_ctj8_2p224_ctu8_m0p015_ctd8_m0p767_cQj31_m1p391_cQj11_m0p627_cQu1_0p875_cQd1_1p29_ctj1_2p313_ctu1_1p659_ctd1_0p972
+    set param_card ctGIm 0.301
+    set param_card ctGRe 0.17
+    set param_card cQj38 -1.029
+    set param_card cQj18 3.867
+    set param_card cQu8 -0.221
+    set param_card cQd8 -1.886
+    set param_card ctj8 2.224
+    set param_card ctu8 -0.015
+    set param_card ctd8 -0.767
+    set param_card cQj31 -1.391
+    set param_card cQj11 -0.627
+    set param_card cQu1 0.875
+    set param_card cQd1 1.29
+    set param_card ctj1 2.313
+    set param_card ctu1 1.659
+    set param_card ctd1 0.972
+
+
+launch --rwgt_name=EFTrwgt48_ctGIm_0p722_ctGRe_m1p403_cQj38_m1p306_cQj18_4p321_cQu8_0p626_cQd8_0p372_ctj8_1p8_ctu8_1p522_ctd8_0p035_cQj31_2p026_cQj11_m1p51_cQu1_m0p558_cQd1_0p567_ctj1_1p174_ctu1_m0p572_ctd1_m1p952
+    set param_card ctGIm 0.722
+    set param_card ctGRe -1.403
+    set param_card cQj38 -1.306
+    set param_card cQj18 4.321
+    set param_card cQu8 0.626
+    set param_card cQd8 0.372
+    set param_card ctj8 1.8
+    set param_card ctu8 1.522
+    set param_card ctd8 0.035
+    set param_card cQj31 2.026
+    set param_card cQj11 -1.51
+    set param_card cQu1 -0.558
+    set param_card cQd1 0.567
+    set param_card ctj1 1.174
+    set param_card ctu1 -0.572
+    set param_card ctd1 -1.952
+
+
+launch --rwgt_name=EFTrwgt49_ctGIm_0p48_ctGRe_0p12_cQj38_m0p818_cQj18_m0p213_cQu8_0p105_cQd8_0p909_ctj8_0p375_ctu8_m0p921_ctd8_m2p027_cQj31_1p611_cQj11_m1p56_cQu1_m0p198_cQd1_1p599_ctj1_m2p029_ctu1_0p694_ctd1_1p8
+    set param_card ctGIm 0.48
+    set param_card ctGRe 0.12
+    set param_card cQj38 -0.818
+    set param_card cQj18 -0.213
+    set param_card cQu8 0.105
+    set param_card cQd8 0.909
+    set param_card ctj8 0.375
+    set param_card ctu8 -0.921
+    set param_card ctd8 -2.027
+    set param_card cQj31 1.611
+    set param_card cQj11 -1.56
+    set param_card cQu1 -0.198
+    set param_card cQd1 1.599
+    set param_card ctj1 -2.029
+    set param_card ctu1 0.694
+    set param_card ctd1 1.8
+
+
+launch --rwgt_name=EFTrwgt50_ctGIm_m0p559_ctGRe_1p213_cQj38_1p777_cQj18_m1p916_cQu8_m0p014_cQd8_0p387_ctj8_0p994_ctu8_m1p408_ctd8_3p15_cQj31_m0p575_cQj11_0p517_cQu1_0p626_cQd1_m0p216_ctj1_m0p531_ctu1_1p104_ctd1_1p753
+    set param_card ctGIm -0.559
+    set param_card ctGRe 1.213
+    set param_card cQj38 1.777
+    set param_card cQj18 -1.916
+    set param_card cQu8 -0.014
+    set param_card cQd8 0.387
+    set param_card ctj8 0.994
+    set param_card ctu8 -1.408
+    set param_card ctd8 3.15
+    set param_card cQj31 -0.575
+    set param_card cQj11 0.517
+    set param_card cQu1 0.626
+    set param_card cQd1 -0.216
+    set param_card ctj1 -0.531
+    set param_card ctu1 1.104
+    set param_card ctd1 1.753
+
+
+launch --rwgt_name=EFTrwgt51_ctGIm_0p234_ctGRe_m0p287_cQj38_m1p49_cQj18_2p657_cQu8_m0p561_cQd8_m0p052_ctj8_m0p027_ctu8_m0p034_ctd8_m1p855_cQj31_m0p963_cQj11_m0p541_cQu1_m0p335_cQd1_1p516_ctj1_m2p201_ctu1_0p788_ctd1_1p28
+    set param_card ctGIm 0.234
+    set param_card ctGRe -0.287
+    set param_card cQj38 -1.49
+    set param_card cQj18 2.657
+    set param_card cQu8 -0.561
+    set param_card cQd8 -0.052
+    set param_card ctj8 -0.027
+    set param_card ctu8 -0.034
+    set param_card ctd8 -1.855
+    set param_card cQj31 -0.963
+    set param_card cQj11 -0.541
+    set param_card cQu1 -0.335
+    set param_card cQd1 1.516
+    set param_card ctj1 -2.201
+    set param_card ctu1 0.788
+    set param_card ctd1 1.28
+
+
+launch --rwgt_name=EFTrwgt52_ctGIm_m0p466_ctGRe_m1p457_cQj38_0p986_cQj18_m4p231_cQu8_0p373_cQd8_m1p299_ctj8_m0p33_ctu8_0p853_ctd8_2p872_cQj31_1p459_cQj11_0p641_cQu1_m0p758_cQd1_0p757_ctj1_0p654_ctu1_m1p258_ctd1_2p08
+    set param_card ctGIm -0.466
+    set param_card ctGRe -1.457
+    set param_card cQj38 0.986
+    set param_card cQj18 -4.231
+    set param_card cQu8 0.373
+    set param_card cQd8 -1.299
+    set param_card ctj8 -0.33
+    set param_card ctu8 0.853
+    set param_card ctd8 2.872
+    set param_card cQj31 1.459
+    set param_card cQj11 0.641
+    set param_card cQu1 -0.758
+    set param_card cQd1 0.757
+    set param_card ctj1 0.654
+    set param_card ctu1 -1.258
+    set param_card ctd1 2.08
+
+
+launch --rwgt_name=EFTrwgt53_ctGIm_m0p642_ctGRe_m0p871_cQj38_0p831_cQj18_m2p265_cQu8_m0p675_cQd8_1p469_ctj8_1p06_ctu8_0p655_ctd8_m2p69_cQj31_m0p244_cQj11_0p265_cQu1_0p648_cQd1_0p473_ctj1_1p273_ctu1_m0p28_ctd1_m1p734
+    set param_card ctGIm -0.642
+    set param_card ctGRe -0.871
+    set param_card cQj38 0.831
+    set param_card cQj18 -2.265
+    set param_card cQu8 -0.675
+    set param_card cQd8 1.469
+    set param_card ctj8 1.06
+    set param_card ctu8 0.655
+    set param_card ctd8 -2.69
+    set param_card cQj31 -0.244
+    set param_card cQj11 0.265
+    set param_card cQu1 0.648
+    set param_card cQd1 0.473
+    set param_card ctj1 1.273
+    set param_card ctu1 -0.28
+    set param_card ctd1 -1.734
+
+
+launch --rwgt_name=EFTrwgt54_ctGIm_m1p644_ctGRe_0p174_cQj38_1p244_cQj18_m2p436_cQu8_m0p818_cQd8_0p289_ctj8_0p933_ctu8_m1p24_ctd8_m2p875_cQj31_0p239_cQj11_0p828_cQu1_0p842_cQd1_1p426_ctj1_2p894_ctu1_m1p691_ctd1_0p772
+    set param_card ctGIm -1.644
+    set param_card ctGRe 0.174
+    set param_card cQj38 1.244
+    set param_card cQj18 -2.436
+    set param_card cQu8 -0.818
+    set param_card cQd8 0.289
+    set param_card ctj8 0.933
+    set param_card ctu8 -1.24
+    set param_card ctd8 -2.875
+    set param_card cQj31 0.239
+    set param_card cQj11 0.828
+    set param_card cQu1 0.842
+    set param_card cQd1 1.426
+    set param_card ctj1 2.894
+    set param_card ctu1 -1.691
+    set param_card ctd1 0.772
+
+
+launch --rwgt_name=EFTrwgt55_ctGIm_m0p63_ctGRe_m1p041_cQj38_1p469_cQj18_0p297_cQu8_0p683_cQd8_1p699_ctj8_m1p395_ctu8_m1p074_ctd8_m0p93_cQj31_m2p089_cQj11_m1p328_cQu1_m0p828_cQd1_0p158_ctj1_3p565_ctu1_m0p9_ctd1_m0p384
+    set param_card ctGIm -0.63
+    set param_card ctGRe -1.041
+    set param_card cQj38 1.469
+    set param_card cQj18 0.297
+    set param_card cQu8 0.683
+    set param_card cQd8 1.699
+    set param_card ctj8 -1.395
+    set param_card ctu8 -1.074
+    set param_card ctd8 -0.93
+    set param_card cQj31 -2.089
+    set param_card cQj11 -1.328
+    set param_card cQu1 -0.828
+    set param_card cQd1 0.158
+    set param_card ctj1 3.565
+    set param_card ctu1 -0.9
+    set param_card ctd1 -0.384
+
+
+launch --rwgt_name=EFTrwgt56_ctGIm_0p743_ctGRe_m1p354_cQj38_m0p009_cQj18_m1p978_cQu8_m0p404_cQd8_m1p312_ctj8_m2p319_ctu8_1p261_ctd8_m3p715_cQj31_m0p14_cQj11_m1p436_cQu1_0p096_cQd1_m0p699_ctj1_m0p776_ctu1_m1p003_ctd1_m1p046
+    set param_card ctGIm 0.743
+    set param_card ctGRe -1.354
+    set param_card cQj38 -0.009
+    set param_card cQj18 -1.978
+    set param_card cQu8 -0.404
+    set param_card cQd8 -1.312
+    set param_card ctj8 -2.319
+    set param_card ctu8 1.261
+    set param_card ctd8 -3.715
+    set param_card cQj31 -0.14
+    set param_card cQj11 -1.436
+    set param_card cQu1 0.096
+    set param_card cQd1 -0.699
+    set param_card ctj1 -0.776
+    set param_card ctu1 -1.003
+    set param_card ctd1 -1.046
+
+
+launch --rwgt_name=EFTrwgt57_ctGIm_m0p242_ctGRe_m0p645_cQj38_m0p79_cQj18_2p301_cQu8_0p977_cQd8_0p163_ctj8_m1p842_ctu8_0p866_ctd8_0p697_cQj31_m2p019_cQj11_0p122_cQu1_m0p782_cQd1_m0p577_ctj1_m1p112_ctu1_1p16_ctd1_0p602
+    set param_card ctGIm -0.242
+    set param_card ctGRe -0.645
+    set param_card cQj38 -0.79
+    set param_card cQj18 2.301
+    set param_card cQu8 0.977
+    set param_card cQd8 0.163
+    set param_card ctj8 -1.842
+    set param_card ctu8 0.866
+    set param_card ctd8 0.697
+    set param_card cQj31 -2.019
+    set param_card cQj11 0.122
+    set param_card cQu1 -0.782
+    set param_card cQd1 -0.577
+    set param_card ctj1 -1.112
+    set param_card ctu1 1.16
+    set param_card ctd1 0.602
+
+
+launch --rwgt_name=EFTrwgt58_ctGIm_0p847_ctGRe_m0p283_cQj38_m0p79_cQj18_1p687_cQu8_m0p139_cQd8_1p622_ctj8_m0p217_ctu8_m1p403_ctd8_0p184_cQj31_0p416_cQj11_m1p261_cQu1_0p547_cQd1_m1p085_ctj1_m0p163_ctu1_m0p843_ctd1_m1p208
+    set param_card ctGIm 0.847
+    set param_card ctGRe -0.283
+    set param_card cQj38 -0.79
+    set param_card cQj18 1.687
+    set param_card cQu8 -0.139
+    set param_card cQd8 1.622
+    set param_card ctj8 -0.217
+    set param_card ctu8 -1.403
+    set param_card ctd8 0.184
+    set param_card cQj31 0.416
+    set param_card cQj11 -1.261
+    set param_card cQu1 0.547
+    set param_card cQd1 -1.085
+    set param_card ctj1 -0.163
+    set param_card ctu1 -0.843
+    set param_card ctd1 -1.208
+
+
+launch --rwgt_name=EFTrwgt59_ctGIm_m1p061_ctGRe_m0p878_cQj38_m0p278_cQj18_2p508_cQu8_m0p288_cQd8_m0p62_ctj8_2p168_ctu8_0p195_ctd8_3p505_cQj31_m1p007_cQj11_1p466_cQu1_0p563_cQd1_m0p805_ctj1_m0p267_ctu1_0p856_ctd1_m0p356
+    set param_card ctGIm -1.061
+    set param_card ctGRe -0.878
+    set param_card cQj38 -0.278
+    set param_card cQj18 2.508
+    set param_card cQu8 -0.288
+    set param_card cQd8 -0.62
+    set param_card ctj8 2.168
+    set param_card ctu8 0.195
+    set param_card ctd8 3.505
+    set param_card cQj31 -1.007
+    set param_card cQj11 1.466
+    set param_card cQu1 0.563
+    set param_card cQd1 -0.805
+    set param_card ctj1 -0.267
+    set param_card ctu1 0.856
+    set param_card ctd1 -0.356
+
+
+launch --rwgt_name=EFTrwgt60_ctGIm_m1p134_ctGRe_0p238_cQj38_1p811_cQj18_m0p616_cQu8_m0p123_cQd8_m0p411_ctj8_0p212_ctu8_m0p304_ctd8_0p845_cQj31_1p832_cQj11_m0p221_cQu1_0p411_cQd1_0p04_ctj1_0p6_ctu1_m0p026_ctd1_1p638
+    set param_card ctGIm -1.134
+    set param_card ctGRe 0.238
+    set param_card cQj38 1.811
+    set param_card cQj18 -0.616
+    set param_card cQu8 -0.123
+    set param_card cQd8 -0.411
+    set param_card ctj8 0.212
+    set param_card ctu8 -0.304
+    set param_card ctd8 0.845
+    set param_card cQj31 1.832
+    set param_card cQj11 -0.221
+    set param_card cQu1 0.411
+    set param_card cQd1 0.04
+    set param_card ctj1 0.6
+    set param_card ctu1 -0.026
+    set param_card ctd1 1.638
+
+
+launch --rwgt_name=EFTrwgt61_ctGIm_m1p524_ctGRe_m0p159_cQj38_1p648_cQj18_2p65_cQu8_0p545_cQd8_1p661_ctj8_m0p021_ctu8_0p044_ctd8_m2p048_cQj31_m1p211_cQj11_0p956_cQu1_m0p343_cQd1_0p654_ctj1_m0p725_ctu1_m0p733_ctd1_m0p259
+    set param_card ctGIm -1.524
+    set param_card ctGRe -0.159
+    set param_card cQj38 1.648
+    set param_card cQj18 2.65
+    set param_card cQu8 0.545
+    set param_card cQd8 1.661
+    set param_card ctj8 -0.021
+    set param_card ctu8 0.044
+    set param_card ctd8 -2.048
+    set param_card cQj31 -1.211
+    set param_card cQj11 0.956
+    set param_card cQu1 -0.343
+    set param_card cQd1 0.654
+    set param_card ctj1 -0.725
+    set param_card ctu1 -0.733
+    set param_card ctd1 -0.259
+
+
+launch --rwgt_name=EFTrwgt62_ctGIm_m1p489_ctGRe_0p239_cQj38_m0p703_cQj18_m3p367_cQu8_m0p227_cQd8_m1p753_ctj8_1p757_ctu8_m0p129_ctd8_1p431_cQj31_m1p551_cQj11_m0p799_cQu1_m0p037_cQd1_1p114_ctj1_0p507_ctu1_m0p48_ctd1_m1p382
+    set param_card ctGIm -1.489
+    set param_card ctGRe 0.239
+    set param_card cQj38 -0.703
+    set param_card cQj18 -3.367
+    set param_card cQu8 -0.227
+    set param_card cQd8 -1.753
+    set param_card ctj8 1.757
+    set param_card ctu8 -0.129
+    set param_card ctd8 1.431
+    set param_card cQj31 -1.551
+    set param_card cQj11 -0.799
+    set param_card cQu1 -0.037
+    set param_card cQd1 1.114
+    set param_card ctj1 0.507
+    set param_card ctu1 -0.48
+    set param_card ctd1 -1.382
+
+
+launch --rwgt_name=EFTrwgt63_ctGIm_m0p243_ctGRe_0p31_cQj38_1p638_cQj18_m1p647_cQu8_0p838_cQd8_0p642_ctj8_1p702_ctu8_m1p302_ctd8_m3p163_cQj31_1p834_cQj11_0p106_cQu1_0p575_cQd1_m1p372_ctj1_2p214_ctu1_m0p26_ctd1_m1p897
+    set param_card ctGIm -0.243
+    set param_card ctGRe 0.31
+    set param_card cQj38 1.638
+    set param_card cQj18 -1.647
+    set param_card cQu8 0.838
+    set param_card cQd8 0.642
+    set param_card ctj8 1.702
+    set param_card ctu8 -1.302
+    set param_card ctd8 -3.163
+    set param_card cQj31 1.834
+    set param_card cQj11 0.106
+    set param_card cQu1 0.575
+    set param_card cQd1 -1.372
+    set param_card ctj1 2.214
+    set param_card ctu1 -0.26
+    set param_card ctd1 -1.897
+
+
+launch --rwgt_name=EFTrwgt64_ctGIm_m0p465_ctGRe_m0p464_cQj38_1p141_cQj18_m2p104_cQu8_0p208_cQd8_1p827_ctj8_2p348_ctu8_1p003_ctd8_m3p664_cQj31_1p871_cQj11_m1p435_cQu1_0p673_cQd1_0p498_ctj1_1p425_ctu1_1p412_ctd1_m0p409
+    set param_card ctGIm -0.465
+    set param_card ctGRe -0.464
+    set param_card cQj38 1.141
+    set param_card cQj18 -2.104
+    set param_card cQu8 0.208
+    set param_card cQd8 1.827
+    set param_card ctj8 2.348
+    set param_card ctu8 1.003
+    set param_card ctd8 -3.664
+    set param_card cQj31 1.871
+    set param_card cQj11 -1.435
+    set param_card cQu1 0.673
+    set param_card cQd1 0.498
+    set param_card ctj1 1.425
+    set param_card ctu1 1.412
+    set param_card ctd1 -0.409
+
+
+launch --rwgt_name=EFTrwgt65_ctGIm_1p439_ctGRe_0p504_cQj38_m1p093_cQj18_m4p635_cQu8_0p439_cQd8_0p214_ctj8_0p143_ctu8_0p446_ctd8_0p126_cQj31_m0p313_cQj11_1p329_cQu1_0p187_cQd1_m1p026_ctj1_m0p948_ctu1_m1p369_ctd1_2p147
+    set param_card ctGIm 1.439
+    set param_card ctGRe 0.504
+    set param_card cQj38 -1.093
+    set param_card cQj18 -4.635
+    set param_card cQu8 0.439
+    set param_card cQd8 0.214
+    set param_card ctj8 0.143
+    set param_card ctu8 0.446
+    set param_card ctd8 0.126
+    set param_card cQj31 -0.313
+    set param_card cQj11 1.329
+    set param_card cQu1 0.187
+    set param_card cQd1 -1.026
+    set param_card ctj1 -0.948
+    set param_card ctu1 -1.369
+    set param_card ctd1 2.147
+
+
+launch --rwgt_name=EFTrwgt66_ctGIm_m0p069_ctGRe_m0p597_cQj38_m1p685_cQj18_m0p855_cQu8_m0p952_cQd8_1p672_ctj8_m1p014_ctu8_0p633_ctd8_2p028_cQj31_m0p005_cQj11_1p529_cQu1_0p057_cQd1_0p122_ctj1_m1p44_ctu1_m0p044_ctd1_1p155
+    set param_card ctGIm -0.069
+    set param_card ctGRe -0.597
+    set param_card cQj38 -1.685
+    set param_card cQj18 -0.855
+    set param_card cQu8 -0.952
+    set param_card cQd8 1.672
+    set param_card ctj8 -1.014
+    set param_card ctu8 0.633
+    set param_card ctd8 2.028
+    set param_card cQj31 -0.005
+    set param_card cQj11 1.529
+    set param_card cQu1 0.057
+    set param_card cQd1 0.122
+    set param_card ctj1 -1.44
+    set param_card ctu1 -0.044
+    set param_card ctd1 1.155
+
+
+launch --rwgt_name=EFTrwgt67_ctGIm_m0p185_ctGRe_0p178_cQj38_0p021_cQj18_m3p751_cQu8_m0p732_cQd8_0p22_ctj8_1p607_ctu8_m0p608_ctd8_m3p803_cQj31_m0p985_cQj11_1p227_cQu1_m0p902_cQd1_m0p175_ctj1_3p718_ctu1_1p061_ctd1_2p139
+    set param_card ctGIm -0.185
+    set param_card ctGRe 0.178
+    set param_card cQj38 0.021
+    set param_card cQj18 -3.751
+    set param_card cQu8 -0.732
+    set param_card cQd8 0.22
+    set param_card ctj8 1.607
+    set param_card ctu8 -0.608
+    set param_card ctd8 -3.803
+    set param_card cQj31 -0.985
+    set param_card cQj11 1.227
+    set param_card cQu1 -0.902
+    set param_card cQd1 -0.175
+    set param_card ctj1 3.718
+    set param_card ctu1 1.061
+    set param_card ctd1 2.139
+
+
+launch --rwgt_name=EFTrwgt68_ctGIm_m0p558_ctGRe_1p546_cQj38_m0p851_cQj18_m0p806_cQu8_0p987_cQd8_m0p337_ctj8_m1p475_ctu8_m1p864_ctd8_m2p594_cQj31_0p209_cQj11_m0p702_cQu1_m0p761_cQd1_1p192_ctj1_1p205_ctu1_1p477_ctd1_1p547
+    set param_card ctGIm -0.558
+    set param_card ctGRe 1.546
+    set param_card cQj38 -0.851
+    set param_card cQj18 -0.806
+    set param_card cQu8 0.987
+    set param_card cQd8 -0.337
+    set param_card ctj8 -1.475
+    set param_card ctu8 -1.864
+    set param_card ctd8 -2.594
+    set param_card cQj31 0.209
+    set param_card cQj11 -0.702
+    set param_card cQu1 -0.761
+    set param_card cQd1 1.192
+    set param_card ctj1 1.205
+    set param_card ctu1 1.477
+    set param_card ctd1 1.547
+
+
+launch --rwgt_name=EFTrwgt69_ctGIm_m1p773_ctGRe_m0p572_cQj38_1p721_cQj18_3p786_cQu8_0p996_cQd8_0p12_ctj8_0p528_ctu8_m1p711_ctd8_2p125_cQj31_m2p05_cQj11_m0p808_cQu1_0p457_cQd1_0p32_ctj1_3p663_ctu1_1p632_ctd1_m0p7
+    set param_card ctGIm -1.773
+    set param_card ctGRe -0.572
+    set param_card cQj38 1.721
+    set param_card cQj18 3.786
+    set param_card cQu8 0.996
+    set param_card cQd8 0.12
+    set param_card ctj8 0.528
+    set param_card ctu8 -1.711
+    set param_card ctd8 2.125
+    set param_card cQj31 -2.05
+    set param_card cQj11 -0.808
+    set param_card cQu1 0.457
+    set param_card cQd1 0.32
+    set param_card ctj1 3.663
+    set param_card ctu1 1.632
+    set param_card ctd1 -0.7
+
+
+launch --rwgt_name=EFTrwgt70_ctGIm_0p007_ctGRe_m0p043_cQj38_m0p848_cQj18_3p483_cQu8_0p553_cQd8_0p917_ctj8_m1p521_ctu8_m0p877_ctd8_1p717_cQj31_m1p537_cQj11_0p896_cQu1_m0p274_cQd1_m1p49_ctj1_3p016_ctu1_m0p377_ctd1_1p624
+    set param_card ctGIm 0.007
+    set param_card ctGRe -0.043
+    set param_card cQj38 -0.848
+    set param_card cQj18 3.483
+    set param_card cQu8 0.553
+    set param_card cQd8 0.917
+    set param_card ctj8 -1.521
+    set param_card ctu8 -0.877
+    set param_card ctd8 1.717
+    set param_card cQj31 -1.537
+    set param_card cQj11 0.896
+    set param_card cQu1 -0.274
+    set param_card cQd1 -1.49
+    set param_card ctj1 3.016
+    set param_card ctu1 -0.377
+    set param_card ctd1 1.624
+
+
+launch --rwgt_name=EFTrwgt71_ctGIm_m0p16_ctGRe_m0p923_cQj38_1p106_cQj18_3p907_cQu8_0p982_cQd8_m0p59_ctj8_m1p999_ctu8_1p798_ctd8_m2p557_cQj31_m1p555_cQj11_m0p972_cQu1_m0p02_cQd1_m0p866_ctj1_2p423_ctu1_0p786_ctd1_m1p165
+    set param_card ctGIm -0.16
+    set param_card ctGRe -0.923
+    set param_card cQj38 1.106
+    set param_card cQj18 3.907
+    set param_card cQu8 0.982
+    set param_card cQd8 -0.59
+    set param_card ctj8 -1.999
+    set param_card ctu8 1.798
+    set param_card ctd8 -2.557
+    set param_card cQj31 -1.555
+    set param_card cQj11 -0.972
+    set param_card cQu1 -0.02
+    set param_card cQd1 -0.866
+    set param_card ctj1 2.423
+    set param_card ctu1 0.786
+    set param_card ctd1 -1.165
+
+
+launch --rwgt_name=EFTrwgt72_ctGIm_0p204_ctGRe_0p815_cQj38_m0p237_cQj18_0p518_cQu8_0p921_cQd8_0p903_ctj8_m0p562_ctu8_m1p795_ctd8_3p107_cQj31_m1p306_cQj11_1p442_cQu1_m0p963_cQd1_m0p256_ctj1_m0p72_ctu1_1p921_ctd1_m1p704
+    set param_card ctGIm 0.204
+    set param_card ctGRe 0.815
+    set param_card cQj38 -0.237
+    set param_card cQj18 0.518
+    set param_card cQu8 0.921
+    set param_card cQd8 0.903
+    set param_card ctj8 -0.562
+    set param_card ctu8 -1.795
+    set param_card ctd8 3.107
+    set param_card cQj31 -1.306
+    set param_card cQj11 1.442
+    set param_card cQu1 -0.963
+    set param_card cQd1 -0.256
+    set param_card ctj1 -0.72
+    set param_card ctu1 1.921
+    set param_card ctd1 -1.704
+
+
+launch --rwgt_name=EFTrwgt73_ctGIm_m1p615_ctGRe_m0p494_cQj38_1p302_cQj18_4p19_cQu8_m0p899_cQd8_m1p154_ctj8_1p756_ctu8_m0p096_ctd8_2p855_cQj31_2p219_cQj11_m0p447_cQu1_m0p483_cQd1_m0p252_ctj1_m1p389_ctu1_m1p639_ctd1_0p255
+    set param_card ctGIm -1.615
+    set param_card ctGRe -0.494
+    set param_card cQj38 1.302
+    set param_card cQj18 4.19
+    set param_card cQu8 -0.899
+    set param_card cQd8 -1.154
+    set param_card ctj8 1.756
+    set param_card ctu8 -0.096
+    set param_card ctd8 2.855
+    set param_card cQj31 2.219
+    set param_card cQj11 -0.447
+    set param_card cQu1 -0.483
+    set param_card cQd1 -0.252
+    set param_card ctj1 -1.389
+    set param_card ctu1 -1.639
+    set param_card ctd1 0.255
+
+
+launch --rwgt_name=EFTrwgt74_ctGIm_m1p388_ctGRe_m1p353_cQj38_1p691_cQj18_2p509_cQu8_m0p42_cQd8_m0p217_ctj8_2p052_ctu8_m0p831_ctd8_m2p128_cQj31_m2p117_cQj11_1p526_cQu1_m0p326_cQd1_1p428_ctj1_m3p146_ctu1_1p523_ctd1_0p898
+    set param_card ctGIm -1.388
+    set param_card ctGRe -1.353
+    set param_card cQj38 1.691
+    set param_card cQj18 2.509
+    set param_card cQu8 -0.42
+    set param_card cQd8 -0.217
+    set param_card ctj8 2.052
+    set param_card ctu8 -0.831
+    set param_card ctd8 -2.128
+    set param_card cQj31 -2.117
+    set param_card cQj11 1.526
+    set param_card cQu1 -0.326
+    set param_card cQd1 1.428
+    set param_card ctj1 -3.146
+    set param_card ctu1 1.523
+    set param_card ctd1 0.898
+
+
+launch --rwgt_name=EFTrwgt75_ctGIm_0p831_ctGRe_0p182_cQj38_m1p857_cQj18_m1p21_cQu8_m0p994_cQd8_0p501_ctj8_m2p037_ctu8_m0p931_ctd8_1p258_cQj31_1p79_cQj11_1p515_cQu1_m0p938_cQd1_0p386_ctj1_m0p143_ctu1_m0p442_ctd1_0p764
+    set param_card ctGIm 0.831
+    set param_card ctGRe 0.182
+    set param_card cQj38 -1.857
+    set param_card cQj18 -1.21
+    set param_card cQu8 -0.994
+    set param_card cQd8 0.501
+    set param_card ctj8 -2.037
+    set param_card ctu8 -0.931
+    set param_card ctd8 1.258
+    set param_card cQj31 1.79
+    set param_card cQj11 1.515
+    set param_card cQu1 -0.938
+    set param_card cQd1 0.386
+    set param_card ctj1 -0.143
+    set param_card ctu1 -0.442
+    set param_card ctd1 0.764
+
+
+launch --rwgt_name=EFTrwgt76_ctGIm_m0p775_ctGRe_m0p158_cQj38_m1p664_cQj18_m4p751_cQu8_m0p731_cQd8_m1p854_ctj8_m1p329_ctu8_0p524_ctd8_m3p712_cQj31_m0p771_cQj11_0p664_cQu1_m0p67_cQd1_m1p343_ctj1_m3p627_ctu1_1p641_ctd1_m1p086
+    set param_card ctGIm -0.775
+    set param_card ctGRe -0.158
+    set param_card cQj38 -1.664
+    set param_card cQj18 -4.751
+    set param_card cQu8 -0.731
+    set param_card cQd8 -1.854
+    set param_card ctj8 -1.329
+    set param_card ctu8 0.524
+    set param_card ctd8 -3.712
+    set param_card cQj31 -0.771
+    set param_card cQj11 0.664
+    set param_card cQu1 -0.67
+    set param_card cQd1 -1.343
+    set param_card ctj1 -3.627
+    set param_card ctu1 1.641
+    set param_card ctd1 -1.086
+
+
+launch --rwgt_name=EFTrwgt77_ctGIm_1p502_ctGRe_m1p374_cQj38_1p891_cQj18_2p213_cQu8_0p56_cQd8_m1p048_ctj8_m1p704_ctu8_0p328_ctd8_m3p308_cQj31_2p277_cQj11_0p219_cQu1_m0p747_cQd1_1p418_ctj1_m1p479_ctu1_m0p295_ctd1_m2p196
+    set param_card ctGIm 1.502
+    set param_card ctGRe -1.374
+    set param_card cQj38 1.891
+    set param_card cQj18 2.213
+    set param_card cQu8 0.56
+    set param_card cQd8 -1.048
+    set param_card ctj8 -1.704
+    set param_card ctu8 0.328
+    set param_card ctd8 -3.308
+    set param_card cQj31 2.277
+    set param_card cQj11 0.219
+    set param_card cQu1 -0.747
+    set param_card cQd1 1.418
+    set param_card ctj1 -1.479
+    set param_card ctu1 -0.295
+    set param_card ctd1 -2.196
+
+
+launch --rwgt_name=EFTrwgt78_ctGIm_0p606_ctGRe_m1p136_cQj38_m0p245_cQj18_m4p642_cQu8_0p659_cQd8_1p906_ctj8_m0p067_ctu8_1p273_ctd8_3p604_cQj31_m0p553_cQj11_m0p77_cQu1_0p066_cQd1_m0p817_ctj1_3p871_ctu1_0p508_ctd1_m0p209
+    set param_card ctGIm 0.606
+    set param_card ctGRe -1.136
+    set param_card cQj38 -0.245
+    set param_card cQj18 -4.642
+    set param_card cQu8 0.659
+    set param_card cQd8 1.906
+    set param_card ctj8 -0.067
+    set param_card ctu8 1.273
+    set param_card ctd8 3.604
+    set param_card cQj31 -0.553
+    set param_card cQj11 -0.77
+    set param_card cQu1 0.066
+    set param_card cQd1 -0.817
+    set param_card ctj1 3.871
+    set param_card ctu1 0.508
+    set param_card ctd1 -0.209
+
+
+launch --rwgt_name=EFTrwgt79_ctGIm_1p121_ctGRe_1p022_cQj38_m0p622_cQj18_m1p483_cQu8_m0p738_cQd8_m1p385_ctj8_m2p378_ctu8_m1p899_ctd8_m1p012_cQj31_0p653_cQj11_1p499_cQu1_m0p206_cQd1_m0p512_ctj1_3p49_ctu1_m1p726_ctd1_m2p129
+    set param_card ctGIm 1.121
+    set param_card ctGRe 1.022
+    set param_card cQj38 -0.622
+    set param_card cQj18 -1.483
+    set param_card cQu8 -0.738
+    set param_card cQd8 -1.385
+    set param_card ctj8 -2.378
+    set param_card ctu8 -1.899
+    set param_card ctd8 -1.012
+    set param_card cQj31 0.653
+    set param_card cQj11 1.499
+    set param_card cQu1 -0.206
+    set param_card cQd1 -0.512
+    set param_card ctj1 3.49
+    set param_card ctu1 -1.726
+    set param_card ctd1 -2.129
+
+
+launch --rwgt_name=EFTrwgt80_ctGIm_0p733_ctGRe_0p664_cQj38_0p186_cQj18_1p078_cQu8_m0p417_cQd8_m0p276_ctj8_m1p734_ctu8_m0p604_ctd8_3p924_cQj31_1p137_cQj11_1p105_cQu1_0p34_cQd1_0p344_ctj1_0p214_ctu1_0p067_ctd1_m1p904
+    set param_card ctGIm 0.733
+    set param_card ctGRe 0.664
+    set param_card cQj38 0.186
+    set param_card cQj18 1.078
+    set param_card cQu8 -0.417
+    set param_card cQd8 -0.276
+    set param_card ctj8 -1.734
+    set param_card ctu8 -0.604
+    set param_card ctd8 3.924
+    set param_card cQj31 1.137
+    set param_card cQj11 1.105
+    set param_card cQu1 0.34
+    set param_card cQd1 0.344
+    set param_card ctj1 0.214
+    set param_card ctu1 0.067
+    set param_card ctd1 -1.904
+
+
+launch --rwgt_name=EFTrwgt81_ctGIm_0p5_ctGRe_m1p574_cQj38_m0p657_cQj18_m1p186_cQu8_0p07_cQd8_m1p041_ctj8_2p184_ctu8_0p09_ctd8_1p83_cQj31_m0p056_cQj11_m0p296_cQu1_m0p586_cQd1_0p106_ctj1_3p01_ctu1_1p231_ctd1_1p462
+    set param_card ctGIm 0.5
+    set param_card ctGRe -1.574
+    set param_card cQj38 -0.657
+    set param_card cQj18 -1.186
+    set param_card cQu8 0.07
+    set param_card cQd8 -1.041
+    set param_card ctj8 2.184
+    set param_card ctu8 0.09
+    set param_card ctd8 1.83
+    set param_card cQj31 -0.056
+    set param_card cQj11 -0.296
+    set param_card cQu1 -0.586
+    set param_card cQd1 0.106
+    set param_card ctj1 3.01
+    set param_card ctu1 1.231
+    set param_card ctd1 1.462
+
+
+launch --rwgt_name=EFTrwgt82_ctGIm_0p743_ctGRe_1p495_cQj38_0p403_cQj18_0p964_cQu8_0p776_cQd8_m0p703_ctj8_m2p373_ctu8_m0p108_ctd8_3p505_cQj31_m0p792_cQj11_m0p682_cQu1_m0p487_cQd1_1p127_ctj1_m0p918_ctu1_m0p991_ctd1_1p804
+    set param_card ctGIm 0.743
+    set param_card ctGRe 1.495
+    set param_card cQj38 0.403
+    set param_card cQj18 0.964
+    set param_card cQu8 0.776
+    set param_card cQd8 -0.703
+    set param_card ctj8 -2.373
+    set param_card ctu8 -0.108
+    set param_card ctd8 3.505
+    set param_card cQj31 -0.792
+    set param_card cQj11 -0.682
+    set param_card cQu1 -0.487
+    set param_card cQd1 1.127
+    set param_card ctj1 -0.918
+    set param_card ctu1 -0.991
+    set param_card ctd1 1.804
+
+
+launch --rwgt_name=EFTrwgt83_ctGIm_1p055_ctGRe_m1p319_cQj38_1p108_cQj18_m4p263_cQu8_m0p674_cQd8_1p378_ctj8_m0p003_ctu8_0p152_ctd8_0p526_cQj31_1p146_cQj11_m1p338_cQu1_m0p015_cQd1_m0p98_ctj1_2p752_ctu1_1p354_ctd1_m2p386
+    set param_card ctGIm 1.055
+    set param_card ctGRe -1.319
+    set param_card cQj38 1.108
+    set param_card cQj18 -4.263
+    set param_card cQu8 -0.674
+    set param_card cQd8 1.378
+    set param_card ctj8 -0.003
+    set param_card ctu8 0.152
+    set param_card ctd8 0.526
+    set param_card cQj31 1.146
+    set param_card cQj11 -1.338
+    set param_card cQu1 -0.015
+    set param_card cQd1 -0.98
+    set param_card ctj1 2.752
+    set param_card ctu1 1.354
+    set param_card ctd1 -2.386
+
+
+launch --rwgt_name=EFTrwgt84_ctGIm_m1p489_ctGRe_1p503_cQj38_m0p618_cQj18_m3p333_cQu8_0p065_cQd8_1p877_ctj8_1p312_ctu8_0p634_ctd8_0p075_cQj31_m1p791_cQj11_1p232_cQu1_m0p334_cQd1_1p166_ctj1_m3p831_ctu1_0p022_ctd1_m1p282
+    set param_card ctGIm -1.489
+    set param_card ctGRe 1.503
+    set param_card cQj38 -0.618
+    set param_card cQj18 -3.333
+    set param_card cQu8 0.065
+    set param_card cQd8 1.877
+    set param_card ctj8 1.312
+    set param_card ctu8 0.634
+    set param_card ctd8 0.075
+    set param_card cQj31 -1.791
+    set param_card cQj11 1.232
+    set param_card cQu1 -0.334
+    set param_card cQd1 1.166
+    set param_card ctj1 -3.831
+    set param_card ctu1 0.022
+    set param_card ctd1 -1.282
+
+
+launch --rwgt_name=EFTrwgt85_ctGIm_m0p867_ctGRe_m0p36_cQj38_1p963_cQj18_1p765_cQu8_m0p834_cQd8_m0p701_ctj8_m0p383_ctu8_1p211_ctd8_m0p929_cQj31_m1p673_cQj11_m1p509_cQu1_m0p055_cQd1_1p142_ctj1_2p196_ctu1_m0p235_ctd1_0p415
+    set param_card ctGIm -0.867
+    set param_card ctGRe -0.36
+    set param_card cQj38 1.963
+    set param_card cQj18 1.765
+    set param_card cQu8 -0.834
+    set param_card cQd8 -0.701
+    set param_card ctj8 -0.383
+    set param_card ctu8 1.211
+    set param_card ctd8 -0.929
+    set param_card cQj31 -1.673
+    set param_card cQj11 -1.509
+    set param_card cQu1 -0.055
+    set param_card cQd1 1.142
+    set param_card ctj1 2.196
+    set param_card ctu1 -0.235
+    set param_card ctd1 0.415
+
+
+launch --rwgt_name=EFTrwgt86_ctGIm_m1p656_ctGRe_m1p592_cQj38_m1p615_cQj18_3p99_cQu8_m0p514_cQd8_0p238_ctj8_2p293_ctu8_m0p344_ctd8_0p874_cQj31_0p862_cQj11_0p608_cQu1_m0p156_cQd1_0p103_ctj1_m2p907_ctu1_m0p534_ctd1_m0p342
+    set param_card ctGIm -1.656
+    set param_card ctGRe -1.592
+    set param_card cQj38 -1.615
+    set param_card cQj18 3.99
+    set param_card cQu8 -0.514
+    set param_card cQd8 0.238
+    set param_card ctj8 2.293
+    set param_card ctu8 -0.344
+    set param_card ctd8 0.874
+    set param_card cQj31 0.862
+    set param_card cQj11 0.608
+    set param_card cQu1 -0.156
+    set param_card cQd1 0.103
+    set param_card ctj1 -2.907
+    set param_card ctu1 -0.534
+    set param_card ctd1 -0.342
+
+
+launch --rwgt_name=EFTrwgt87_ctGIm_m0p202_ctGRe_m0p213_cQj38_1p401_cQj18_m1p815_cQu8_0p645_cQd8_m0p841_ctj8_1p031_ctu8_m1p034_ctd8_0p385_cQj31_0p433_cQj11_m1p274_cQu1_m0p709_cQd1_m1p552_ctj1_0p615_ctu1_1p053_ctd1_2p033
+    set param_card ctGIm -0.202
+    set param_card ctGRe -0.213
+    set param_card cQj38 1.401
+    set param_card cQj18 -1.815
+    set param_card cQu8 0.645
+    set param_card cQd8 -0.841
+    set param_card ctj8 1.031
+    set param_card ctu8 -1.034
+    set param_card ctd8 0.385
+    set param_card cQj31 0.433
+    set param_card cQj11 -1.274
+    set param_card cQu1 -0.709
+    set param_card cQd1 -1.552
+    set param_card ctj1 0.615
+    set param_card ctu1 1.053
+    set param_card ctd1 2.033
+
+
+launch --rwgt_name=EFTrwgt88_ctGIm_1p797_ctGRe_m0p191_cQj38_1p172_cQj18_0p428_cQu8_0p617_cQd8_m0p26_ctj8_1p223_ctu8_1p71_ctd8_1p644_cQj31_0p035_cQj11_m1p079_cQu1_0p186_cQd1_1p016_ctj1_m2p732_ctu1_0p372_ctd1_m1p331
+    set param_card ctGIm 1.797
+    set param_card ctGRe -0.191
+    set param_card cQj38 1.172
+    set param_card cQj18 0.428
+    set param_card cQu8 0.617
+    set param_card cQd8 -0.26
+    set param_card ctj8 1.223
+    set param_card ctu8 1.71
+    set param_card ctd8 1.644
+    set param_card cQj31 0.035
+    set param_card cQj11 -1.079
+    set param_card cQu1 0.186
+    set param_card cQd1 1.016
+    set param_card ctj1 -2.732
+    set param_card ctu1 0.372
+    set param_card ctd1 -1.331
+
+
+launch --rwgt_name=EFTrwgt89_ctGIm_m1p375_ctGRe_m1p425_cQj38_0p141_cQj18_m1p471_cQu8_0p974_cQd8_m1p77_ctj8_m2p236_ctu8_1p123_ctd8_3p022_cQj31_m0p667_cQj11_m1p542_cQu1_0p027_cQd1_0p124_ctj1_0p906_ctu1_1p329_ctd1_0p674
+    set param_card ctGIm -1.375
+    set param_card ctGRe -1.425
+    set param_card cQj38 0.141
+    set param_card cQj18 -1.471
+    set param_card cQu8 0.974
+    set param_card cQd8 -1.77
+    set param_card ctj8 -2.236
+    set param_card ctu8 1.123
+    set param_card ctd8 3.022
+    set param_card cQj31 -0.667
+    set param_card cQj11 -1.542
+    set param_card cQu1 0.027
+    set param_card cQd1 0.124
+    set param_card ctj1 0.906
+    set param_card ctu1 1.329
+    set param_card ctd1 0.674
+
+
+launch --rwgt_name=EFTrwgt90_ctGIm_m0p666_ctGRe_m1p393_cQj38_m0p214_cQj18_4p482_cQu8_0p633_cQd8_m0p052_ctj8_0p917_ctu8_m1p956_ctd8_m2p979_cQj31_m1p387_cQj11_0p857_cQu1_0p332_cQd1_m1p363_ctj1_2p494_ctu1_0p362_ctd1_2p234
+    set param_card ctGIm -0.666
+    set param_card ctGRe -1.393
+    set param_card cQj38 -0.214
+    set param_card cQj18 4.482
+    set param_card cQu8 0.633
+    set param_card cQd8 -0.052
+    set param_card ctj8 0.917
+    set param_card ctu8 -1.956
+    set param_card ctd8 -2.979
+    set param_card cQj31 -1.387
+    set param_card cQj11 0.857
+    set param_card cQu1 0.332
+    set param_card cQd1 -1.363
+    set param_card ctj1 2.494
+    set param_card ctu1 0.362
+    set param_card ctd1 2.234
+
+
+launch --rwgt_name=EFTrwgt91_ctGIm_0p949_ctGRe_m0p488_cQj38_1p764_cQj18_1p354_cQu8_0p082_cQd8_m0p749_ctj8_m1p689_ctu8_0p807_ctd8_2p543_cQj31_m2p247_cQj11_m0p71_cQu1_m0p568_cQd1_1p476_ctj1_2p326_ctu1_0p913_ctd1_1p34
+    set param_card ctGIm 0.949
+    set param_card ctGRe -0.488
+    set param_card cQj38 1.764
+    set param_card cQj18 1.354
+    set param_card cQu8 0.082
+    set param_card cQd8 -0.749
+    set param_card ctj8 -1.689
+    set param_card ctu8 0.807
+    set param_card ctd8 2.543
+    set param_card cQj31 -2.247
+    set param_card cQj11 -0.71
+    set param_card cQu1 -0.568
+    set param_card cQd1 1.476
+    set param_card ctj1 2.326
+    set param_card ctu1 0.913
+    set param_card ctd1 1.34
+
+
+launch --rwgt_name=EFTrwgt92_ctGIm_1p773_ctGRe_0p478_cQj38_m1p75_cQj18_m2p219_cQu8_m0p45_cQd8_0p322_ctj8_1p792_ctu8_m1p707_ctd8_m1p404_cQj31_m1p995_cQj11_m0p944_cQu1_0p437_cQd1_m0p086_ctj1_1p002_ctu1_m1p06_ctd1_m1p749
+    set param_card ctGIm 1.773
+    set param_card ctGRe 0.478
+    set param_card cQj38 -1.75
+    set param_card cQj18 -2.219
+    set param_card cQu8 -0.45
+    set param_card cQd8 0.322
+    set param_card ctj8 1.792
+    set param_card ctu8 -1.707
+    set param_card ctd8 -1.404
+    set param_card cQj31 -1.995
+    set param_card cQj11 -0.944
+    set param_card cQu1 0.437
+    set param_card cQd1 -0.086
+    set param_card ctj1 1.002
+    set param_card ctu1 -1.06
+    set param_card ctd1 -1.749
+
+
+launch --rwgt_name=EFTrwgt93_ctGIm_0p312_ctGRe_m0p047_cQj38_1p662_cQj18_4p829_cQu8_m0p534_cQd8_1p464_ctj8_m2p098_ctu8_0p742_ctd8_1p356_cQj31_2p28_cQj11_0p368_cQu1_m0p84_cQd1_0p727_ctj1_m2p73_ctu1_0p438_ctd1_m1p593
+    set param_card ctGIm 0.312
+    set param_card ctGRe -0.047
+    set param_card cQj38 1.662
+    set param_card cQj18 4.829
+    set param_card cQu8 -0.534
+    set param_card cQd8 1.464
+    set param_card ctj8 -2.098
+    set param_card ctu8 0.742
+    set param_card ctd8 1.356
+    set param_card cQj31 2.28
+    set param_card cQj11 0.368
+    set param_card cQu1 -0.84
+    set param_card cQd1 0.727
+    set param_card ctj1 -2.73
+    set param_card ctu1 0.438
+    set param_card ctd1 -1.593
+
+
+launch --rwgt_name=EFTrwgt94_ctGIm_m0p778_ctGRe_0p944_cQj38_m1p344_cQj18_3p949_cQu8_m0p251_cQd8_1p128_ctj8_0p628_ctu8_m1p714_ctd8_0p713_cQj31_1p042_cQj11_m1p362_cQu1_m0p905_cQd1_1p253_ctj1_0p16_ctu1_1p929_ctd1_1p721
+    set param_card ctGIm -0.778
+    set param_card ctGRe 0.944
+    set param_card cQj38 -1.344
+    set param_card cQj18 3.949
+    set param_card cQu8 -0.251
+    set param_card cQd8 1.128
+    set param_card ctj8 0.628
+    set param_card ctu8 -1.714
+    set param_card ctd8 0.713
+    set param_card cQj31 1.042
+    set param_card cQj11 -1.362
+    set param_card cQu1 -0.905
+    set param_card cQd1 1.253
+    set param_card ctj1 0.16
+    set param_card ctu1 1.929
+    set param_card ctd1 1.721
+
+
+launch --rwgt_name=EFTrwgt95_ctGIm_m0p503_ctGRe_0p51_cQj38_m0p3_cQj18_m4p158_cQu8_m0p018_cQd8_1p08_ctj8_m1p701_ctu8_0p573_ctd8_m3p84_cQj31_m2p238_cQj11_m1p51_cQu1_m0p413_cQd1_0p333_ctj1_3p863_ctu1_0p999_ctd1_1p492
+    set param_card ctGIm -0.503
+    set param_card ctGRe 0.51
+    set param_card cQj38 -0.3
+    set param_card cQj18 -4.158
+    set param_card cQu8 -0.018
+    set param_card cQd8 1.08
+    set param_card ctj8 -1.701
+    set param_card ctu8 0.573
+    set param_card ctd8 -3.84
+    set param_card cQj31 -2.238
+    set param_card cQj11 -1.51
+    set param_card cQu1 -0.413
+    set param_card cQd1 0.333
+    set param_card ctj1 3.863
+    set param_card ctu1 0.999
+    set param_card ctd1 1.492
+
+
+launch --rwgt_name=EFTrwgt96_ctGIm_1p194_ctGRe_0p865_cQj38_m0p752_cQj18_0p067_cQu8_m0p567_cQd8_m1p196_ctj8_1p084_ctu8_m1p588_ctd8_3p58_cQj31_0p358_cQj11_0p353_cQu1_m0p235_cQd1_1p049_ctj1_0p678_ctu1_1p106_ctd1_m0p505
+    set param_card ctGIm 1.194
+    set param_card ctGRe 0.865
+    set param_card cQj38 -0.752
+    set param_card cQj18 0.067
+    set param_card cQu8 -0.567
+    set param_card cQd8 -1.196
+    set param_card ctj8 1.084
+    set param_card ctu8 -1.588
+    set param_card ctd8 3.58
+    set param_card cQj31 0.358
+    set param_card cQj11 0.353
+    set param_card cQu1 -0.235
+    set param_card cQd1 1.049
+    set param_card ctj1 0.678
+    set param_card ctu1 1.106
+    set param_card ctd1 -0.505
+
+
+launch --rwgt_name=EFTrwgt97_ctGIm_0p369_ctGRe_0p272_cQj38_1p736_cQj18_m4p793_cQu8_m0p86_cQd8_m0p297_ctj8_m1p176_ctu8_1p248_ctd8_0p103_cQj31_m1p111_cQj11_m1p272_cQu1_m0p736_cQd1_m1p496_ctj1_m3p387_ctu1_m0p823_ctd1_0p507
+    set param_card ctGIm 0.369
+    set param_card ctGRe 0.272
+    set param_card cQj38 1.736
+    set param_card cQj18 -4.793
+    set param_card cQu8 -0.86
+    set param_card cQd8 -0.297
+    set param_card ctj8 -1.176
+    set param_card ctu8 1.248
+    set param_card ctd8 0.103
+    set param_card cQj31 -1.111
+    set param_card cQj11 -1.272
+    set param_card cQu1 -0.736
+    set param_card cQd1 -1.496
+    set param_card ctj1 -3.387
+    set param_card ctu1 -0.823
+    set param_card ctd1 0.507
+
+
+launch --rwgt_name=EFTrwgt98_ctGIm_0p569_ctGRe_1p311_cQj38_1p963_cQj18_4p335_cQu8_0p718_cQd8_1p771_ctj8_m0p15_ctu8_m1p407_ctd8_3p972_cQj31_m1p552_cQj11_m0p673_cQu1_m0p343_cQd1_m0p985_ctj1_1p848_ctu1_0p296_ctd1_m2p375
+    set param_card ctGIm 0.569
+    set param_card ctGRe 1.311
+    set param_card cQj38 1.963
+    set param_card cQj18 4.335
+    set param_card cQu8 0.718
+    set param_card cQd8 1.771
+    set param_card ctj8 -0.15
+    set param_card ctu8 -1.407
+    set param_card ctd8 3.972
+    set param_card cQj31 -1.552
+    set param_card cQj11 -0.673
+    set param_card cQu1 -0.343
+    set param_card cQd1 -0.985
+    set param_card ctj1 1.848
+    set param_card ctu1 0.296
+    set param_card ctd1 -2.375
+
+
+launch --rwgt_name=EFTrwgt99_ctGIm_m1p539_ctGRe_1p081_cQj38_1p441_cQj18_m4p488_cQu8_0p948_cQd8_m1p857_ctj8_1p464_ctu8_1p067_ctd8_2p406_cQj31_m1p96_cQj11_m0p914_cQu1_0p365_cQd1_m1p36_ctj1_m0p694_ctu1_0p481_ctd1_m1p109
+    set param_card ctGIm -1.539
+    set param_card ctGRe 1.081
+    set param_card cQj38 1.441
+    set param_card cQj18 -4.488
+    set param_card cQu8 0.948
+    set param_card cQd8 -1.857
+    set param_card ctj8 1.464
+    set param_card ctu8 1.067
+    set param_card ctd8 2.406
+    set param_card cQj31 -1.96
+    set param_card cQj11 -0.914
+    set param_card cQu1 0.365
+    set param_card cQd1 -1.36
+    set param_card ctj1 -0.694
+    set param_card ctu1 0.481
+    set param_card ctd1 -1.109
+
+
+launch --rwgt_name=EFTrwgt100_ctGIm_0p559_ctGRe_0p689_cQj38_m0p39_cQj18_1p831_cQu8_m0p643_cQd8_0p242_ctj8_m1p419_ctu8_m1p314_ctd8_2p207_cQj31_m0p146_cQj11_1p377_cQu1_m0p157_cQd1_m0p902_ctj1_1p848_ctu1_m1p638_ctd1_m1p411
+    set param_card ctGIm 0.559
+    set param_card ctGRe 0.689
+    set param_card cQj38 -0.39
+    set param_card cQj18 1.831
+    set param_card cQu8 -0.643
+    set param_card cQd8 0.242
+    set param_card ctj8 -1.419
+    set param_card ctu8 -1.314
+    set param_card ctd8 2.207
+    set param_card cQj31 -0.146
+    set param_card cQj11 1.377
+    set param_card cQu1 -0.157
+    set param_card cQd1 -0.902
+    set param_card ctj1 1.848
+    set param_card ctu1 -1.638
+    set param_card ctd1 -1.411
+
+
+launch --rwgt_name=EFTrwgt101_ctGIm_0p551_ctGRe_m1p505_cQj38_m1p043_cQj18_m3p384_cQu8_m0p605_cQd8_m1p992_ctj8_2p207_ctu8_m0p073_ctd8_m0p871_cQj31_m0p145_cQj11_m1p277_cQu1_m0p937_cQd1_m1p133_ctj1_m3p657_ctu1_m0p388_ctd1_2p119
+    set param_card ctGIm 0.551
+    set param_card ctGRe -1.505
+    set param_card cQj38 -1.043
+    set param_card cQj18 -3.384
+    set param_card cQu8 -0.605
+    set param_card cQd8 -1.992
+    set param_card ctj8 2.207
+    set param_card ctu8 -0.073
+    set param_card ctd8 -0.871
+    set param_card cQj31 -0.145
+    set param_card cQj11 -1.277
+    set param_card cQu1 -0.937
+    set param_card cQd1 -1.133
+    set param_card ctj1 -3.657
+    set param_card ctu1 -0.388
+    set param_card ctd1 2.119
+
+
+launch --rwgt_name=EFTrwgt102_ctGIm_m0p349_ctGRe_m1p358_cQj38_1p397_cQj18_m3p607_cQu8_m0p398_cQd8_m1p508_ctj8_2p104_ctu8_0p188_ctd8_1p478_cQj31_m2p223_cQj11_m0p574_cQu1_0p57_cQd1_m0p838_ctj1_2p043_ctu1_0p08_ctd1_m0p127
+    set param_card ctGIm -0.349
+    set param_card ctGRe -1.358
+    set param_card cQj38 1.397
+    set param_card cQj18 -3.607
+    set param_card cQu8 -0.398
+    set param_card cQd8 -1.508
+    set param_card ctj8 2.104
+    set param_card ctu8 0.188
+    set param_card ctd8 1.478
+    set param_card cQj31 -2.223
+    set param_card cQj11 -0.574
+    set param_card cQu1 0.57
+    set param_card cQd1 -0.838
+    set param_card ctj1 2.043
+    set param_card ctu1 0.08
+    set param_card ctd1 -0.127
+
+
+launch --rwgt_name=EFTrwgt103_ctGIm_m0p678_ctGRe_0p245_cQj38_0p992_cQj18_m0p535_cQu8_0p091_cQd8_m0p779_ctj8_m2p227_ctu8_m0p564_ctd8_m1p997_cQj31_1p13_cQj11_m0p849_cQu1_m0p576_cQd1_m0p847_ctj1_1p145_ctu1_m1p036_ctd1_0p993
+    set param_card ctGIm -0.678
+    set param_card ctGRe 0.245
+    set param_card cQj38 0.992
+    set param_card cQj18 -0.535
+    set param_card cQu8 0.091
+    set param_card cQd8 -0.779
+    set param_card ctj8 -2.227
+    set param_card ctu8 -0.564
+    set param_card ctd8 -1.997
+    set param_card cQj31 1.13
+    set param_card cQj11 -0.849
+    set param_card cQu1 -0.576
+    set param_card cQd1 -0.847
+    set param_card ctj1 1.145
+    set param_card ctu1 -1.036
+    set param_card ctd1 0.993
+
+
+launch --rwgt_name=EFTrwgt104_ctGIm_m0p076_ctGRe_0p361_cQj38_m1p304_cQj18_m4p552_cQu8_0p834_cQd8_0p066_ctj8_m1p922_ctu8_0p451_ctd8_0p294_cQj31_1p981_cQj11_m0p082_cQu1_m0p527_cQd1_0p226_ctj1_1p926_ctu1_1p16_ctd1_m1p974
+    set param_card ctGIm -0.076
+    set param_card ctGRe 0.361
+    set param_card cQj38 -1.304
+    set param_card cQj18 -4.552
+    set param_card cQu8 0.834
+    set param_card cQd8 0.066
+    set param_card ctj8 -1.922
+    set param_card ctu8 0.451
+    set param_card ctd8 0.294
+    set param_card cQj31 1.981
+    set param_card cQj11 -0.082
+    set param_card cQu1 -0.527
+    set param_card cQd1 0.226
+    set param_card ctj1 1.926
+    set param_card ctu1 1.16
+    set param_card ctd1 -1.974
+
+
+launch --rwgt_name=EFTrwgt105_ctGIm_0p447_ctGRe_m0p88_cQj38_0p396_cQj18_4p318_cQu8_m0p787_cQd8_m0p307_ctj8_m1p955_ctu8_0p195_ctd8_m3p569_cQj31_0p844_cQj11_0p364_cQu1_m0p289_cQd1_0p744_ctj1_m0p524_ctu1_m1p1_ctd1_2p37
+    set param_card ctGIm 0.447
+    set param_card ctGRe -0.88
+    set param_card cQj38 0.396
+    set param_card cQj18 4.318
+    set param_card cQu8 -0.787
+    set param_card cQd8 -0.307
+    set param_card ctj8 -1.955
+    set param_card ctu8 0.195
+    set param_card ctd8 -3.569
+    set param_card cQj31 0.844
+    set param_card cQj11 0.364
+    set param_card cQu1 -0.289
+    set param_card cQd1 0.744
+    set param_card ctj1 -0.524
+    set param_card ctu1 -1.1
+    set param_card ctd1 2.37
+
+
+launch --rwgt_name=EFTrwgt106_ctGIm_0p353_ctGRe_m0p612_cQj38_m0p013_cQj18_m4p506_cQu8_0p524_cQd8_1p455_ctj8_m2p03_ctu8_m1p884_ctd8_m0p207_cQj31_m2p325_cQj11_m0p176_cQu1_m0p714_cQd1_0p772_ctj1_0p495_ctu1_1p599_ctd1_m2p036
+    set param_card ctGIm 0.353
+    set param_card ctGRe -0.612
+    set param_card cQj38 -0.013
+    set param_card cQj18 -4.506
+    set param_card cQu8 0.524
+    set param_card cQd8 1.455
+    set param_card ctj8 -2.03
+    set param_card ctu8 -1.884
+    set param_card ctd8 -0.207
+    set param_card cQj31 -2.325
+    set param_card cQj11 -0.176
+    set param_card cQu1 -0.714
+    set param_card cQd1 0.772
+    set param_card ctj1 0.495
+    set param_card ctu1 1.599
+    set param_card ctd1 -2.036
+
+
+launch --rwgt_name=EFTrwgt107_ctGIm_0p708_ctGRe_1p498_cQj38_m0p133_cQj18_4p972_cQu8_m0p294_cQd8_m0p317_ctj8_m0p415_ctu8_m1p412_ctd8_m0p219_cQj31_m1p557_cQj11_0p418_cQu1_m0p568_cQd1_1p031_ctj1_1p665_ctu1_0p729_ctd1_m0p243
+    set param_card ctGIm 0.708
+    set param_card ctGRe 1.498
+    set param_card cQj38 -0.133
+    set param_card cQj18 4.972
+    set param_card cQu8 -0.294
+    set param_card cQd8 -0.317
+    set param_card ctj8 -0.415
+    set param_card ctu8 -1.412
+    set param_card ctd8 -0.219
+    set param_card cQj31 -1.557
+    set param_card cQj11 0.418
+    set param_card cQu1 -0.568
+    set param_card cQd1 1.031
+    set param_card ctj1 1.665
+    set param_card ctu1 0.729
+    set param_card ctd1 -0.243
+
+
+launch --rwgt_name=EFTrwgt108_ctGIm_0p912_ctGRe_1p217_cQj38_m0p483_cQj18_1p381_cQu8_0p807_cQd8_1p246_ctj8_m0p275_ctu8_0p848_ctd8_0p666_cQj31_m0p649_cQj11_m1p309_cQu1_0p195_cQd1_m0p096_ctj1_1p077_ctu1_1p33_ctd1_m0p205
+    set param_card ctGIm 0.912
+    set param_card ctGRe 1.217
+    set param_card cQj38 -0.483
+    set param_card cQj18 1.381
+    set param_card cQu8 0.807
+    set param_card cQd8 1.246
+    set param_card ctj8 -0.275
+    set param_card ctu8 0.848
+    set param_card ctd8 0.666
+    set param_card cQj31 -0.649
+    set param_card cQj11 -1.309
+    set param_card cQu1 0.195
+    set param_card cQd1 -0.096
+    set param_card ctj1 1.077
+    set param_card ctu1 1.33
+    set param_card ctd1 -0.205
+
+
+launch --rwgt_name=EFTrwgt109_ctGIm_1p714_ctGRe_0p334_cQj38_m0p487_cQj18_m2p057_cQu8_m0p698_cQd8_m1p527_ctj8_1p805_ctu8_1p828_ctd8_m0p527_cQj31_m0p158_cQj11_m0p399_cQu1_m0p407_cQd1_m0p987_ctj1_m3p932_ctu1_m0p706_ctd1_2p119
+    set param_card ctGIm 1.714
+    set param_card ctGRe 0.334
+    set param_card cQj38 -0.487
+    set param_card cQj18 -2.057
+    set param_card cQu8 -0.698
+    set param_card cQd8 -1.527
+    set param_card ctj8 1.805
+    set param_card ctu8 1.828
+    set param_card ctd8 -0.527
+    set param_card cQj31 -0.158
+    set param_card cQj11 -0.399
+    set param_card cQu1 -0.407
+    set param_card cQd1 -0.987
+    set param_card ctj1 -3.932
+    set param_card ctu1 -0.706
+    set param_card ctd1 2.119
+
+
+launch --rwgt_name=EFTrwgt110_ctGIm_m1p508_ctGRe_m1p512_cQj38_m0p981_cQj18_2p277_cQu8_m0p171_cQd8_m1p968_ctj8_0p869_ctu8_m1p699_ctd8_m0p894_cQj31_1p977_cQj11_1p341_cQu1_0p984_cQd1_0p997_ctj1_m0p207_ctu1_1p049_ctd1_0p524
+    set param_card ctGIm -1.508
+    set param_card ctGRe -1.512
+    set param_card cQj38 -0.981
+    set param_card cQj18 2.277
+    set param_card cQu8 -0.171
+    set param_card cQd8 -1.968
+    set param_card ctj8 0.869
+    set param_card ctu8 -1.699
+    set param_card ctd8 -0.894
+    set param_card cQj31 1.977
+    set param_card cQj11 1.341
+    set param_card cQu1 0.984
+    set param_card cQd1 0.997
+    set param_card ctj1 -0.207
+    set param_card ctu1 1.049
+    set param_card ctd1 0.524
+
+
+launch --rwgt_name=EFTrwgt111_ctGIm_m0p092_ctGRe_0p725_cQj38_0p199_cQj18_m3p591_cQu8_0p613_cQd8_m1p8_ctj8_1p812_ctu8_m0p775_ctd8_3p433_cQj31_m0p965_cQj11_m1p037_cQu1_0p068_cQd1_m0p806_ctj1_3p493_ctu1_0p2_ctd1_0p526
+    set param_card ctGIm -0.092
+    set param_card ctGRe 0.725
+    set param_card cQj38 0.199
+    set param_card cQj18 -3.591
+    set param_card cQu8 0.613
+    set param_card cQd8 -1.8
+    set param_card ctj8 1.812
+    set param_card ctu8 -0.775
+    set param_card ctd8 3.433
+    set param_card cQj31 -0.965
+    set param_card cQj11 -1.037
+    set param_card cQu1 0.068
+    set param_card cQd1 -0.806
+    set param_card ctj1 3.493
+    set param_card ctu1 0.2
+    set param_card ctd1 0.526
+
+
+launch --rwgt_name=EFTrwgt112_ctGIm_0p921_ctGRe_m1p149_cQj38_m0p281_cQj18_m4p808_cQu8_0p704_cQd8_m1p916_ctj8_0p821_ctu8_m0p55_ctd8_3p909_cQj31_2p056_cQj11_m0p329_cQu1_m0p103_cQd1_0p725_ctj1_3p136_ctu1_m1p448_ctd1_1p305
+    set param_card ctGIm 0.921
+    set param_card ctGRe -1.149
+    set param_card cQj38 -0.281
+    set param_card cQj18 -4.808
+    set param_card cQu8 0.704
+    set param_card cQd8 -1.916
+    set param_card ctj8 0.821
+    set param_card ctu8 -0.55
+    set param_card ctd8 3.909
+    set param_card cQj31 2.056
+    set param_card cQj11 -0.329
+    set param_card cQu1 -0.103
+    set param_card cQd1 0.725
+    set param_card ctj1 3.136
+    set param_card ctu1 -1.448
+    set param_card ctd1 1.305
+
+
+launch --rwgt_name=EFTrwgt113_ctGIm_0p333_ctGRe_m0p216_cQj38_0p011_cQj18_1p928_cQu8_m0p414_cQd8_m0p949_ctj8_m0p19_ctu8_m1p858_ctd8_m0p67_cQj31_m2p075_cQj11_0p925_cQu1_0p626_cQd1_m0p013_ctj1_m2p027_ctu1_m1p735_ctd1_m0p248
+    set param_card ctGIm 0.333
+    set param_card ctGRe -0.216
+    set param_card cQj38 0.011
+    set param_card cQj18 1.928
+    set param_card cQu8 -0.414
+    set param_card cQd8 -0.949
+    set param_card ctj8 -0.19
+    set param_card ctu8 -1.858
+    set param_card ctd8 -0.67
+    set param_card cQj31 -2.075
+    set param_card cQj11 0.925
+    set param_card cQu1 0.626
+    set param_card cQd1 -0.013
+    set param_card ctj1 -2.027
+    set param_card ctu1 -1.735
+    set param_card ctd1 -0.248
+
+
+launch --rwgt_name=EFTrwgt114_ctGIm_1p246_ctGRe_m0p619_cQj38_1p022_cQj18_m1p9_cQu8_0p821_cQd8_m1p108_ctj8_1p448_ctu8_0p396_ctd8_3p509_cQj31_0p343_cQj11_1p317_cQu1_0p702_cQd1_0p694_ctj1_3p907_ctu1_m1p79_ctd1_m0p439
+    set param_card ctGIm 1.246
+    set param_card ctGRe -0.619
+    set param_card cQj38 1.022
+    set param_card cQj18 -1.9
+    set param_card cQu8 0.821
+    set param_card cQd8 -1.108
+    set param_card ctj8 1.448
+    set param_card ctu8 0.396
+    set param_card ctd8 3.509
+    set param_card cQj31 0.343
+    set param_card cQj11 1.317
+    set param_card cQu1 0.702
+    set param_card cQd1 0.694
+    set param_card ctj1 3.907
+    set param_card ctu1 -1.79
+    set param_card ctd1 -0.439
+
+
+launch --rwgt_name=EFTrwgt115_ctGIm_0p618_ctGRe_m0p051_cQj38_1p147_cQj18_4p607_cQu8_0p683_cQd8_0p138_ctj8_1p39_ctu8_1p916_ctd8_m3p107_cQj31_0p391_cQj11_m0p277_cQu1_m0p151_cQd1_m1p071_ctj1_m1p801_ctu1_0p779_ctd1_m2p01
+    set param_card ctGIm 0.618
+    set param_card ctGRe -0.051
+    set param_card cQj38 1.147
+    set param_card cQj18 4.607
+    set param_card cQu8 0.683
+    set param_card cQd8 0.138
+    set param_card ctj8 1.39
+    set param_card ctu8 1.916
+    set param_card ctd8 -3.107
+    set param_card cQj31 0.391
+    set param_card cQj11 -0.277
+    set param_card cQu1 -0.151
+    set param_card cQd1 -1.071
+    set param_card ctj1 -1.801
+    set param_card ctu1 0.779
+    set param_card ctd1 -2.01
+
+
+launch --rwgt_name=EFTrwgt116_ctGIm_m1p504_ctGRe_m0p281_cQj38_0p938_cQj18_m2p351_cQu8_0p053_cQd8_m1p185_ctj8_2p105_ctu8_m0p547_ctd8_3p739_cQj31_0p07_cQj11_m0p452_cQu1_0p862_cQd1_0p755_ctj1_m1p623_ctu1_m1p489_ctd1_m2p048
+    set param_card ctGIm -1.504
+    set param_card ctGRe -0.281
+    set param_card cQj38 0.938
+    set param_card cQj18 -2.351
+    set param_card cQu8 0.053
+    set param_card cQd8 -1.185
+    set param_card ctj8 2.105
+    set param_card ctu8 -0.547
+    set param_card ctd8 3.739
+    set param_card cQj31 0.07
+    set param_card cQj11 -0.452
+    set param_card cQu1 0.862
+    set param_card cQd1 0.755
+    set param_card ctj1 -1.623
+    set param_card ctu1 -1.489
+    set param_card ctd1 -2.048
+
+
+launch --rwgt_name=EFTrwgt117_ctGIm_m1p421_ctGRe_m1p498_cQj38_m0p067_cQj18_4p028_cQu8_m0p088_cQd8_0p163_ctj8_m1p617_ctu8_1p989_ctd8_m2p242_cQj31_m2p299_cQj11_1p094_cQu1_0p073_cQd1_m0p518_ctj1_m2p557_ctu1_m1p085_ctd1_0p829
+    set param_card ctGIm -1.421
+    set param_card ctGRe -1.498
+    set param_card cQj38 -0.067
+    set param_card cQj18 4.028
+    set param_card cQu8 -0.088
+    set param_card cQd8 0.163
+    set param_card ctj8 -1.617
+    set param_card ctu8 1.989
+    set param_card ctd8 -2.242
+    set param_card cQj31 -2.299
+    set param_card cQj11 1.094
+    set param_card cQu1 0.073
+    set param_card cQd1 -0.518
+    set param_card ctj1 -2.557
+    set param_card ctu1 -1.085
+    set param_card ctd1 0.829
+
+
+launch --rwgt_name=EFTrwgt118_ctGIm_m0p718_ctGRe_m1p259_cQj38_m0p823_cQj18_m4p699_cQu8_m0p703_cQd8_1p581_ctj8_1p33_ctu8_1p057_ctd8_1p09_cQj31_m2p329_cQj11_m0p835_cQu1_0p637_cQd1_1p0_ctj1_m0p998_ctu1_m0p991_ctd1_m1p508
+    set param_card ctGIm -0.718
+    set param_card ctGRe -1.259
+    set param_card cQj38 -0.823
+    set param_card cQj18 -4.699
+    set param_card cQu8 -0.703
+    set param_card cQd8 1.581
+    set param_card ctj8 1.33
+    set param_card ctu8 1.057
+    set param_card ctd8 1.09
+    set param_card cQj31 -2.329
+    set param_card cQj11 -0.835
+    set param_card cQu1 0.637
+    set param_card cQd1 1.0
+    set param_card ctj1 -0.998
+    set param_card ctu1 -0.991
+    set param_card ctd1 -1.508
+
+
+launch --rwgt_name=EFTrwgt119_ctGIm_0p518_ctGRe_m0p707_cQj38_m0p072_cQj18_m3p347_cQu8_0p074_cQd8_1p072_ctj8_m0p498_ctu8_m1p581_ctd8_m1p988_cQj31_0p561_cQj11_1p576_cQu1_0p349_cQd1_0p127_ctj1_m1p622_ctu1_m0p917_ctd1_m0p67
+    set param_card ctGIm 0.518
+    set param_card ctGRe -0.707
+    set param_card cQj38 -0.072
+    set param_card cQj18 -3.347
+    set param_card cQu8 0.074
+    set param_card cQd8 1.072
+    set param_card ctj8 -0.498
+    set param_card ctu8 -1.581
+    set param_card ctd8 -1.988
+    set param_card cQj31 0.561
+    set param_card cQj11 1.576
+    set param_card cQu1 0.349
+    set param_card cQd1 0.127
+    set param_card ctj1 -1.622
+    set param_card ctu1 -0.917
+    set param_card ctd1 -0.67
+
+
+launch --rwgt_name=EFTrwgt120_ctGIm_m0p363_ctGRe_m0p129_cQj38_1p094_cQj18_m1p309_cQu8_0p394_cQd8_0p034_ctj8_0p513_ctu8_m1p615_ctd8_3p399_cQj31_m1p16_cQj11_0p709_cQu1_m0p328_cQd1_1p554_ctj1_m0p451_ctu1_m0p258_ctd1_1p139
+    set param_card ctGIm -0.363
+    set param_card ctGRe -0.129
+    set param_card cQj38 1.094
+    set param_card cQj18 -1.309
+    set param_card cQu8 0.394
+    set param_card cQd8 0.034
+    set param_card ctj8 0.513
+    set param_card ctu8 -1.615
+    set param_card ctd8 3.399
+    set param_card cQj31 -1.16
+    set param_card cQj11 0.709
+    set param_card cQu1 -0.328
+    set param_card cQd1 1.554
+    set param_card ctj1 -0.451
+    set param_card ctu1 -0.258
+    set param_card ctd1 1.139
+
+
+launch --rwgt_name=EFTrwgt121_ctGIm_m0p75_ctGRe_0p963_cQj38_1p73_cQj18_0p979_cQu8_m0p479_cQd8_1p338_ctj8_2p301_ctu8_0p65_ctd8_1p914_cQj31_m1p971_cQj11_m1p457_cQu1_m0p974_cQd1_1p588_ctj1_2p899_ctu1_m1p835_ctd1_m1p632
+    set param_card ctGIm -0.75
+    set param_card ctGRe 0.963
+    set param_card cQj38 1.73
+    set param_card cQj18 0.979
+    set param_card cQu8 -0.479
+    set param_card cQd8 1.338
+    set param_card ctj8 2.301
+    set param_card ctu8 0.65
+    set param_card ctd8 1.914
+    set param_card cQj31 -1.971
+    set param_card cQj11 -1.457
+    set param_card cQu1 -0.974
+    set param_card cQd1 1.588
+    set param_card ctj1 2.899
+    set param_card ctu1 -1.835
+    set param_card ctd1 -1.632
+
+
+launch --rwgt_name=EFTrwgt122_ctGIm_1p097_ctGRe_m0p84_cQj38_m1p85_cQj18_m0p277_cQu8_m0p812_cQd8_1p289_ctj8_m0p816_ctu8_m0p892_ctd8_m3p174_cQj31_m1p549_cQj11_m1p137_cQu1_m0p851_cQd1_1p232_ctj1_m3p843_ctu1_1p106_ctd1_m0p992
+    set param_card ctGIm 1.097
+    set param_card ctGRe -0.84
+    set param_card cQj38 -1.85
+    set param_card cQj18 -0.277
+    set param_card cQu8 -0.812
+    set param_card cQd8 1.289
+    set param_card ctj8 -0.816
+    set param_card ctu8 -0.892
+    set param_card ctd8 -3.174
+    set param_card cQj31 -1.549
+    set param_card cQj11 -1.137
+    set param_card cQu1 -0.851
+    set param_card cQd1 1.232
+    set param_card ctj1 -3.843
+    set param_card ctu1 1.106
+    set param_card ctd1 -0.992
+
+
+launch --rwgt_name=EFTrwgt123_ctGIm_m0p08_ctGRe_m0p402_cQj38_0p543_cQj18_m2p142_cQu8_m0p271_cQd8_m0p897_ctj8_0p15_ctu8_0p922_ctd8_m3p359_cQj31_m0p618_cQj11_m0p577_cQu1_m0p257_cQd1_0p299_ctj1_m1p393_ctu1_1p767_ctd1_m2p019
+    set param_card ctGIm -0.08
+    set param_card ctGRe -0.402
+    set param_card cQj38 0.543
+    set param_card cQj18 -2.142
+    set param_card cQu8 -0.271
+    set param_card cQd8 -0.897
+    set param_card ctj8 0.15
+    set param_card ctu8 0.922
+    set param_card ctd8 -3.359
+    set param_card cQj31 -0.618
+    set param_card cQj11 -0.577
+    set param_card cQu1 -0.257
+    set param_card cQd1 0.299
+    set param_card ctj1 -1.393
+    set param_card ctu1 1.767
+    set param_card ctd1 -2.019
+
+
+launch --rwgt_name=EFTrwgt124_ctGIm_m1p13_ctGRe_0p557_cQj38_m0p301_cQj18_1p423_cQu8_0p577_cQd8_m1p57_ctj8_0p73_ctu8_m1p399_ctd8_m0p63_cQj31_m2p239_cQj11_m0p603_cQu1_0p832_cQd1_0p889_ctj1_m1p48_ctu1_1p235_ctd1_m1p931
+    set param_card ctGIm -1.13
+    set param_card ctGRe 0.557
+    set param_card cQj38 -0.301
+    set param_card cQj18 1.423
+    set param_card cQu8 0.577
+    set param_card cQd8 -1.57
+    set param_card ctj8 0.73
+    set param_card ctu8 -1.399
+    set param_card ctd8 -0.63
+    set param_card cQj31 -2.239
+    set param_card cQj11 -0.603
+    set param_card cQu1 0.832
+    set param_card cQd1 0.889
+    set param_card ctj1 -1.48
+    set param_card ctu1 1.235
+    set param_card ctd1 -1.931
+
+
+launch --rwgt_name=EFTrwgt125_ctGIm_m1p534_ctGRe_0p356_cQj38_m0p007_cQj18_4p365_cQu8_0p758_cQd8_1p013_ctj8_1p078_ctu8_0p162_ctd8_m0p955_cQj31_0p7_cQj11_0p655_cQu1_0p015_cQd1_m1p064_ctj1_m1p621_ctu1_m1p016_ctd1_0p512
+    set param_card ctGIm -1.534
+    set param_card ctGRe 0.356
+    set param_card cQj38 -0.007
+    set param_card cQj18 4.365
+    set param_card cQu8 0.758
+    set param_card cQd8 1.013
+    set param_card ctj8 1.078
+    set param_card ctu8 0.162
+    set param_card ctd8 -0.955
+    set param_card cQj31 0.7
+    set param_card cQj11 0.655
+    set param_card cQu1 0.015
+    set param_card cQd1 -1.064
+    set param_card ctj1 -1.621
+    set param_card ctu1 -1.016
+    set param_card ctd1 0.512
+
+
+launch --rwgt_name=EFTrwgt126_ctGIm_m1p153_ctGRe_0p363_cQj38_0p849_cQj18_m1p567_cQu8_0p31_cQd8_m0p015_ctj8_m0p542_ctu8_m0p709_ctd8_1p817_cQj31_m0p2_cQj11_1p124_cQu1_m0p995_cQd1_m0p522_ctj1_2p416_ctu1_0p716_ctd1_1p757
+    set param_card ctGIm -1.153
+    set param_card ctGRe 0.363
+    set param_card cQj38 0.849
+    set param_card cQj18 -1.567
+    set param_card cQu8 0.31
+    set param_card cQd8 -0.015
+    set param_card ctj8 -0.542
+    set param_card ctu8 -0.709
+    set param_card ctd8 1.817
+    set param_card cQj31 -0.2
+    set param_card cQj11 1.124
+    set param_card cQu1 -0.995
+    set param_card cQd1 -0.522
+    set param_card ctj1 2.416
+    set param_card ctu1 0.716
+    set param_card ctd1 1.757
+
+
+launch --rwgt_name=EFTrwgt127_ctGIm_1p703_ctGRe_0p977_cQj38_m0p504_cQj18_m1p892_cQu8_0p795_cQd8_0p513_ctj8_m2p067_ctu8_m1p828_ctd8_m0p333_cQj31_1p982_cQj11_0p279_cQu1_m0p604_cQd1_0p625_ctj1_0p878_ctu1_0p633_ctd1_m0p206
+    set param_card ctGIm 1.703
+    set param_card ctGRe 0.977
+    set param_card cQj38 -0.504
+    set param_card cQj18 -1.892
+    set param_card cQu8 0.795
+    set param_card cQd8 0.513
+    set param_card ctj8 -2.067
+    set param_card ctu8 -1.828
+    set param_card ctd8 -0.333
+    set param_card cQj31 1.982
+    set param_card cQj11 0.279
+    set param_card cQu1 -0.604
+    set param_card cQd1 0.625
+    set param_card ctj1 0.878
+    set param_card ctu1 0.633
+    set param_card ctd1 -0.206
+
+
+launch --rwgt_name=EFTrwgt128_ctGIm_1p738_ctGRe_1p194_cQj38_m0p396_cQj18_1p909_cQu8_m0p416_cQd8_m1p006_ctj8_m0p287_ctu8_m0p516_ctd8_m3p335_cQj31_m0p931_cQj11_0p288_cQu1_0p478_cQd1_0p462_ctj1_m0p186_ctu1_0p664_ctd1_m1p361
+    set param_card ctGIm 1.738
+    set param_card ctGRe 1.194
+    set param_card cQj38 -0.396
+    set param_card cQj18 1.909
+    set param_card cQu8 -0.416
+    set param_card cQd8 -1.006
+    set param_card ctj8 -0.287
+    set param_card ctu8 -0.516
+    set param_card ctd8 -3.335
+    set param_card cQj31 -0.931
+    set param_card cQj11 0.288
+    set param_card cQu1 0.478
+    set param_card cQd1 0.462
+    set param_card ctj1 -0.186
+    set param_card ctu1 0.664
+    set param_card ctd1 -1.361
+
+
+launch --rwgt_name=EFTrwgt129_ctGIm_m0p837_ctGRe_1p507_cQj38_m1p458_cQj18_0p417_cQu8_0p097_cQd8_0p458_ctj8_0p942_ctu8_m0p274_ctd8_3p27_cQj31_0p372_cQj11_0p483_cQu1_m0p555_cQd1_0p703_ctj1_2p579_ctu1_m1p469_ctd1_m1p253
+    set param_card ctGIm -0.837
+    set param_card ctGRe 1.507
+    set param_card cQj38 -1.458
+    set param_card cQj18 0.417
+    set param_card cQu8 0.097
+    set param_card cQd8 0.458
+    set param_card ctj8 0.942
+    set param_card ctu8 -0.274
+    set param_card ctd8 3.27
+    set param_card cQj31 0.372
+    set param_card cQj11 0.483
+    set param_card cQu1 -0.555
+    set param_card cQd1 0.703
+    set param_card ctj1 2.579
+    set param_card ctu1 -1.469
+    set param_card ctd1 -1.253
+
+
+launch --rwgt_name=EFTrwgt130_ctGIm_0p441_ctGRe_m0p825_cQj38_0p264_cQj18_2p321_cQu8_0p965_cQd8_m0p658_ctj8_m1p628_ctu8_0p819_ctd8_m1p878_cQj31_m0p32_cQj11_0p218_cQu1_m0p279_cQd1_m1p536_ctj1_m3p258_ctu1_m1p089_ctd1_m0p197
+    set param_card ctGIm 0.441
+    set param_card ctGRe -0.825
+    set param_card cQj38 0.264
+    set param_card cQj18 2.321
+    set param_card cQu8 0.965
+    set param_card cQd8 -0.658
+    set param_card ctj8 -1.628
+    set param_card ctu8 0.819
+    set param_card ctd8 -1.878
+    set param_card cQj31 -0.32
+    set param_card cQj11 0.218
+    set param_card cQu1 -0.279
+    set param_card cQd1 -1.536
+    set param_card ctj1 -3.258
+    set param_card ctu1 -1.089
+    set param_card ctd1 -0.197
+
+
+launch --rwgt_name=EFTrwgt131_ctGIm_1p649_ctGRe_m0p904_cQj38_m1p325_cQj18_m2p312_cQu8_0p711_cQd8_0p945_ctj8_2p096_ctu8_0p448_ctd8_m1p628_cQj31_m0p589_cQj11_0p201_cQu1_m0p949_cQd1_m0p116_ctj1_m0p832_ctu1_m0p637_ctd1_m0p075
+    set param_card ctGIm 1.649
+    set param_card ctGRe -0.904
+    set param_card cQj38 -1.325
+    set param_card cQj18 -2.312
+    set param_card cQu8 0.711
+    set param_card cQd8 0.945
+    set param_card ctj8 2.096
+    set param_card ctu8 0.448
+    set param_card ctd8 -1.628
+    set param_card cQj31 -0.589
+    set param_card cQj11 0.201
+    set param_card cQu1 -0.949
+    set param_card cQd1 -0.116
+    set param_card ctj1 -0.832
+    set param_card ctu1 -0.637
+    set param_card ctd1 -0.075
+
+
+launch --rwgt_name=EFTrwgt132_ctGIm_m0p29_ctGRe_0p204_cQj38_m1p287_cQj18_m3p094_cQu8_0p624_cQd8_m1p44_ctj8_m1p85_ctu8_m1p252_ctd8_m1p822_cQj31_0p628_cQj11_m0p489_cQu1_m0p209_cQd1_m0p679_ctj1_3p581_ctu1_1p795_ctd1_m0p315
+    set param_card ctGIm -0.29
+    set param_card ctGRe 0.204
+    set param_card cQj38 -1.287
+    set param_card cQj18 -3.094
+    set param_card cQu8 0.624
+    set param_card cQd8 -1.44
+    set param_card ctj8 -1.85
+    set param_card ctu8 -1.252
+    set param_card ctd8 -1.822
+    set param_card cQj31 0.628
+    set param_card cQj11 -0.489
+    set param_card cQu1 -0.209
+    set param_card cQd1 -0.679
+    set param_card ctj1 3.581
+    set param_card ctu1 1.795
+    set param_card ctd1 -0.315
+
+
+launch --rwgt_name=EFTrwgt133_ctGIm_1p281_ctGRe_1p291_cQj38_m0p701_cQj18_m4p351_cQu8_0p737_cQd8_0p594_ctj8_0p707_ctu8_m0p222_ctd8_3p532_cQj31_m0p591_cQj11_m0p057_cQu1_0p195_cQd1_0p57_ctj1_m1p743_ctu1_0p261_ctd1_m0p073
+    set param_card ctGIm 1.281
+    set param_card ctGRe 1.291
+    set param_card cQj38 -0.701
+    set param_card cQj18 -4.351
+    set param_card cQu8 0.737
+    set param_card cQd8 0.594
+    set param_card ctj8 0.707
+    set param_card ctu8 -0.222
+    set param_card ctd8 3.532
+    set param_card cQj31 -0.591
+    set param_card cQj11 -0.057
+    set param_card cQu1 0.195
+    set param_card cQd1 0.57
+    set param_card ctj1 -1.743
+    set param_card ctu1 0.261
+    set param_card ctd1 -0.073
+
+
+launch --rwgt_name=EFTrwgt134_ctGIm_m0p263_ctGRe_0p528_cQj38_m0p188_cQj18_m2p15_cQu8_m0p943_cQd8_1p357_ctj8_m1p321_ctu8_0p604_ctd8_1p661_cQj31_0p896_cQj11_m0p081_cQu1_m0p911_cQd1_m0p037_ctj1_0p561_ctu1_0p253_ctd1_m1p023
+    set param_card ctGIm -0.263
+    set param_card ctGRe 0.528
+    set param_card cQj38 -0.188
+    set param_card cQj18 -2.15
+    set param_card cQu8 -0.943
+    set param_card cQd8 1.357
+    set param_card ctj8 -1.321
+    set param_card ctu8 0.604
+    set param_card ctd8 1.661
+    set param_card cQj31 0.896
+    set param_card cQj11 -0.081
+    set param_card cQu1 -0.911
+    set param_card cQd1 -0.037
+    set param_card ctj1 0.561
+    set param_card ctu1 0.253
+    set param_card ctd1 -1.023
+
+
+launch --rwgt_name=EFTrwgt135_ctGIm_1p334_ctGRe_0p644_cQj38_0p37_cQj18_m1p531_cQu8_m0p044_cQd8_m1p572_ctj8_m1p599_ctu8_m1p158_ctd8_m2p777_cQj31_1p595_cQj11_m0p239_cQu1_m0p538_cQd1_m1p353_ctj1_m3p971_ctu1_0p507_ctd1_m0p469
+    set param_card ctGIm 1.334
+    set param_card ctGRe 0.644
+    set param_card cQj38 0.37
+    set param_card cQj18 -1.531
+    set param_card cQu8 -0.044
+    set param_card cQd8 -1.572
+    set param_card ctj8 -1.599
+    set param_card ctu8 -1.158
+    set param_card ctd8 -2.777
+    set param_card cQj31 1.595
+    set param_card cQj11 -0.239
+    set param_card cQu1 -0.538
+    set param_card cQd1 -1.353
+    set param_card ctj1 -3.971
+    set param_card ctu1 0.507
+    set param_card ctd1 -0.469
+
+
+launch --rwgt_name=EFTrwgt136_ctGIm_m0p675_ctGRe_m1p117_cQj38_m0p724_cQj18_3p448_cQu8_0p047_cQd8_1p313_ctj8_m1p658_ctu8_m1p193_ctd8_m0p762_cQj31_m0p588_cQj11_m0p78_cQu1_m0p537_cQd1_m0p975_ctj1_3p238_ctu1_0p076_ctd1_0p473
+    set param_card ctGIm -0.675
+    set param_card ctGRe -1.117
+    set param_card cQj38 -0.724
+    set param_card cQj18 3.448
+    set param_card cQu8 0.047
+    set param_card cQd8 1.313
+    set param_card ctj8 -1.658
+    set param_card ctu8 -1.193
+    set param_card ctd8 -0.762
+    set param_card cQj31 -0.588
+    set param_card cQj11 -0.78
+    set param_card cQu1 -0.537
+    set param_card cQd1 -0.975
+    set param_card ctj1 3.238
+    set param_card ctu1 0.076
+    set param_card ctd1 0.473
+
+
+launch --rwgt_name=EFTrwgt137_ctGIm_m0p88_ctGRe_m0p588_cQj38_m0p822_cQj18_3p876_cQu8_0p167_cQd8_m1p232_ctj8_m1p515_ctu8_0p547_ctd8_2p836_cQj31_0p421_cQj11_m0p125_cQu1_m0p917_cQd1_m0p367_ctj1_1p629_ctu1_1p868_ctd1_0p875
+    set param_card ctGIm -0.88
+    set param_card ctGRe -0.588
+    set param_card cQj38 -0.822
+    set param_card cQj18 3.876
+    set param_card cQu8 0.167
+    set param_card cQd8 -1.232
+    set param_card ctj8 -1.515
+    set param_card ctu8 0.547
+    set param_card ctd8 2.836
+    set param_card cQj31 0.421
+    set param_card cQj11 -0.125
+    set param_card cQu1 -0.917
+    set param_card cQd1 -0.367
+    set param_card ctj1 1.629
+    set param_card ctu1 1.868
+    set param_card ctd1 0.875
+
+
+launch --rwgt_name=EFTrwgt138_ctGIm_0p276_ctGRe_m0p172_cQj38_m1p704_cQj18_4p303_cQu8_m0p982_cQd8_m1p963_ctj8_2p171_ctu8_1p679_ctd8_1p715_cQj31_0p108_cQj11_m1p149_cQu1_m0p66_cQd1_m1p315_ctj1_2p534_ctu1_m1p19_ctd1_m0p307
+    set param_card ctGIm 0.276
+    set param_card ctGRe -0.172
+    set param_card cQj38 -1.704
+    set param_card cQj18 4.303
+    set param_card cQu8 -0.982
+    set param_card cQd8 -1.963
+    set param_card ctj8 2.171
+    set param_card ctu8 1.679
+    set param_card ctd8 1.715
+    set param_card cQj31 0.108
+    set param_card cQj11 -1.149
+    set param_card cQu1 -0.66
+    set param_card cQd1 -1.315
+    set param_card ctj1 2.534
+    set param_card ctu1 -1.19
+    set param_card ctd1 -0.307
+
+
+launch --rwgt_name=EFTrwgt139_ctGIm_m1p213_ctGRe_m0p412_cQj38_m0p99_cQj18_3p068_cQu8_m0p792_cQd8_m0p372_ctj8_0p278_ctu8_0p621_ctd8_m2p39_cQj31_1p933_cQj11_0p293_cQu1_0p864_cQd1_0p531_ctj1_3p529_ctu1_1p93_ctd1_m1p241
+    set param_card ctGIm -1.213
+    set param_card ctGRe -0.412
+    set param_card cQj38 -0.99
+    set param_card cQj18 3.068
+    set param_card cQu8 -0.792
+    set param_card cQd8 -0.372
+    set param_card ctj8 0.278
+    set param_card ctu8 0.621
+    set param_card ctd8 -2.39
+    set param_card cQj31 1.933
+    set param_card cQj11 0.293
+    set param_card cQu1 0.864
+    set param_card cQd1 0.531
+    set param_card ctj1 3.529
+    set param_card ctu1 1.93
+    set param_card ctd1 -1.241
+
+
+launch --rwgt_name=EFTrwgt140_ctGIm_0p983_ctGRe_1p22_cQj38_0p363_cQj18_m0p212_cQu8_0p024_cQd8_0p709_ctj8_1p371_ctu8_0p936_ctd8_1p846_cQj31_m0p92_cQj11_0p017_cQu1_m0p837_cQd1_m1p495_ctj1_m1p623_ctu1_m0p301_ctd1_m2p155
+    set param_card ctGIm 0.983
+    set param_card ctGRe 1.22
+    set param_card cQj38 0.363
+    set param_card cQj18 -0.212
+    set param_card cQu8 0.024
+    set param_card cQd8 0.709
+    set param_card ctj8 1.371
+    set param_card ctu8 0.936
+    set param_card ctd8 1.846
+    set param_card cQj31 -0.92
+    set param_card cQj11 0.017
+    set param_card cQu1 -0.837
+    set param_card cQd1 -1.495
+    set param_card ctj1 -1.623
+    set param_card ctu1 -0.301
+    set param_card ctd1 -2.155
+
+
+launch --rwgt_name=EFTrwgt141_ctGIm_m0p395_ctGRe_1p378_cQj38_0p818_cQj18_2p891_cQu8_m0p284_cQd8_0p831_ctj8_0p364_ctu8_1p834_ctd8_m0p226_cQj31_m2p03_cQj11_m0p383_cQu1_m0p181_cQd1_m0p522_ctj1_m0p723_ctu1_0p336_ctd1_m2p151
+    set param_card ctGIm -0.395
+    set param_card ctGRe 1.378
+    set param_card cQj38 0.818
+    set param_card cQj18 2.891
+    set param_card cQu8 -0.284
+    set param_card cQd8 0.831
+    set param_card ctj8 0.364
+    set param_card ctu8 1.834
+    set param_card ctd8 -0.226
+    set param_card cQj31 -2.03
+    set param_card cQj11 -0.383
+    set param_card cQu1 -0.181
+    set param_card cQd1 -0.522
+    set param_card ctj1 -0.723
+    set param_card ctu1 0.336
+    set param_card ctd1 -2.151
+
+
+launch --rwgt_name=EFTrwgt142_ctGIm_m0p534_ctGRe_m0p449_cQj38_m1p794_cQj18_m4p697_cQu8_m0p352_cQd8_0p27_ctj8_0p865_ctu8_1p214_ctd8_1p357_cQj31_1p739_cQj11_0p552_cQu1_0p684_cQd1_m0p492_ctj1_m1p73_ctu1_1p351_ctd1_m1p47
+    set param_card ctGIm -0.534
+    set param_card ctGRe -0.449
+    set param_card cQj38 -1.794
+    set param_card cQj18 -4.697
+    set param_card cQu8 -0.352
+    set param_card cQd8 0.27
+    set param_card ctj8 0.865
+    set param_card ctu8 1.214
+    set param_card ctd8 1.357
+    set param_card cQj31 1.739
+    set param_card cQj11 0.552
+    set param_card cQu1 0.684
+    set param_card cQd1 -0.492
+    set param_card ctj1 -1.73
+    set param_card ctu1 1.351
+    set param_card ctd1 -1.47
+
+
+launch --rwgt_name=EFTrwgt143_ctGIm_0p625_ctGRe_m1p521_cQj38_m1p702_cQj18_m1p789_cQu8_m0p714_cQd8_0p493_ctj8_m1p638_ctu8_m1p466_ctd8_2p458_cQj31_0p322_cQj11_0p868_cQu1_m0p883_cQd1_0p441_ctj1_1p605_ctu1_m1p17_ctd1_m1p432
+    set param_card ctGIm 0.625
+    set param_card ctGRe -1.521
+    set param_card cQj38 -1.702
+    set param_card cQj18 -1.789
+    set param_card cQu8 -0.714
+    set param_card cQd8 0.493
+    set param_card ctj8 -1.638
+    set param_card ctu8 -1.466
+    set param_card ctd8 2.458
+    set param_card cQj31 0.322
+    set param_card cQj11 0.868
+    set param_card cQu1 -0.883
+    set param_card cQd1 0.441
+    set param_card ctj1 1.605
+    set param_card ctu1 -1.17
+    set param_card ctd1 -1.432
+
+
+launch --rwgt_name=EFTrwgt144_ctGIm_m1p759_ctGRe_m1p189_cQj38_0p902_cQj18_m0p941_cQu8_m0p351_cQd8_0p664_ctj8_1p942_ctu8_m1p731_ctd8_m3p442_cQj31_m2p25_cQj11_0p493_cQu1_0p994_cQd1_m1p102_ctj1_1p005_ctu1_m1p52_ctd1_m0p148
+    set param_card ctGIm -1.759
+    set param_card ctGRe -1.189
+    set param_card cQj38 0.902
+    set param_card cQj18 -0.941
+    set param_card cQu8 -0.351
+    set param_card cQd8 0.664
+    set param_card ctj8 1.942
+    set param_card ctu8 -1.731
+    set param_card ctd8 -3.442
+    set param_card cQj31 -2.25
+    set param_card cQj11 0.493
+    set param_card cQu1 0.994
+    set param_card cQd1 -1.102
+    set param_card ctj1 1.005
+    set param_card ctu1 -1.52
+    set param_card ctd1 -0.148
+
+
+launch --rwgt_name=EFTrwgt145_ctGIm_m0p083_ctGRe_m0p303_cQj38_m1p32_cQj18_m1p596_cQu8_m0p565_cQd8_0p794_ctj8_m2p349_ctu8_1p303_ctd8_m2p661_cQj31_m1p323_cQj11_0p997_cQu1_0p724_cQd1_0p832_ctj1_1p906_ctu1_m1p75_ctd1_m0p681
+    set param_card ctGIm -0.083
+    set param_card ctGRe -0.303
+    set param_card cQj38 -1.32
+    set param_card cQj18 -1.596
+    set param_card cQu8 -0.565
+    set param_card cQd8 0.794
+    set param_card ctj8 -2.349
+    set param_card ctu8 1.303
+    set param_card ctd8 -2.661
+    set param_card cQj31 -1.323
+    set param_card cQj11 0.997
+    set param_card cQu1 0.724
+    set param_card cQd1 0.832
+    set param_card ctj1 1.906
+    set param_card ctu1 -1.75
+    set param_card ctd1 -0.681
+
+
+launch --rwgt_name=EFTrwgt146_ctGIm_0p622_ctGRe_m1p397_cQj38_m0p129_cQj18_m0p32_cQu8_m0p562_cQd8_m0p864_ctj8_m1p77_ctu8_m0p68_ctd8_0p799_cQj31_2p305_cQj11_0p725_cQu1_m0p505_cQd1_m0p575_ctj1_2p782_ctu1_1p709_ctd1_m0p012
+    set param_card ctGIm 0.622
+    set param_card ctGRe -1.397
+    set param_card cQj38 -0.129
+    set param_card cQj18 -0.32
+    set param_card cQu8 -0.562
+    set param_card cQd8 -0.864
+    set param_card ctj8 -1.77
+    set param_card ctu8 -0.68
+    set param_card ctd8 0.799
+    set param_card cQj31 2.305
+    set param_card cQj11 0.725
+    set param_card cQu1 -0.505
+    set param_card cQd1 -0.575
+    set param_card ctj1 2.782
+    set param_card ctu1 1.709
+    set param_card ctd1 -0.012
+
+
+launch --rwgt_name=EFTrwgt147_ctGIm_1p73_ctGRe_m0p203_cQj38_m0p388_cQj18_4p691_cQu8_0p853_cQd8_1p117_ctj8_0p734_ctu8_1p609_ctd8_m1p883_cQj31_m0p887_cQj11_0p018_cQu1_0p162_cQd1_1p254_ctj1_1p203_ctu1_m0p938_ctd1_m0p344
+    set param_card ctGIm 1.73
+    set param_card ctGRe -0.203
+    set param_card cQj38 -0.388
+    set param_card cQj18 4.691
+    set param_card cQu8 0.853
+    set param_card cQd8 1.117
+    set param_card ctj8 0.734
+    set param_card ctu8 1.609
+    set param_card ctd8 -1.883
+    set param_card cQj31 -0.887
+    set param_card cQj11 0.018
+    set param_card cQu1 0.162
+    set param_card cQd1 1.254
+    set param_card ctj1 1.203
+    set param_card ctu1 -0.938
+    set param_card ctd1 -0.344
+
+
+launch --rwgt_name=EFTrwgt148_ctGIm_m0p516_ctGRe_m1p512_cQj38_1p908_cQj18_3p039_cQu8_m0p323_cQd8_m1p274_ctj8_m1p67_ctu8_0p773_ctd8_m1p672_cQj31_0p72_cQj11_m1p376_cQu1_0p257_cQd1_m0p234_ctj1_2p144_ctu1_m1p199_ctd1_0p165
+    set param_card ctGIm -0.516
+    set param_card ctGRe -1.512
+    set param_card cQj38 1.908
+    set param_card cQj18 3.039
+    set param_card cQu8 -0.323
+    set param_card cQd8 -1.274
+    set param_card ctj8 -1.67
+    set param_card ctu8 0.773
+    set param_card ctd8 -1.672
+    set param_card cQj31 0.72
+    set param_card cQj11 -1.376
+    set param_card cQu1 0.257
+    set param_card cQd1 -0.234
+    set param_card ctj1 2.144
+    set param_card ctu1 -1.199
+    set param_card ctd1 0.165
+
+
+launch --rwgt_name=EFTrwgt149_ctGIm_0p128_ctGRe_0p415_cQj38_0p63_cQj18_m2p337_cQu8_0p067_cQd8_m0p624_ctj8_0p437_ctu8_0p655_ctd8_m1p815_cQj31_1p409_cQj11_1p403_cQu1_0p23_cQd1_m0p977_ctj1_3p734_ctu1_m1p526_ctd1_m1p117
+    set param_card ctGIm 0.128
+    set param_card ctGRe 0.415
+    set param_card cQj38 0.63
+    set param_card cQj18 -2.337
+    set param_card cQu8 0.067
+    set param_card cQd8 -0.624
+    set param_card ctj8 0.437
+    set param_card ctu8 0.655
+    set param_card ctd8 -1.815
+    set param_card cQj31 1.409
+    set param_card cQj11 1.403
+    set param_card cQu1 0.23
+    set param_card cQd1 -0.977
+    set param_card ctj1 3.734
+    set param_card ctu1 -1.526
+    set param_card ctd1 -1.117
+
+
+launch --rwgt_name=EFTrwgt150_ctGIm_0p022_ctGRe_0p975_cQj38_m0p169_cQj18_0p511_cQu8_m0p377_cQd8_m1p549_ctj8_m1p198_ctu8_1p323_ctd8_m2p506_cQj31_m0p374_cQj11_1p192_cQu1_0p765_cQd1_0p721_ctj1_m0p461_ctu1_1p432_ctd1_m1p54
+    set param_card ctGIm 0.022
+    set param_card ctGRe 0.975
+    set param_card cQj38 -0.169
+    set param_card cQj18 0.511
+    set param_card cQu8 -0.377
+    set param_card cQd8 -1.549
+    set param_card ctj8 -1.198
+    set param_card ctu8 1.323
+    set param_card ctd8 -2.506
+    set param_card cQj31 -0.374
+    set param_card cQj11 1.192
+    set param_card cQu1 0.765
+    set param_card cQd1 0.721
+    set param_card ctj1 -0.461
+    set param_card ctu1 1.432
+    set param_card ctd1 -1.54
+
+
+launch --rwgt_name=EFTrwgt151_ctGIm_m0p316_ctGRe_m1p342_cQj38_m0p898_cQj18_1p693_cQu8_m0p563_cQd8_0p742_ctj8_m0p435_ctu8_m0p278_ctd8_m0p459_cQj31_1p931_cQj11_0p093_cQu1_0p574_cQd1_m0p392_ctj1_0p465_ctu1_0p568_ctd1_1p159
+    set param_card ctGIm -0.316
+    set param_card ctGRe -1.342
+    set param_card cQj38 -0.898
+    set param_card cQj18 1.693
+    set param_card cQu8 -0.563
+    set param_card cQd8 0.742
+    set param_card ctj8 -0.435
+    set param_card ctu8 -0.278
+    set param_card ctd8 -0.459
+    set param_card cQj31 1.931
+    set param_card cQj11 0.093
+    set param_card cQu1 0.574
+    set param_card cQd1 -0.392
+    set param_card ctj1 0.465
+    set param_card ctu1 0.568
+    set param_card ctd1 1.159
+
+
+launch --rwgt_name=EFTrwgt152_ctGIm_m1p141_ctGRe_1p437_cQj38_0p247_cQj18_2p214_cQu8_m0p212_cQd8_0p437_ctj8_m0p558_ctu8_1p845_ctd8_2p538_cQj31_2p14_cQj11_m0p472_cQu1_m0p927_cQd1_0p746_ctj1_3p883_ctu1_m0p641_ctd1_1p036
+    set param_card ctGIm -1.141
+    set param_card ctGRe 1.437
+    set param_card cQj38 0.247
+    set param_card cQj18 2.214
+    set param_card cQu8 -0.212
+    set param_card cQd8 0.437
+    set param_card ctj8 -0.558
+    set param_card ctu8 1.845
+    set param_card ctd8 2.538
+    set param_card cQj31 2.14
+    set param_card cQj11 -0.472
+    set param_card cQu1 -0.927
+    set param_card cQd1 0.746
+    set param_card ctj1 3.883
+    set param_card ctu1 -0.641
+    set param_card ctd1 1.036
+
+
+launch --rwgt_name=EFTrwgt153_ctGIm_1p3_ctGRe_m0p613_cQj38_1p558_cQj18_m0p465_cQu8_m0p536_cQd8_m1p895_ctj8_m2p354_ctu8_m0p221_ctd8_m3p779_cQj31_0p079_cQj11_m1p391_cQu1_m0p311_cQd1_m1p074_ctj1_m0p698_ctu1_1p623_ctd1_1p715
+    set param_card ctGIm 1.3
+    set param_card ctGRe -0.613
+    set param_card cQj38 1.558
+    set param_card cQj18 -0.465
+    set param_card cQu8 -0.536
+    set param_card cQd8 -1.895
+    set param_card ctj8 -2.354
+    set param_card ctu8 -0.221
+    set param_card ctd8 -3.779
+    set param_card cQj31 0.079
+    set param_card cQj11 -1.391
+    set param_card cQu1 -0.311
+    set param_card cQd1 -1.074
+    set param_card ctj1 -0.698
+    set param_card ctu1 1.623
+    set param_card ctd1 1.715
+
+
+launch --rwgt_name=EFTrwgt154_ctGIm_0p355_ctGRe_0p644_cQj38_1p905_cQj18_m3p031_cQu8_0p515_cQd8_1p691_ctj8_m2p318_ctu8_1p308_ctd8_m0p792_cQj31_1p02_cQj11_0p261_cQu1_0p523_cQd1_1p147_ctj1_3p616_ctu1_0p784_ctd1_m2p2
+    set param_card ctGIm 0.355
+    set param_card ctGRe 0.644
+    set param_card cQj38 1.905
+    set param_card cQj18 -3.031
+    set param_card cQu8 0.515
+    set param_card cQd8 1.691
+    set param_card ctj8 -2.318
+    set param_card ctu8 1.308
+    set param_card ctd8 -0.792
+    set param_card cQj31 1.02
+    set param_card cQj11 0.261
+    set param_card cQu1 0.523
+    set param_card cQd1 1.147
+    set param_card ctj1 3.616
+    set param_card ctu1 0.784
+    set param_card ctd1 -2.2
+
+
+launch --rwgt_name=EFTrwgt155_ctGIm_m0p597_ctGRe_0p969_cQj38_0p119_cQj18_m4p281_cQu8_m0p052_cQd8_m0p74_ctj8_0p512_ctu8_m0p63_ctd8_0p256_cQj31_1p483_cQj11_0p369_cQu1_m0p876_cQd1_1p137_ctj1_m1p646_ctu1_m1p555_ctd1_0p196
+    set param_card ctGIm -0.597
+    set param_card ctGRe 0.969
+    set param_card cQj38 0.119
+    set param_card cQj18 -4.281
+    set param_card cQu8 -0.052
+    set param_card cQd8 -0.74
+    set param_card ctj8 0.512
+    set param_card ctu8 -0.63
+    set param_card ctd8 0.256
+    set param_card cQj31 1.483
+    set param_card cQj11 0.369
+    set param_card cQu1 -0.876
+    set param_card cQd1 1.137
+    set param_card ctj1 -1.646
+    set param_card ctu1 -1.555
+    set param_card ctd1 0.196
+
+
+launch --rwgt_name=EFTrwgt156_ctGIm_m1p629_ctGRe_m0p922_cQj38_1p865_cQj18_m2p726_cQu8_0p232_cQd8_0p809_ctj8_m0p334_ctu8_1p673_ctd8_m0p956_cQj31_m0p886_cQj11_0p668_cQu1_0p159_cQd1_0p082_ctj1_0p336_ctu1_1p459_ctd1_m0p144
+    set param_card ctGIm -1.629
+    set param_card ctGRe -0.922
+    set param_card cQj38 1.865
+    set param_card cQj18 -2.726
+    set param_card cQu8 0.232
+    set param_card cQd8 0.809
+    set param_card ctj8 -0.334
+    set param_card ctu8 1.673
+    set param_card ctd8 -0.956
+    set param_card cQj31 -0.886
+    set param_card cQj11 0.668
+    set param_card cQu1 0.159
+    set param_card cQd1 0.082
+    set param_card ctj1 0.336
+    set param_card ctu1 1.459
+    set param_card ctd1 -0.144
+
+
+launch --rwgt_name=EFTrwgt157_ctGIm_m1p449_ctGRe_0p75_cQj38_m0p899_cQj18_m2p317_cQu8_m0p672_cQd8_1p133_ctj8_1p296_ctu8_0p5_ctd8_3p065_cQj31_1p834_cQj11_0p168_cQu1_m0p554_cQd1_1p226_ctj1_m2p436_ctu1_m1p186_ctd1_1p221
+    set param_card ctGIm -1.449
+    set param_card ctGRe 0.75
+    set param_card cQj38 -0.899
+    set param_card cQj18 -2.317
+    set param_card cQu8 -0.672
+    set param_card cQd8 1.133
+    set param_card ctj8 1.296
+    set param_card ctu8 0.5
+    set param_card ctd8 3.065
+    set param_card cQj31 1.834
+    set param_card cQj11 0.168
+    set param_card cQu1 -0.554
+    set param_card cQd1 1.226
+    set param_card ctj1 -2.436
+    set param_card ctu1 -1.186
+    set param_card ctd1 1.221
+
+
+launch --rwgt_name=EFTrwgt158_ctGIm_m1p063_ctGRe_m0p607_cQj38_1p789_cQj18_m1p166_cQu8_0p197_cQd8_m0p792_ctj8_m0p666_ctu8_m0p015_ctd8_m1p583_cQj31_1p821_cQj11_0p773_cQu1_m0p651_cQd1_m1p265_ctj1_3p535_ctu1_0p864_ctd1_1p825
+    set param_card ctGIm -1.063
+    set param_card ctGRe -0.607
+    set param_card cQj38 1.789
+    set param_card cQj18 -1.166
+    set param_card cQu8 0.197
+    set param_card cQd8 -0.792
+    set param_card ctj8 -0.666
+    set param_card ctu8 -0.015
+    set param_card ctd8 -1.583
+    set param_card cQj31 1.821
+    set param_card cQj11 0.773
+    set param_card cQu1 -0.651
+    set param_card cQd1 -1.265
+    set param_card ctj1 3.535
+    set param_card ctu1 0.864
+    set param_card ctd1 1.825
+
+
+launch --rwgt_name=EFTrwgt159_ctGIm_m1p771_ctGRe_0p584_cQj38_m1p421_cQj18_m4p195_cQu8_0p996_cQd8_0p751_ctj8_0p257_ctu8_m1p651_ctd8_m3p889_cQj31_m2p14_cQj11_0p877_cQu1_m0p508_cQd1_0p002_ctj1_3p912_ctu1_m0p783_ctd1_0p603
+    set param_card ctGIm -1.771
+    set param_card ctGRe 0.584
+    set param_card cQj38 -1.421
+    set param_card cQj18 -4.195
+    set param_card cQu8 0.996
+    set param_card cQd8 0.751
+    set param_card ctj8 0.257
+    set param_card ctu8 -1.651
+    set param_card ctd8 -3.889
+    set param_card cQj31 -2.14
+    set param_card cQj11 0.877
+    set param_card cQu1 -0.508
+    set param_card cQd1 0.002
+    set param_card ctj1 3.912
+    set param_card ctu1 -0.783
+    set param_card ctd1 0.603
+
+
+launch --rwgt_name=EFTrwgt160_ctGIm_m1p198_ctGRe_0p745_cQj38_0p029_cQj18_1p845_cQu8_0p821_cQd8_m1p733_ctj8_1p664_ctu8_1p656_ctd8_m1p611_cQj31_0p769_cQj11_1p274_cQu1_m0p18_cQd1_m0p309_ctj1_2p331_ctu1_1p427_ctd1_1p838
+    set param_card ctGIm -1.198
+    set param_card ctGRe 0.745
+    set param_card cQj38 0.029
+    set param_card cQj18 1.845
+    set param_card cQu8 0.821
+    set param_card cQd8 -1.733
+    set param_card ctj8 1.664
+    set param_card ctu8 1.656
+    set param_card ctd8 -1.611
+    set param_card cQj31 0.769
+    set param_card cQj11 1.274
+    set param_card cQu1 -0.18
+    set param_card cQd1 -0.309
+    set param_card ctj1 2.331
+    set param_card ctu1 1.427
+    set param_card ctd1 1.838
+
+
+launch --rwgt_name=EFTrwgt161_ctGIm_m1p078_ctGRe_m0p368_cQj38_1p446_cQj18_m3p987_cQu8_0p808_cQd8_1p785_ctj8_0p543_ctu8_0p561_ctd8_3p281_cQj31_1p023_cQj11_0p323_cQu1_m0p356_cQd1_1p098_ctj1_3p345_ctu1_1p304_ctd1_m2p103
+    set param_card ctGIm -1.078
+    set param_card ctGRe -0.368
+    set param_card cQj38 1.446
+    set param_card cQj18 -3.987
+    set param_card cQu8 0.808
+    set param_card cQd8 1.785
+    set param_card ctj8 0.543
+    set param_card ctu8 0.561
+    set param_card ctd8 3.281
+    set param_card cQj31 1.023
+    set param_card cQj11 0.323
+    set param_card cQu1 -0.356
+    set param_card cQd1 1.098
+    set param_card ctj1 3.345
+    set param_card ctu1 1.304
+    set param_card ctd1 -2.103
+
+
+launch --rwgt_name=EFTrwgt162_ctGIm_m0p534_ctGRe_0p151_cQj38_0p274_cQj18_m4p426_cQu8_0p481_cQd8_1p292_ctj8_m2p036_ctu8_1p567_ctd8_m0p637_cQj31_0p192_cQj11_m0p833_cQu1_0p749_cQd1_m1p449_ctj1_m1p217_ctu1_1p945_ctd1_0p772
+    set param_card ctGIm -0.534
+    set param_card ctGRe 0.151
+    set param_card cQj38 0.274
+    set param_card cQj18 -4.426
+    set param_card cQu8 0.481
+    set param_card cQd8 1.292
+    set param_card ctj8 -2.036
+    set param_card ctu8 1.567
+    set param_card ctd8 -0.637
+    set param_card cQj31 0.192
+    set param_card cQj11 -0.833
+    set param_card cQu1 0.749
+    set param_card cQd1 -1.449
+    set param_card ctj1 -1.217
+    set param_card ctu1 1.945
+    set param_card ctd1 0.772
+
+
+launch --rwgt_name=EFTrwgt163_ctGIm_1p233_ctGRe_m1p073_cQj38_0p823_cQj18_1p854_cQu8_m0p314_cQd8_m0p721_ctj8_2p386_ctu8_0p686_ctd8_m2p019_cQj31_1p019_cQj11_m1p002_cQu1_m0p98_cQd1_m1p221_ctj1_m2p221_ctu1_1p606_ctd1_m1p082
+    set param_card ctGIm 1.233
+    set param_card ctGRe -1.073
+    set param_card cQj38 0.823
+    set param_card cQj18 1.854
+    set param_card cQu8 -0.314
+    set param_card cQd8 -0.721
+    set param_card ctj8 2.386
+    set param_card ctu8 0.686
+    set param_card ctd8 -2.019
+    set param_card cQj31 1.019
+    set param_card cQj11 -1.002
+    set param_card cQu1 -0.98
+    set param_card cQd1 -1.221
+    set param_card ctj1 -2.221
+    set param_card ctu1 1.606
+    set param_card ctd1 -1.082
+
+
+launch --rwgt_name=EFTrwgt164_ctGIm_0p604_ctGRe_m1p45_cQj38_1p601_cQj18_0p051_cQu8_0p739_cQd8_1p333_ctj8_1p658_ctu8_m0p546_ctd8_3p881_cQj31_m1p51_cQj11_m0p521_cQu1_m0p664_cQd1_0p373_ctj1_3p763_ctu1_1p795_ctd1_1p885
+    set param_card ctGIm 0.604
+    set param_card ctGRe -1.45
+    set param_card cQj38 1.601
+    set param_card cQj18 0.051
+    set param_card cQu8 0.739
+    set param_card cQd8 1.333
+    set param_card ctj8 1.658
+    set param_card ctu8 -0.546
+    set param_card ctd8 3.881
+    set param_card cQj31 -1.51
+    set param_card cQj11 -0.521
+    set param_card cQu1 -0.664
+    set param_card cQd1 0.373
+    set param_card ctj1 3.763
+    set param_card ctu1 1.795
+    set param_card ctd1 1.885
+
+
+launch --rwgt_name=EFTrwgt165_ctGIm_1p268_ctGRe_m0p666_cQj38_0p069_cQj18_m1p708_cQu8_0p225_cQd8_m1p081_ctj8_m2p266_ctu8_m1p709_ctd8_0p539_cQj31_m1p012_cQj11_1p269_cQu1_0p355_cQd1_1p501_ctj1_m3p532_ctu1_m1p759_ctd1_m1p392
+    set param_card ctGIm 1.268
+    set param_card ctGRe -0.666
+    set param_card cQj38 0.069
+    set param_card cQj18 -1.708
+    set param_card cQu8 0.225
+    set param_card cQd8 -1.081
+    set param_card ctj8 -2.266
+    set param_card ctu8 -1.709
+    set param_card ctd8 0.539
+    set param_card cQj31 -1.012
+    set param_card cQj11 1.269
+    set param_card cQu1 0.355
+    set param_card cQd1 1.501
+    set param_card ctj1 -3.532
+    set param_card ctu1 -1.759
+    set param_card ctd1 -1.392
+
+
+launch --rwgt_name=EFTrwgt166_ctGIm_0p065_ctGRe_m0p056_cQj38_m0p29_cQj18_3p859_cQu8_m0p25_cQd8_m0p604_ctj8_0p505_ctu8_m0p91_ctd8_2p493_cQj31_0p76_cQj11_m0p66_cQu1_m0p934_cQd1_m0p628_ctj1_0p297_ctu1_m1p666_ctd1_m2p044
+    set param_card ctGIm 0.065
+    set param_card ctGRe -0.056
+    set param_card cQj38 -0.29
+    set param_card cQj18 3.859
+    set param_card cQu8 -0.25
+    set param_card cQd8 -0.604
+    set param_card ctj8 0.505
+    set param_card ctu8 -0.91
+    set param_card ctd8 2.493
+    set param_card cQj31 0.76
+    set param_card cQj11 -0.66
+    set param_card cQu1 -0.934
+    set param_card cQd1 -0.628
+    set param_card ctj1 0.297
+    set param_card ctu1 -1.666
+    set param_card ctd1 -2.044
+
+
+launch --rwgt_name=EFTrwgt167_ctGIm_0p967_ctGRe_m0p288_cQj38_m1p093_cQj18_0p55_cQu8_0p409_cQd8_0p801_ctj8_0p512_ctu8_0p487_ctd8_m1p198_cQj31_0p042_cQj11_0p813_cQu1_0p42_cQd1_m0p06_ctj1_1p095_ctu1_1p268_ctd1_0p849
+    set param_card ctGIm 0.967
+    set param_card ctGRe -0.288
+    set param_card cQj38 -1.093
+    set param_card cQj18 0.55
+    set param_card cQu8 0.409
+    set param_card cQd8 0.801
+    set param_card ctj8 0.512
+    set param_card ctu8 0.487
+    set param_card ctd8 -1.198
+    set param_card cQj31 0.042
+    set param_card cQj11 0.813
+    set param_card cQu1 0.42
+    set param_card cQd1 -0.06
+    set param_card ctj1 1.095
+    set param_card ctu1 1.268
+    set param_card ctd1 0.849
+
+
+launch --rwgt_name=EFTrwgt168_ctGIm_m0p621_ctGRe_m0p101_cQj38_1p065_cQj18_4p479_cQu8_0p257_cQd8_0p464_ctj8_0p051_ctu8_m0p301_ctd8_1p397_cQj31_m1p743_cQj11_0p66_cQu1_0p178_cQd1_0p734_ctj1_m2p924_ctu1_m1p86_ctd1_1p698
+    set param_card ctGIm -0.621
+    set param_card ctGRe -0.101
+    set param_card cQj38 1.065
+    set param_card cQj18 4.479
+    set param_card cQu8 0.257
+    set param_card cQd8 0.464
+    set param_card ctj8 0.051
+    set param_card ctu8 -0.301
+    set param_card ctd8 1.397
+    set param_card cQj31 -1.743
+    set param_card cQj11 0.66
+    set param_card cQu1 0.178
+    set param_card cQd1 0.734
+    set param_card ctj1 -2.924
+    set param_card ctu1 -1.86
+    set param_card ctd1 1.698
+
+
+launch --rwgt_name=EFTrwgt169_ctGIm_m1p576_ctGRe_1p451_cQj38_1p401_cQj18_m1p208_cQu8_0p106_cQd8_m1p067_ctj8_m1p088_ctu8_1p358_ctd8_2p322_cQj31_0p922_cQj11_0p074_cQu1_m0p66_cQd1_1p126_ctj1_2p192_ctu1_1p979_ctd1_m0p852
+    set param_card ctGIm -1.576
+    set param_card ctGRe 1.451
+    set param_card cQj38 1.401
+    set param_card cQj18 -1.208
+    set param_card cQu8 0.106
+    set param_card cQd8 -1.067
+    set param_card ctj8 -1.088
+    set param_card ctu8 1.358
+    set param_card ctd8 2.322
+    set param_card cQj31 0.922
+    set param_card cQj11 0.074
+    set param_card cQu1 -0.66
+    set param_card cQd1 1.126
+    set param_card ctj1 2.192
+    set param_card ctu1 1.979
+    set param_card ctd1 -0.852
+
+
+launch --rwgt_name=EFTrwgt170_ctGIm_m0p069_ctGRe_m0p04_cQj38_m1p901_cQj18_4p166_cQu8_0p847_cQd8_m1p68_ctj8_m1p959_ctu8_m0p294_ctd8_m2p511_cQj31_m0p965_cQj11_m1p017_cQu1_m0p677_cQd1_m1p472_ctj1_3p721_ctu1_0p468_ctd1_1p401
+    set param_card ctGIm -0.069
+    set param_card ctGRe -0.04
+    set param_card cQj38 -1.901
+    set param_card cQj18 4.166
+    set param_card cQu8 0.847
+    set param_card cQd8 -1.68
+    set param_card ctj8 -1.959
+    set param_card ctu8 -0.294
+    set param_card ctd8 -2.511
+    set param_card cQj31 -0.965
+    set param_card cQj11 -1.017
+    set param_card cQu1 -0.677
+    set param_card cQd1 -1.472
+    set param_card ctj1 3.721
+    set param_card ctu1 0.468
+    set param_card ctd1 1.401
+
+
+launch --rwgt_name=EFTrwgt171_ctGIm_1p465_ctGRe_m0p116_cQj38_m1p965_cQj18_2p027_cQu8_m0p173_cQd8_1p194_ctj8_m1p122_ctu8_m1p74_ctd8_2p115_cQj31_0p523_cQj11_1p155_cQu1_0p534_cQd1_1p495_ctj1_m3p661_ctu1_0p516_ctd1_m0p122
+    set param_card ctGIm 1.465
+    set param_card ctGRe -0.116
+    set param_card cQj38 -1.965
+    set param_card cQj18 2.027
+    set param_card cQu8 -0.173
+    set param_card cQd8 1.194
+    set param_card ctj8 -1.122
+    set param_card ctu8 -1.74
+    set param_card ctd8 2.115
+    set param_card cQj31 0.523
+    set param_card cQj11 1.155
+    set param_card cQu1 0.534
+    set param_card cQd1 1.495
+    set param_card ctj1 -3.661
+    set param_card ctu1 0.516
+    set param_card ctd1 -0.122
+
+
+launch --rwgt_name=EFTrwgt172_ctGIm_m0p801_ctGRe_0p237_cQj38_m1p253_cQj18_2p216_cQu8_m0p326_cQd8_0p277_ctj8_1p662_ctu8_1p902_ctd8_3p029_cQj31_1p846_cQj11_0p963_cQu1_0p596_cQd1_m0p345_ctj1_m1p834_ctu1_1p1_ctd1_1p01
+    set param_card ctGIm -0.801
+    set param_card ctGRe 0.237
+    set param_card cQj38 -1.253
+    set param_card cQj18 2.216
+    set param_card cQu8 -0.326
+    set param_card cQd8 0.277
+    set param_card ctj8 1.662
+    set param_card ctu8 1.902
+    set param_card ctd8 3.029
+    set param_card cQj31 1.846
+    set param_card cQj11 0.963
+    set param_card cQu1 0.596
+    set param_card cQd1 -0.345
+    set param_card ctj1 -1.834
+    set param_card ctu1 1.1
+    set param_card ctd1 1.01
+
+
+launch --rwgt_name=EFTrwgt173_ctGIm_1p294_ctGRe_m1p426_cQj38_1p727_cQj18_4p912_cQu8_0p998_cQd8_m1p192_ctj8_m0p17_ctu8_0p195_ctd8_1p917_cQj31_1p326_cQj11_1p047_cQu1_0p738_cQd1_0p613_ctj1_1p929_ctu1_m0p814_ctd1_0p999
+    set param_card ctGIm 1.294
+    set param_card ctGRe -1.426
+    set param_card cQj38 1.727
+    set param_card cQj18 4.912
+    set param_card cQu8 0.998
+    set param_card cQd8 -1.192
+    set param_card ctj8 -0.17
+    set param_card ctu8 0.195
+    set param_card ctd8 1.917
+    set param_card cQj31 1.326
+    set param_card cQj11 1.047
+    set param_card cQu1 0.738
+    set param_card cQd1 0.613
+    set param_card ctj1 1.929
+    set param_card ctu1 -0.814
+    set param_card ctd1 0.999
+
+
+launch --rwgt_name=EFTrwgt174_ctGIm_m0p756_ctGRe_m0p725_cQj38_m0p997_cQj18_0p414_cQu8_0p274_cQd8_m1p79_ctj8_m2p134_ctu8_m0p332_ctd8_m1p133_cQj31_m0p568_cQj11_m0p125_cQu1_m0p916_cQd1_m0p601_ctj1_m0p168_ctu1_m1p656_ctd1_m0p262
+    set param_card ctGIm -0.756
+    set param_card ctGRe -0.725
+    set param_card cQj38 -0.997
+    set param_card cQj18 0.414
+    set param_card cQu8 0.274
+    set param_card cQd8 -1.79
+    set param_card ctj8 -2.134
+    set param_card ctu8 -0.332
+    set param_card ctd8 -1.133
+    set param_card cQj31 -0.568
+    set param_card cQj11 -0.125
+    set param_card cQu1 -0.916
+    set param_card cQd1 -0.601
+    set param_card ctj1 -0.168
+    set param_card ctu1 -1.656
+    set param_card ctd1 -0.262
+
+
+launch --rwgt_name=EFTrwgt175_ctGIm_m1p618_ctGRe_m0p557_cQj38_m1p232_cQj18_m3p511_cQu8_0p635_cQd8_0p179_ctj8_m1p016_ctu8_1p834_ctd8_0p582_cQj31_m1p013_cQj11_m1p439_cQu1_m0p867_cQd1_m0p348_ctj1_m2p154_ctu1_m1p804_ctd1_m2p34
+    set param_card ctGIm -1.618
+    set param_card ctGRe -0.557
+    set param_card cQj38 -1.232
+    set param_card cQj18 -3.511
+    set param_card cQu8 0.635
+    set param_card cQd8 0.179
+    set param_card ctj8 -1.016
+    set param_card ctu8 1.834
+    set param_card ctd8 0.582
+    set param_card cQj31 -1.013
+    set param_card cQj11 -1.439
+    set param_card cQu1 -0.867
+    set param_card cQd1 -0.348
+    set param_card ctj1 -2.154
+    set param_card ctu1 -1.804
+    set param_card ctd1 -2.34
+
+
+launch --rwgt_name=EFTrwgt176_ctGIm_m0p868_ctGRe_m1p553_cQj38_0p095_cQj18_m1p803_cQu8_0p519_cQd8_0p49_ctj8_m1p554_ctu8_m0p374_ctd8_1p512_cQj31_m0p244_cQj11_0p261_cQu1_m0p681_cQd1_m0p637_ctj1_1p765_ctu1_m1p747_ctd1_1p486
+    set param_card ctGIm -0.868
+    set param_card ctGRe -1.553
+    set param_card cQj38 0.095
+    set param_card cQj18 -1.803
+    set param_card cQu8 0.519
+    set param_card cQd8 0.49
+    set param_card ctj8 -1.554
+    set param_card ctu8 -0.374
+    set param_card ctd8 1.512
+    set param_card cQj31 -0.244
+    set param_card cQj11 0.261
+    set param_card cQu1 -0.681
+    set param_card cQd1 -0.637
+    set param_card ctj1 1.765
+    set param_card ctu1 -1.747
+    set param_card ctd1 1.486
+
+
+launch --rwgt_name=EFTrwgt177_ctGIm_0p503_ctGRe_m1p346_cQj38_m1p292_cQj18_m1p676_cQu8_m0p297_cQd8_1p002_ctj8_m2p177_ctu8_0p516_ctd8_0p463_cQj31_m0p978_cQj11_0p369_cQu1_m0p525_cQd1_m0p774_ctj1_m2p962_ctu1_m0p804_ctd1_1p645
+    set param_card ctGIm 0.503
+    set param_card ctGRe -1.346
+    set param_card cQj38 -1.292
+    set param_card cQj18 -1.676
+    set param_card cQu8 -0.297
+    set param_card cQd8 1.002
+    set param_card ctj8 -2.177
+    set param_card ctu8 0.516
+    set param_card ctd8 0.463
+    set param_card cQj31 -0.978
+    set param_card cQj11 0.369
+    set param_card cQu1 -0.525
+    set param_card cQd1 -0.774
+    set param_card ctj1 -2.962
+    set param_card ctu1 -0.804
+    set param_card ctd1 1.645
+
+
+launch --rwgt_name=EFTrwgt178_ctGIm_1p386_ctGRe_m0p403_cQj38_0p081_cQj18_3p739_cQu8_0p873_cQd8_m1p607_ctj8_m0p202_ctu8_0p977_ctd8_m0p003_cQj31_m0p143_cQj11_m1p484_cQu1_m0p232_cQd1_0p917_ctj1_m0p331_ctu1_m0p11_ctd1_1p747
+    set param_card ctGIm 1.386
+    set param_card ctGRe -0.403
+    set param_card cQj38 0.081
+    set param_card cQj18 3.739
+    set param_card cQu8 0.873
+    set param_card cQd8 -1.607
+    set param_card ctj8 -0.202
+    set param_card ctu8 0.977
+    set param_card ctd8 -0.003
+    set param_card cQj31 -0.143
+    set param_card cQj11 -1.484
+    set param_card cQu1 -0.232
+    set param_card cQd1 0.917
+    set param_card ctj1 -0.331
+    set param_card ctu1 -0.11
+    set param_card ctd1 1.747
+
+
+launch --rwgt_name=EFTrwgt179_ctGIm_0p481_ctGRe_0p151_cQj38_0p926_cQj18_m2p351_cQu8_m0p407_cQd8_0p082_ctj8_1p702_ctu8_1p008_ctd8_m1p578_cQj31_0p201_cQj11_m0p257_cQu1_m0p986_cQd1_0p334_ctj1_1p442_ctu1_0p872_ctd1_m0p76
+    set param_card ctGIm 0.481
+    set param_card ctGRe 0.151
+    set param_card cQj38 0.926
+    set param_card cQj18 -2.351
+    set param_card cQu8 -0.407
+    set param_card cQd8 0.082
+    set param_card ctj8 1.702
+    set param_card ctu8 1.008
+    set param_card ctd8 -1.578
+    set param_card cQj31 0.201
+    set param_card cQj11 -0.257
+    set param_card cQu1 -0.986
+    set param_card cQd1 0.334
+    set param_card ctj1 1.442
+    set param_card ctu1 0.872
+    set param_card ctd1 -0.76
+
+
+launch --rwgt_name=EFTrwgt180_ctGIm_1p628_ctGRe_1p068_cQj38_0p39_cQj18_0p065_cQu8_0p631_cQd8_m1p578_ctj8_m1p784_ctu8_m1p833_ctd8_0p001_cQj31_m2p008_cQj11_m0p65_cQu1_m0p276_cQd1_0p652_ctj1_m1p894_ctu1_m0p904_ctd1_m1p184
+    set param_card ctGIm 1.628
+    set param_card ctGRe 1.068
+    set param_card cQj38 0.39
+    set param_card cQj18 0.065
+    set param_card cQu8 0.631
+    set param_card cQd8 -1.578
+    set param_card ctj8 -1.784
+    set param_card ctu8 -1.833
+    set param_card ctd8 0.001
+    set param_card cQj31 -2.008
+    set param_card cQj11 -0.65
+    set param_card cQu1 -0.276
+    set param_card cQd1 0.652
+    set param_card ctj1 -1.894
+    set param_card ctu1 -0.904
+    set param_card ctd1 -1.184
+
+
+launch --rwgt_name=EFTrwgt181_ctGIm_1p294_ctGRe_m0p883_cQj38_m0p089_cQj18_0p934_cQu8_m0p892_cQd8_1p621_ctj8_m1p375_ctu8_m1p0_ctd8_3p189_cQj31_m0p682_cQj11_m0p659_cQu1_0p797_cQd1_m0p662_ctj1_2p63_ctu1_0p034_ctd1_1p929
+    set param_card ctGIm 1.294
+    set param_card ctGRe -0.883
+    set param_card cQj38 -0.089
+    set param_card cQj18 0.934
+    set param_card cQu8 -0.892
+    set param_card cQd8 1.621
+    set param_card ctj8 -1.375
+    set param_card ctu8 -1.0
+    set param_card ctd8 3.189
+    set param_card cQj31 -0.682
+    set param_card cQj11 -0.659
+    set param_card cQu1 0.797
+    set param_card cQd1 -0.662
+    set param_card ctj1 2.63
+    set param_card ctu1 0.034
+    set param_card ctd1 1.929
+
+
+launch --rwgt_name=EFTrwgt182_ctGIm_m1p758_ctGRe_0p186_cQj38_m1p426_cQj18_m2p978_cQu8_0p015_cQd8_m1p219_ctj8_m1p891_ctu8_m0p426_ctd8_1p445_cQj31_m0p133_cQj11_0p596_cQu1_m0p327_cQd1_0p32_ctj1_m2p695_ctu1_1p132_ctd1_1p417
+    set param_card ctGIm -1.758
+    set param_card ctGRe 0.186
+    set param_card cQj38 -1.426
+    set param_card cQj18 -2.978
+    set param_card cQu8 0.015
+    set param_card cQd8 -1.219
+    set param_card ctj8 -1.891
+    set param_card ctu8 -0.426
+    set param_card ctd8 1.445
+    set param_card cQj31 -0.133
+    set param_card cQj11 0.596
+    set param_card cQu1 -0.327
+    set param_card cQd1 0.32
+    set param_card ctj1 -2.695
+    set param_card ctu1 1.132
+    set param_card ctd1 1.417
+
+
+launch --rwgt_name=EFTrwgt183_ctGIm_m0p562_ctGRe_0p744_cQj38_m1p075_cQj18_m4p324_cQu8_m0p388_cQd8_0p532_ctj8_2p209_ctu8_m0p898_ctd8_0p67_cQj31_m0p865_cQj11_m0p978_cQu1_m0p343_cQd1_0p237_ctj1_3p788_ctu1_0p47_ctd1_0p243
+    set param_card ctGIm -0.562
+    set param_card ctGRe 0.744
+    set param_card cQj38 -1.075
+    set param_card cQj18 -4.324
+    set param_card cQu8 -0.388
+    set param_card cQd8 0.532
+    set param_card ctj8 2.209
+    set param_card ctu8 -0.898
+    set param_card ctd8 0.67
+    set param_card cQj31 -0.865
+    set param_card cQj11 -0.978
+    set param_card cQu1 -0.343
+    set param_card cQd1 0.237
+    set param_card ctj1 3.788
+    set param_card ctu1 0.47
+    set param_card ctd1 0.243
+
+
+launch --rwgt_name=EFTrwgt184_ctGIm_1p518_ctGRe_m0p309_cQj38_0p194_cQj18_4p283_cQu8_0p099_cQd8_m1p211_ctj8_m1p314_ctu8_m1p977_ctd8_2p044_cQj31_m0p671_cQj11_m0p118_cQu1_0p853_cQd1_m1p454_ctj1_m0p635_ctu1_m0p169_ctd1_0p003
+    set param_card ctGIm 1.518
+    set param_card ctGRe -0.309
+    set param_card cQj38 0.194
+    set param_card cQj18 4.283
+    set param_card cQu8 0.099
+    set param_card cQd8 -1.211
+    set param_card ctj8 -1.314
+    set param_card ctu8 -1.977
+    set param_card ctd8 2.044
+    set param_card cQj31 -0.671
+    set param_card cQj11 -0.118
+    set param_card cQu1 0.853
+    set param_card cQd1 -1.454
+    set param_card ctj1 -0.635
+    set param_card ctu1 -0.169
+    set param_card ctd1 0.003
+
+
+launch --rwgt_name=EFTrwgt185_ctGIm_m0p935_ctGRe_0p296_cQj38_m1p535_cQj18_4p917_cQu8_m0p986_cQd8_1p074_ctj8_2p14_ctu8_0p178_ctd8_3p125_cQj31_0p717_cQj11_m1p031_cQu1_0p99_cQd1_m0p056_ctj1_3p525_ctu1_1p122_ctd1_m0p852
+    set param_card ctGIm -0.935
+    set param_card ctGRe 0.296
+    set param_card cQj38 -1.535
+    set param_card cQj18 4.917
+    set param_card cQu8 -0.986
+    set param_card cQd8 1.074
+    set param_card ctj8 2.14
+    set param_card ctu8 0.178
+    set param_card ctd8 3.125
+    set param_card cQj31 0.717
+    set param_card cQj11 -1.031
+    set param_card cQu1 0.99
+    set param_card cQd1 -0.056
+    set param_card ctj1 3.525
+    set param_card ctu1 1.122
+    set param_card ctd1 -0.852
+
+
+launch --rwgt_name=EFTrwgt186_ctGIm_0p204_ctGRe_0p177_cQj38_m0p964_cQj18_4p223_cQu8_m0p84_cQd8_0p853_ctj8_1p66_ctu8_1p099_ctd8_2p395_cQj31_m0p398_cQj11_1p314_cQu1_m0p897_cQd1_1p449_ctj1_2p723_ctu1_1p084_ctd1_m0p955
+    set param_card ctGIm 0.204
+    set param_card ctGRe 0.177
+    set param_card cQj38 -0.964
+    set param_card cQj18 4.223
+    set param_card cQu8 -0.84
+    set param_card cQd8 0.853
+    set param_card ctj8 1.66
+    set param_card ctu8 1.099
+    set param_card ctd8 2.395
+    set param_card cQj31 -0.398
+    set param_card cQj11 1.314
+    set param_card cQu1 -0.897
+    set param_card cQd1 1.449
+    set param_card ctj1 2.723
+    set param_card ctu1 1.084
+    set param_card ctd1 -0.955
+
+
+launch --rwgt_name=EFTrwgt187_ctGIm_m1p275_ctGRe_0p199_cQj38_1p919_cQj18_0p438_cQu8_m0p37_cQd8_0p792_ctj8_m0p753_ctu8_m1p166_ctd8_m0p611_cQj31_1p659_cQj11_m1p519_cQu1_m0p837_cQd1_1p563_ctj1_m1p278_ctu1_m1p384_ctd1_1p347
+    set param_card ctGIm -1.275
+    set param_card ctGRe 0.199
+    set param_card cQj38 1.919
+    set param_card cQj18 0.438
+    set param_card cQu8 -0.37
+    set param_card cQd8 0.792
+    set param_card ctj8 -0.753
+    set param_card ctu8 -1.166
+    set param_card ctd8 -0.611
+    set param_card cQj31 1.659
+    set param_card cQj11 -1.519
+    set param_card cQu1 -0.837
+    set param_card cQd1 1.563
+    set param_card ctj1 -1.278
+    set param_card ctu1 -1.384
+    set param_card ctd1 1.347
+
+
+launch --rwgt_name=EFTrwgt188_ctGIm_m0p903_ctGRe_m0p922_cQj38_m1p035_cQj18_3p898_cQu8_0p038_cQd8_0p228_ctj8_0p438_ctu8_0p485_ctd8_0p952_cQj31_m0p915_cQj11_1p482_cQu1_m0p297_cQd1_m0p774_ctj1_m1p985_ctu1_m0p795_ctd1_1p154
+    set param_card ctGIm -0.903
+    set param_card ctGRe -0.922
+    set param_card cQj38 -1.035
+    set param_card cQj18 3.898
+    set param_card cQu8 0.038
+    set param_card cQd8 0.228
+    set param_card ctj8 0.438
+    set param_card ctu8 0.485
+    set param_card ctd8 0.952
+    set param_card cQj31 -0.915
+    set param_card cQj11 1.482
+    set param_card cQu1 -0.297
+    set param_card cQd1 -0.774
+    set param_card ctj1 -1.985
+    set param_card ctu1 -0.795
+    set param_card ctd1 1.154
+
+
+launch --rwgt_name=EFTrwgt189_ctGIm_m0p665_ctGRe_0p902_cQj38_m0p203_cQj18_m3p022_cQu8_0p217_cQd8_0p494_ctj8_m2p338_ctu8_m1p31_ctd8_m2p954_cQj31_1p396_cQj11_0p056_cQu1_0p928_cQd1_m0p315_ctj1_m2p411_ctu1_m1p8_ctd1_m0p529
+    set param_card ctGIm -0.665
+    set param_card ctGRe 0.902
+    set param_card cQj38 -0.203
+    set param_card cQj18 -3.022
+    set param_card cQu8 0.217
+    set param_card cQd8 0.494
+    set param_card ctj8 -2.338
+    set param_card ctu8 -1.31
+    set param_card ctd8 -2.954
+    set param_card cQj31 1.396
+    set param_card cQj11 0.056
+    set param_card cQu1 0.928
+    set param_card cQd1 -0.315
+    set param_card ctj1 -2.411
+    set param_card ctu1 -1.8
+    set param_card ctd1 -0.529
+

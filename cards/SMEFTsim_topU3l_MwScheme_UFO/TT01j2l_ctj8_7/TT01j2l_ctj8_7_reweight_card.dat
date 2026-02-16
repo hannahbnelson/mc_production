@@ -1,0 +1,48 @@
+# Reference point: {'ctj8': 7.0}
+
+change rwgt_dir rwgt
+
+launch --rwgt_name=reference_point
+
+launch --rwgt_name=sm_point
+    set param_card ctj8 0.0 
+
+launch --rwgt_name=EFTrwgt0_ctj8_9p026
+    set param_card ctj8 9.026
+
+
+launch --rwgt_name=EFTrwgt1_ctj8_13p145
+    set param_card ctj8 13.145
+
+
+launch --rwgt_name=EFTrwgt2_ctj8_m8p118
+    set param_card ctj8 -2.118
+
+
+launch --rwgt_name=EFTrwgt3_ctj8_m8p058
+    set param_card ctj8 -8.058
+
+
+launch --rwgt_name=EFTrwgt4_ctj8_7p03
+    set param_card ctj8 1.03
+
+
+launch --rwgt_name=EFTrwgt5_ctj8_6p25
+    set param_card ctj8 6.25
+
+
+launch --rwgt_name=EFTrwgt6_ctj8_m10p722
+    set param_card ctj8 -4.722
+
+
+launch --rwgt_name=EFTrwgt7_ctj8_m11p685
+    set param_card ctj8 -11.685
+
+
+launch --rwgt_name=EFTrwgt8_ctj8_2p541
+    set param_card ctj8 2.541
+
+
+launch --rwgt_name=EFTrwgt9_ctj8_4p391
+    set param_card ctj8 4.391
+

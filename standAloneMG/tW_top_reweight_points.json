@@ -1,0 +1,8 @@
+{
+	"MG_dir": "/users/hnelson2/afs/MG5_aMC_v2_6_5/tW_LHEcut",
+	"wc_names": ["ctGIm", "ctGRe", "cHQ3", "ctWRe", "cbWRe", "cHtbRe", 
+			"cQl311", "cQl322", "cQl333", 
+			"cleQt3Re11", "cleQt3Re22", "cleQt3Re33", 
+			"cleQt1Re11", "cleQt1Re22", "cleQt1Re33"],
+	"scan_points": [-15.0, -10.0, -7.0, -4.0, -2.0, -1.0, 1.0, 2.0, 4.0, 7.0, 10.0, 15.0]
+}

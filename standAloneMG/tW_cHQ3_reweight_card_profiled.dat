@@ -1,0 +1,110 @@
+change rwgt_dir rwgt
+
+launch --rwgt_name=sm_point
+    set param_card ctGIm 0.0 
+    set param_card ctGRe 0.0 
+    set param_card ctWRe 0.0 
+    set param_card cleQt3Re 0.0 
+    set param_card cleQt1Re 0.0 
+    set param_card cQl3 0.0 
+    set param_card cbWRe 0.0 
+    set param_card cHtbRe 0.0
+
+launch --rwgt_name=EFTrwgt0_cHQ3_m10p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 -10.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0 
+
+launch --rwgt_name=EFTrwgt1_cHQ3_m7p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 -7.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0 
+
+launch --rwgt_name=EFTrwgt2_cHQ3_m4p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 -4.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0 
+
+launch --rwgt_name=EFTrwgt3_cHQ3_m2p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 -2.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0 
+
+launch --rwgt_name=EFTrwgt4_cHQ3_0p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 0.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0
+
+launch --rwgt_name=EFTrwgt5_cHQ3_2p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 2.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0
+
+launch --rwgt_name=EFTrwgt6_cHQ3_4p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 4.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0
+
+launch --rwgt_name=EFTrwgt7_cHQ3_7p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 7.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0
+
+launch --rwgt_name=EFTrwgt8_cHQ3_10p0
+	set param_card ctGIm -1.0 
+	set param_card ctGRe -1.0 
+	set param_card cHQ3 10.0
+	set param_card ctWRe -2.0 
+	set param_card cleQt3Re 5.0 
+	set param_card cleQt1Re 10.0 
+	set param_card cQl3 5.0 
+	set param_card cbWRe -3.0 
+	set param_card cHtbRe 3.0

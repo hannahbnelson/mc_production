@@ -11,43 +11,51 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 
 RUN_SETUP = 'UL_production'
 UL_YEAR = 'UL17'
-prod_tag = "nanoGen"
-version = "TT01j2l_SM"
+prod_tag = "NanoGen"
+#prod_tag = "test"
+#version = "Run3_ttbar"
+version="tWLO_SMEFTsimtop2"
+
+process_whitelist = []
+coeff_whitelist   = []
+runs_whitelist    = []    # (i.e. MG starting points)
 
 master_label = 'T3_EFT_{tstamp}'.format(tstamp=timestamp_tag)
 
-output_path  = "/store/user/$USER/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
-workdir_path = "/tmpscratch/users/$USER/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
-plotdir_path = "~/www/lobster/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
+output_path  = "/store/user/$USER/mc/{tag}/{ver}".format(tag=prod_tag, ver=version)
+workdir_path = "/tmpscratch/users/$USER/mc/{tag}/{ver}".format(tag=prod_tag, ver=version)
+plotdir_path = "~/www/lobster/mc/{tag}/{ver}".format(tag=prod_tag, ver=version)
 
 storage = StorageConfiguration(
-    input=[
+    input = [
         "file:///cms/cephfs/data/store/user/",
         "root://hactar01.crc.nd.edu//store/user/",
     ],
+    
     output=[
         "file:///cms/cephfs/data" + output_path,
-        "root://hactar01.crc.nd.edu/"+output_path,
-    ]
+        "root://hactar01.crc.nd.edu/"+output_path,    
+    ],
 )
 
 # gridpack list is a dictionary of the form {'process': [gridpack path, config (path from this dir), events per gridpack, events per lumi]}
 gridpack_list = {
-    'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 10E6, 1000]
+    "tWLO_rwgt1" : ["hnelson2/gridpack_scans/tWLO_rwgt1_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 500],
+    "tWLO_rwgt2" : ["hnelson2/gridpack_scans/tWLO_rwgt2_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz", "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 500],
 }
 
 nanoGen = Category(
             name="nanoGen",
             cores=2,
-            memory=4000,
-            disk=6800
+            memory=16000,
+            disk=100000
         )
 
 wf = []
-print "Generating workflows:"
+print("Generating workflows:")
 for key, value in gridpack_list.items():
-    print key
-    cmsswSSource='/afs/crc.nd.edu/user/h/hnelson2/cmssw/noEFT/CMSSW_10_6_26/'
+    print(key)
+    cmsswSSource='/afs/crc.nd.edu/user/h/hnelson2/cmssw/CMSSW_10_6_26/'
     GN = Workflow(
         label='NanoGen_{tag}'.format(tag=key),
         command='cmsRun {cfg}'.format(cfg= value[1]),
@@ -76,13 +84,15 @@ config = Config(
     storage=storage,
     workflows=wf,
     advanced=AdvancedOptions(
-        dashboard = False,
+        # dashboard = False,
         bad_exit_codes=[127, 160],
         log_level=1,
         payload=10,
         osg_version='3.6',
-        #xrootd_servers=['ndcms.crc.nd.edu',
-        #               'cmsxrootd.fnal.gov',
-        #               'deepthought.crc.nd.edu']
+        threshold_for_failure=40,
+        threshold_for_skipping=40,
+        # xrootd_servers=['ndcms.crc.nd.edu',
+        #                'cmsxrootd.fnal.gov',
+        #                'deepthought.crc.nd.edu']
     )
 )
