@@ -2,7 +2,7 @@
 # using: 
 # Revision: 1.19 
 # Source: /local/reps/CMSSW/CMSSW/Configuration/Applications/python/ConfigBuilder.py,v 
-# with command line options: Configuration/GenProduction/python/pythia-fragment-mtt0to700.py --era Run2_2017 --customise Configuration/DataProcessing/Utils.addMonitoring --beamspot Realistic25ns13TeVEarly2017Collision --step LHE,GEN --geometry DB:Extended --conditions 106X_mc2017_realistic_v6 --customise_commands process.source.numberEventsInLuminosityBlock=cms.untracked.uint32(280) --datatier GEN,LHE --eventcontent RAWSIM,LHE --python_filename TOP-RunIISummer20UL17wmLHEGEN-mtt0to700_cfg.py --fileout file:TOP-RunIISummer20UL17wmLHEGEN-mtt0to700.root --number 10 --no_exec --mc
+# with command line options: Configuration/GenProduction/python/pythia-fragment-mtt0to700.py --era Run2_2017 --customise Configuration/DataProcessing/Utils.addMonitoring --beamspot Realistic25ns13TeVEarly2017Collision --step LHE,GEN --geometry DB:Extended --conditions 106X_mc2017_realistic_v6 --customise_commands process.source.numberEventsInLuminosityBlock=cms.untracked.uint32(280) --datatier GEN,LHE --eventcontent RAWSIM,LHE --python_filename TOP-RunIISummer20UL17wmLHEGEN-mtt0to700_cfg.py --fileout file:GEN-00000.root --number 10 --no_exec --mc
 import FWCore.ParameterSet.Config as cms
 
 from Configuration.Eras.Era_Run2_2017_cff import Run2_2017
@@ -54,7 +54,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
         filterName = cms.untracked.string('')
     ),
     eventAutoFlushCompressedSize = cms.untracked.int32(20971520),
-    fileName = cms.untracked.string('file:TOP-RunIISummer20UL17wmLHEGEN-mtt0to700.root'),
+    fileName = cms.untracked.string('file:GEN-00000.root'),
     outputCommands = process.RAWSIMEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )
@@ -64,7 +64,7 @@ process.LHEoutput = cms.OutputModule("PoolOutputModule",
         dataTier = cms.untracked.string('LHE'),
         filterName = cms.untracked.string('')
     ),
-    fileName = cms.untracked.string('file:TOP-RunIISummer20UL17wmLHEGEN-mtt0to700_inLHE.root'),
+    fileName = cms.untracked.string('file:GEN-00000_inLHE.root'),
     outputCommands = process.LHEEventContent.outputCommands,
     splitLevel = cms.untracked.int32(0)
 )

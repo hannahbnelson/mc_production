@@ -12,11 +12,11 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 # RUN_SETUP = 'UL_production'
 UL_YEAR = 'UL17'
 prod_tag = 'LHEGEN'
-version='v1'
+version='v2'
 
-process_whitelist = []
-coeff_whitelist   = []
-runs_whitelist    = []    # (i.e. MG starting points)
+# process_whitelist = []
+# coeff_whitelist   = []
+# runs_whitelist    = []   
 
 master_label = 'T3_EFT_{tstamp}'.format(tstamp=timestamp_tag)
 
@@ -47,10 +47,15 @@ Nevents_goal = {
         'mtt_700to900': 1979394,
         'mtt_900toInf': 2944757,
     },
+    # 'UL17': {
+    #     'mtt_0to700': 13823659,
+    #     'mtt_700to900': 3832515,
+    #     'mtt_900toInf': 5953931, 
+    # },
     'UL17': {
-        'mtt_0to700': 13823659,
-        'mtt_700to900': 3832515,
-        'mtt_900toInf': 5953931, 
+        'mtt_0to700': 11246720,
+        'mtt_700to900': 3279300,
+        'mtt_900toInf': 5407400, 
     },
     'UL18': {
         'mtt_0to700': 21148226,
@@ -95,21 +100,42 @@ def Nevents_requested(year, mtt_range):
     return int(round(num))
 
 
+# gridpacks = {
+#     'TTto2L2Nu_1Jets_smeft_MTT_0to700': {
+#         'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
+#         'cfg': UL_configs[UL_YEAR]['mtt_0to700'],
+#         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_0to700'),
+#         'Nevents_perlumi': 1000,
+#     },
+#     'TTto2L2Nu_1Jets_smeft_MTT_700to900': {
+#         'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
+#         'cfg': UL_configs[UL_YEAR]['mtt_700to900'],
+#         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_700to900'),
+#         'Nevents_perlumi':1000,
+#     },
+#     'TTto2L2Nu_1Jets_smeft_MTT_900toInf': {
+#         'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
+#         'cfg': UL_configs[UL_YEAR]['mtt_900toInf'],
+#         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_900toInf'),
+#         'Nevents_perlumi': 1000,
+#     },
+# }
+
 gridpacks = {
     'TTto2L2Nu_1Jets_smeft_MTT_0to700': {
-        'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
+        'path': "hnelson2/gridpack_scans/v2_TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz",
         'cfg': UL_configs[UL_YEAR]['mtt_0to700'],
         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_0to700'),
         'Nevents_perlumi': 1000,
     },
     'TTto2L2Nu_1Jets_smeft_MTT_700to900': {
-        'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
+        'path': "hnelson2/gridpack_scans/v2_TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz",
         'cfg': UL_configs[UL_YEAR]['mtt_700to900'],
         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_700to900'),
         'Nevents_perlumi':1000,
     },
     'TTto2L2Nu_1Jets_smeft_MTT_900toInf': {
-        'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
+        'path': "hnelson2/gridpack_scans/v2_TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz",
         'cfg': UL_configs[UL_YEAR]['mtt_900toInf'],
         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_900toInf'),
         'Nevents_perlumi': 1000,
@@ -138,7 +164,7 @@ for key, gridpack in gridpacks.items():
         # extra_inputs=['/afs/crc.nd.edu/user/h/hnelson2/cmssw/CMSSW_10_6_26/src/PhysicsTools/NanoAODTools/scripts/haddnano.py'],
         cleanup_input=False,
         globaltag=False,
-        outputs=["LHE-00000.root"],
+        outputs=["GEN-00000.root"],
         dataset=MultiProductionDataset(
             gridpacks=gridpack['path'],
             events_per_gridpack=gridpack['Nevents'],
