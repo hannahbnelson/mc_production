@@ -47,11 +47,13 @@ Nevents_goal = {
         'mtt_700to900': 1979394,
         'mtt_900toInf': 2944757,
     },
+    # true target number
     # 'UL17': {
     #     'mtt_0to700': 13823659,
     #     'mtt_700to900': 3832515,
     #     'mtt_900toInf': 5953931, 
     # },
+    # target number after including what the 
     'UL17': {
         'mtt_0to700': 11246720,
         'mtt_700to900': 3279300,
