@@ -1,0 +1,8 @@
+{
+    "max-workers": 10,
+    "min-workers": 0,
+    "cores": 12,
+    "memory": 18000,
+    "disk": 18000,
+    "workers-per-cycle": 40
+}
