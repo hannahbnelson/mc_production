@@ -10,9 +10,10 @@ from lobster.core import AdvancedOptions, Category, Config, MultiProductionDatas
 timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 
 # RUN_SETUP = 'UL_production'
-UL_YEAR = 'UL17'
+# UL_YEAR = 'UL16APV'
+UL_YEAR = 'UL18'
 prod_tag = 'LHEGEN'
-version='v2'
+version='v1'
 
 # process_whitelist = []
 # coeff_whitelist   = []
@@ -53,7 +54,7 @@ Nevents_goal = {
     #     'mtt_700to900': 3832515,
     #     'mtt_900toInf': 5953931, 
     # },
-    # target number after including what the 
+    # target number minus how many were made using the first gridpack 
     'UL17': {
         'mtt_0to700': 11246720,
         'mtt_700to900': 3279300,
@@ -97,31 +98,9 @@ LHEGEN_eff = {
 }
 
 def Nevents_requested(year, mtt_range): 
-
     num = Nevents_goal[year][mtt_range] * LHEGEN_eff[mtt_range]
     return int(round(num))
 
-
-# gridpacks = {
-#     'TTto2L2Nu_1Jets_smeft_MTT_0to700': {
-#         'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
-#         'cfg': UL_configs[UL_YEAR]['mtt_0to700'],
-#         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_0to700'),
-#         'Nevents_perlumi': 1000,
-#     },
-#     'TTto2L2Nu_1Jets_smeft_MTT_700to900': {
-#         'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
-#         'cfg': UL_configs[UL_YEAR]['mtt_700to900'],
-#         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_700to900'),
-#         'Nevents_perlumi':1000,
-#     },
-#     'TTto2L2Nu_1Jets_smeft_MTT_900toInf': {
-#         'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
-#         'cfg': UL_configs[UL_YEAR]['mtt_900toInf'],
-#         'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_900toInf'),
-#         'Nevents_perlumi': 1000,
-#     },
-# }
 
 gridpacks = {
     'TTto2L2Nu_1Jets_smeft_MTT_0to700': {
