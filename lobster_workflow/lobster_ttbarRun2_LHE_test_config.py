@@ -10,22 +10,19 @@ from lobster.core import AdvancedOptions, Category, Config, MultiProductionDatas
 timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 
 # RUN_SETUP = 'UL_production'
-# UL_YEAR = 'UL16APV'
-UL_YEAR = 'UL18'
-prod_tag = 'LHEGEN'
+UL_YEAR = 'UL17'
+prod_tag = 'Feb16test'
 version='v2'
 
-# process_whitelist = []
-# coeff_whitelist   = []
-# runs_whitelist    = []   
+process_whitelist = []
+coeff_whitelist   = []
+runs_whitelist    = []    # (i.e. MG starting points)
 
 master_label = 'T3_EFT_{tstamp}'.format(tstamp=timestamp_tag)
 
 output_path  = "/store/user/$USER/mc/ttbarEFT_Run2/{year}/{tag}/{ver}".format(year=UL_YEAR, tag=prod_tag, ver=version)
 workdir_path = "/tmpscratch/users/$USER/mc/ttbarEFT_Run2/{year}/{tag}/{ver}".format(year=UL_YEAR, tag=prod_tag, ver=version)
 plotdir_path = "~/www/lobster/mc/ttbarEFT_Run2/{year}/{tag}/{ver}".format(year=UL_YEAR, tag=prod_tag, ver=version)
-
-print(f"\n\n using timestamp: {timestamp_tag} \n\n")
 
 storage = StorageConfiguration(
     input = [
@@ -50,26 +47,15 @@ Nevents_goal = {
         'mtt_700to900': 1979394,
         'mtt_900toInf': 2944757,
     },
-    # true target number
-    # 'UL17': {
-    #     'mtt_0to700': 13823659,
-    #     'mtt_700to900': 3832515,
-    #     'mtt_900toInf': 5953931, 
-    # },
-    # target number minus how many were made using the first gridpack 
     'UL17': {
-        'mtt_0to700': 11246720,
-        'mtt_700to900': 3279300,
-        'mtt_900toInf': 5407400, 
+        'mtt_0to700': 13823659,
+        'mtt_700to900': 3832515,
+        'mtt_900toInf': 5953931, 
     },
-    # 'UL18': { #v1 - original goal number
-    #     'mtt_0to700': 21148226,
-    #     'mtt_700to900': 6302785,
-    #     'mtt_900toInf': 9186606,
-    # },
-    'UL18': { #v2 - extra making up for missing events
-        'mtt_0to700': 600000,
-        'mtt_700to900': 200000,
+    'UL18': {
+        'mtt_0to700': 21148226,
+        'mtt_700to900': 6302785,
+        'mtt_900toInf': 9186606,
     },
 }
 
@@ -92,7 +78,7 @@ UL_configs = {
     'UL18': {
         'mtt_0to700': 'ttbar_ulcfgs/TOP-RunIISummer20UL18wmLHEGEN-mtt0to700_cfg.py',
         'mtt_700to900': 'ttbar_ulcfgs/TOP-RunIISummer20UL18wmLHEGEN-mtt700to900_cfg.py',
-        'mtt_900toInf': 'ttbar_ulcfgs/TOP-RunIISummer20UL18wmLHEGEN-mtt900toInf_cfg.py', 
+        'mtt_900toInf': 'ttbar_ulcfgs/TOP-RunIISummer20UL18wmLHEGEN-mtt900toInf_cfg.py',
     },
 }
 
@@ -104,27 +90,16 @@ LHEGEN_eff = {
 }
 
 def Nevents_requested(year, mtt_range): 
+
     num = Nevents_goal[year][mtt_range] * LHEGEN_eff[mtt_range]
     return int(round(num))
 
 
 gridpacks = {
     'TTto2L2Nu_1Jets_smeft_MTT_0to700': {
-        'path': "hnelson2/gridpack_scans/v2_TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz",
+        'path': "hnelson2/gridpack_scans/TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_25_tarball.tar.xz",
         'cfg': UL_configs[UL_YEAR]['mtt_0to700'],
-        'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_0to700'),
-        'Nevents_perlumi': 1000,
-    },
-    'TTto2L2Nu_1Jets_smeft_MTT_700to900': {
-        'path': "hnelson2/gridpack_scans/v2_TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz",
-        'cfg': UL_configs[UL_YEAR]['mtt_700to900'],
-        'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_700to900'),
-        'Nevents_perlumi':1000,
-    },
-    'TTto2L2Nu_1Jets_smeft_MTT_900toInf': {
-        'path': "hnelson2/gridpack_scans/v2_TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz",
-        'cfg': UL_configs[UL_YEAR]['mtt_900toInf'],
-        'Nevents': Nevents_requested(year=UL_YEAR, mtt_range='mtt_900toInf'),
+        'Nevents': 10000,
         'Nevents_perlumi': 1000,
     },
 }
@@ -174,8 +149,6 @@ config = Config(
         bad_exit_codes=[127, 160],
         log_level=1,
         payload=10,
-        threshold_for_failure=40,
-        threshold_for_skipping=40,
         osg_version='3.6',
         # xrootd_servers=['ndcms.crc.nd.edu',
         #                'cmsxrootd.fnal.gov',
