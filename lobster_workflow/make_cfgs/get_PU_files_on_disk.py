@@ -46,7 +46,7 @@ if __name__=="__main__":
     site_args = parser.add_mutually_exclusive_group(required=False)
     parser.add_argument("--dataset", type=str,default='/Neutrino_E-10_gun/RunIISummer20ULPrePremix-UL17_106X_mc2017_realistic_v6-v3/PREMIX', help="dataset to query")
     parser.add_argument("-o","--outfile",type=str,default="UL17_DIGIPremix", help="write to this file instead of stdout")
-    parser.add_argument("--redirector", type=str, default="root://cms-xrd-global.cern.ch//", help="redirector to prepend to file names")
+    parser.add_argument("--redirector", type=str, default="root://cmsxcache.crc.nd.edu//", help="redirector to prepend to file names")
     parser.add_argument("--usedict", action='store_true', help='use dictionary in script instead of command line options')
     args = parser.parse_args()
 
