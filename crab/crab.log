@@ -1,0 +1,63 @@
+DEBUG 2026-02-23 19:09:04.421 UTC: 	 CRAB Client version: v3.251020
+DEBUG 2026-02-23 19:09:04.422 UTC: 	 Running on: Linux glados.crc.nd.edu 5.14.0-611.26.1.el9_7.x86_64 #1 SMP PREEMPT_DYNAMIC Sat Jan 17 05:14:35 EST 2026 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2026-02-23 19:09:04.422 UTC: 	 Using SINGULARITY image: el7:x86_64
+DEBUG 2026-02-23 19:09:04.422 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2026-02-23 19:09:04.422 UTC: 	 Executing command: 'status'
+DEBUG 2026-02-23 19:09:04.422 UTC: 	 Found CRAB cache file /users/hnelson2/.crab3
+ERROR 2026-02-23 19:09:04.425 UTC: 	 Error: crabLHEGEN/crab_UL16_mtt0to700/ is not a valid CRAB project directory.
+ERROR 2026-02-23 19:09:04.425 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/status.py", line 50, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crabLHEGEN/crab_UL16_mtt0to700/ is not a valid CRAB project directory.
+INFO 2026-02-23 19:09:04.428 UTC: 	 Log file is /users/hnelson2/mc_production/crab/crab.log
+DEBUG 2026-02-27 14:35:25.271 UTC: 	 CRAB Client version: v3.251020
+DEBUG 2026-02-27 14:35:25.272 UTC: 	 Running on: Linux glados.crc.nd.edu 5.14.0-611.26.1.el9_7.x86_64 #1 SMP PREEMPT_DYNAMIC Sat Jan 17 05:14:35 EST 2026 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2026-02-27 14:35:25.272 UTC: 	 Using SINGULARITY image: el7:x86_64
+DEBUG 2026-02-27 14:35:25.272 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2026-02-27 14:35:25.272 UTC: 	 Executing command: 'status'
+DEBUG 2026-02-27 14:35:25.293 UTC: 	 Found CRAB cache file /users/hnelson2/.crab3
+ERROR 2026-02-27 14:35:25.359 UTC: 	 Error: crabLHEGEN/crab_UL16APV_mtt0to700_v1 is not a valid CRAB project directory.
+ERROR 2026-02-27 14:35:25.359 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/status.py", line 50, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crabLHEGEN/crab_UL16APV_mtt0to700_v1 is not a valid CRAB project directory.
+INFO 2026-02-27 14:35:25.361 UTC: 	 Log file is /users/hnelson2/mc_production/crab/crab.log
+DEBUG 2026-03-03 13:37:50.454 UTC: 	 CRAB Client version: v3.251020
+DEBUG 2026-03-03 13:37:50.454 UTC: 	 Running on: Linux glados.crc.nd.edu 5.14.0-611.26.1.el9_7.x86_64 #1 SMP PREEMPT_DYNAMIC Sat Jan 17 05:14:35 EST 2026 x86_64 x86_64 x86_64 GNU/Linux
+DEBUG 2026-03-03 13:37:50.454 UTC: 	 Using SINGULARITY image: el7:x86_64
+DEBUG 2026-03-03 13:37:50.454 UTC: 	 Operating System: CentOS Linux 7 (Core)
+DEBUG 2026-03-03 13:37:50.454 UTC: 	 Executing command: 'status'
+DEBUG 2026-03-03 13:37:50.455 UTC: 	 Found CRAB cache file /users/hnelson2/.crab3
+ERROR 2026-03-03 13:37:50.459 UTC: 	 Error: crabLHEGEN/crab_UL16APV_mtt900toInf_v5 is not a valid CRAB project directory.
+ERROR 2026-03-03 13:37:50.459 UTC: 	 Caught ClientException exception
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/bin/crab.py", line 157, in <module>
+    client()
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/bin/crab.py", line 135, in __call__
+    self.cmd = sub_cmd(self.logger, args[1:])  # the crab command to be executed
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/status.py", line 50, in __init__
+    SubCommand.__init__(self, logger, cmdargs)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/SubCommand.py", line 281, in __init__
+    SubCommand.validateOptions(self)
+  File "/cvmfs/cms.cern.ch/share/cms/crab-prod/v3.251020.00/lib/CRABClient/Commands/SubCommand.py", line 691, in validateOptions
+    raise ConfigurationException(msg)
+CRABClient.ClientExceptions.ConfigurationException: [91mError[0m: crabLHEGEN/crab_UL16APV_mtt900toInf_v5 is not a valid CRAB project directory.
+INFO 2026-03-03 13:37:50.461 UTC: 	 Log file is /users/hnelson2/mc_production/crab/crab.log

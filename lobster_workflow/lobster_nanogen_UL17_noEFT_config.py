@@ -11,8 +11,8 @@ timestamp_tag = datetime.datetime.now().strftime('%Y%m%d_%H%M')
 
 RUN_SETUP = 'UL_production'
 UL_YEAR = 'UL17'
-prod_tag = "nanoGen"
-version = "tW"
+prod_tag = "noEFT_SMEFTsim_TT01j2lBSMRef"
+version = "v1"
 
 process_whitelist = []
 coeff_whitelist   = []
@@ -20,28 +20,26 @@ runs_whitelist    = []    # (i.e. MG starting points)
 
 master_label = 'T3_EFT_{tstamp}'.format(tstamp=timestamp_tag)
 
-output_path  = "/store/user/$USER/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
-workdir_path = "/tmpscratch/users/$USER/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
-plotdir_path = "~/www/lobster/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
+output_path  = "/store/user/$USER/mc/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
+workdir_path = "/tmpscratch/users/$USER/mc/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
+plotdir_path = "~/www/lobster/mc/noEFT/{tag}/{ver}".format(tag=prod_tag, ver=version)
 
 storage = StorageConfiguration(
     input = [
-        #"file:///scratch365/",
-        #"file:///tmpscratch/users/",
         "file:///cms/cephfs/data/store/user/",
-        "root://hactar01.crc.nd.edu//store/user/",
+        "root://cmsxrootd.crc.nd.edu//store/user/",
     ],
     
     output=[
         "file:///cms/cephfs/data" + output_path,
-        "root://hactar01.crc.nd.edu/"+output_path,    
+        "root://cmsxrootd.crc.nd.edu/"+output_path,    
     ],
 )
 
 # gridpack list is a dictionary of the form {'process': [gridpack path, config (path from this dir), events per gridpack, events per lumi]}
 gridpack_list = {
-    #'TT01j2l_SM': ['hnelson2/gridpack_scans/TT01j2l_SM_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 20000000, 1000]
-    'tW_noEFT': ['hnelson2/gridpack_scans/tW_noEFT_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 1000]
+    'noEFT_TT01j2l': ['hnelson2/gridpack_scans/noEFT_TT01j2lBSMRef_slc7_amd64_gcc10_CMSSW_12_4_8_tarball.tar.xz', 'ul_cfgs/nanoGen2017_LOJets_cfg.py', 20000000, 1000]
+    # 'tW_noEFT': ['hnelson2/gridpack_scans/tW_noEFT_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz', "ul_cfgs/nanoGen2017_LO_cfg.py", 100000, 1000]
 }
 
 
@@ -49,7 +47,7 @@ nanoGen = Category(
             name="nanoGen",
             cores=2,
             memory=4000,
-            disk=6800
+            disk=7000
         )
 
 wf = []

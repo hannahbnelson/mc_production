@@ -1,5 +1,5 @@
 {
-    "max-workers": 80,
+    "max-workers": 200,
     "min-workers": 0,
     "cores": 4,
     "memory": 14000,

@@ -7,6 +7,12 @@ import FWCore.ParameterSet.Config as cms
 
 from Configuration.Eras.Era_Run2_2018_cff import Run2_2018
 
+import os
+envOverride = {}
+if 'HOME' not in os.environ:
+    envOverride['HOME'] = os.environ.get('PWD', "/")
+os.environ.update(envOverride)
+
 process = cms.Process('RECO',Run2_2018)
 
 # import of standard configurations
