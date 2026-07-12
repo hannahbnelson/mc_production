@@ -1,5 +1,9 @@
 The general CMS Twiki page for Monte Carlo Production can be found here: https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO
 
+# Lobster Notes 
+- This is the line I have in my bashrc to source the correct versino of cctools for Run2 lobster generation
+`export PATH="$PATH:/afs/crc.nd.edu/group/ccl/software/x86_64/redhat7/cctools/lobster-171-cd5e3e2c-cvmfs-70dfa0d6/bin"`
+
 # How to Generate Gridpacks
 ## Cards
 First, you will need to produce a gridpack. General instructions can be found on the twiki here: https://twiki.cern.ch/twiki/bin/viewauth/CMS/QuickGuideMadGraph5aMCatNLO#Quick_tutorial_on_how_to_produce
